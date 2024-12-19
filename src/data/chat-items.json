@@ -1,0 +1,122 @@
+[
+  {
+    "chatId": 1,
+    "userImage": "./images/customers/01.jpg",
+    "userName": "John Smith",
+    "msgSnippet": "Sorry, I'm currently driving. Can I get back to you...",
+    "lastSeen": "Now",
+    "msgCount": 3,
+    "userActivity": "Online",
+    "chatStatus": "online"
+  },
+  {
+    "chatId": 2,
+    "userImage": "./images/customers/02.jpg",
+    "userName": "Emily Johnson",
+    "msgSnippet": "<b>You:</b> I just saw your message. Thanks for reaching out! I'll check the details and...",
+    "lastSeen": "8 min",
+    "msgCount": 0,
+    "userActivity": "Active 20 min ago",
+    "chatStatus": "busy"
+  },
+  {
+    "chatId": 3,
+    "userImage": "./images/customers/03.jpg",
+    "userName": "Sophia Miller",
+    "msgSnippet": "That sounds great! I think we should definitely consider going ahead with...",
+    "lastSeen": "5 hrs",
+    "msgCount": 4,
+    "userActivity": "Last seen 15 Feb",
+    "chatStatus": "offline"
+  },
+  {
+    "chatId": 4,
+    "userImage": "./images/customers/04.jpg",
+    "userName": "Ethan Davis",
+    "msgSnippet": "<b>You:</b> I understand your concerns. Perhaps we could arrange a meeting to discuss...",
+    "lastSeen": "9 Apr",
+    "msgCount": 0,
+    "userActivity": "Last active 9 Apr",
+    "chatStatus": "vacation"
+  },
+  {
+    "chatId": 5,
+    "userImage": "./images/customers/05.jpg",
+    "userName": "David Lee",
+    "msgSnippet": "<b>You:</b> We received your request. Our team is reviewing it and will...",
+    "lastSeen": "7 Apr",
+    "msgCount": 0,
+    "userActivity": "Last active 3 days",
+    "chatStatus": "offline"
+  },
+  {
+    "chatId": 6,
+    "userImage": "./images/customers/06.jpg",
+    "userName": "Michael Brown",
+    "msgSnippet": "Just a reminder about tomorrow's appointment. Please remember to bring...",
+    "lastSeen": "4 Apr",
+    "msgCount": "1",
+    "userActivity": "Last active 4 Apr",
+    "chatStatus": "away"
+  },
+  {
+    "chatId": 7,
+    "userImage": "./images/customers/07.jpg",
+    "userName": "Olivia Wilson",
+    "msgSnippet": "The document looks mostly good, but there are a few changes that we need to...",
+    "lastSeen": "20 Mar",
+    "msgCount": 0,
+    "userActivity": "Last active 20 Mar",
+    "chatStatus": "offline"
+  },
+  {
+    "chatId": 8,
+    "userImage": "./images/customers/08.jpg",
+    "userName": "Ben Clark",
+    "msgSnippet": "I'm not sure I agree with that point. Let's take a closer look at...",
+    "lastSeen": "5 Mar",
+    "msgCount": 0,
+    "userActivity": "Last active 5 Mar",
+    "chatStatus": "busy"
+  },
+  {
+    "chatId": 9,
+    "userImage": "./images/customers/09.jpg",
+    "userName": "Liam Anderson",
+    "msgSnippet": "The project is on track, but we're facing some minor issues with...",
+    "lastSeen": "4 Mar",
+    "msgCount": 0,
+    "userActivity": "Last active 4 Mar",
+    "chatStatus": "away"
+  },
+  {
+    "chatId": 10,
+    "userImage": "./images/customers/10.jpg",
+    "userName": "Harper Thomas",
+    "msgSnippet": "<b>You:</b> Your order has been processed, but due to high demand, there might be a slight delay in...",
+    "lastSeen": "29 Feb",
+    "msgCount": 0,
+    "userActivity": "Last active Feb 29",
+    "chatStatus": "busy"
+  },
+  {
+    "chatId": 11,
+    "userImage": "./images/customers/11.jpg",
+    "userName": "Jack Jones",
+    "msgSnippet": "<b>You:</b> I appreciate your feedback. We'll take it into consideration and see how we can...",
+    "lastSeen": "27 Feb",
+    "msgCount": 3,
+    "userActivity": "Last active Feb 27",
+    "chatStatus": "offline"
+  },
+  {
+    "chatId": 12,
+    "userImage": "./images/customers/12.jpg",
+    "userName": "Stan Green",
+    "msgSnippet": "Can't talk right now. Please send me the details and I'll...",
+    "lastSeen": "3 Jan",
+    "msgCount": 0,
+    "userActivity": "Last active 3 Jan",
+    "chatStatus": "vacation"
+  }
+]

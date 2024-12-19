@@ -1,0 +1,284 @@
+[
+  {
+    "type": "checkbox",
+    "alias": "cup-holders",
+    "text": "Cup Holders",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "armrests",
+    "text": "Armrests",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "reverse-camera",
+    "text": "Reverse Camera",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "360-view",
+    "text": "360 View",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "nav-system",
+    "text": "Navigation System",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "power-steering",
+    "text": "Power Steering",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "heated-steering",
+    "text": "Heated Steering",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "aux-heating",
+    "text": "Auxiliary Heating",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "heated-windscreen",
+    "text": "Heated Windscreen",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "fm-radio",
+    "text": "FM Radio",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "am-radio",
+    "text": "AM Radio",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "cd-player",
+    "text": "CD Player",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "electric-seats",
+    "text": "Electric Seats",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "heated-seats",
+    "text": "Heated Seats",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "electric-mirrors",
+    "text": "Electric Mirrors",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "air-condition",
+    "text": "Air Condition",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "ambient-lighting",
+    "text": "Ambient Lighting",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "door-sill-panels",
+    "text": "Door Sill Panels",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "door-sill-illuminated",
+    "text": "Door Sill Illuminated",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "floor-mats",
+    "text": "Floor Mats",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "instrument-cluster",
+    "text": "Instrument Cluster",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "12in-displays",
+    "text": "12in Widescreen Displays",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "13in-displays",
+    "text": "13in Widescreen Displays",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "14in-displays",
+    "text": "14in Widescreen Displays",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "15in-displays",
+    "text": "15in Widescreen Displays",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "panoramic-roof",
+    "text": "Panoramic Roof",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "performance-steering",
+    "text": "Performance Steering",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "steering-wheel-buttons",
+    "text": "Steering Wheel Buttons",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "automatic-dimming-rear",
+    "text": "Automatic Dimming Rear View Mirror",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "center-armrest",
+    "text": "Center Armrest Front Seats",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "cup-holders-front-rear",
+    "text": "Cup Holders - Front & Rear",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "dashboard-nappa-leather",
+    "text": "Dashboard - Nappa Leather",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "dashboard-carbon-fibre",
+    "text": "Dashboard - Carbon Fibre",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "front-seats-electric",
+    "text": "Front Seats Electric",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "front-seats-heated",
+    "text": "Front Seats - Heated",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "front-seats-ventilated",
+    "text": "Front Seats - Ventilated",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "interior-air-ionization",
+    "text": "Interior Air Ionization",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "keyless-go",
+    "text": "KEYLESS-GO",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "luggage-compartment-cover",
+    "text": "Luggage Compartment Cover",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "luggage-protection-net",
+    "text": "Luggage Protection Net",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "rain-sensing-wipers",
+    "text": "Rain-Sensing Wipers",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "rear-bench-seat-split",
+    "text": "Rear Seat - Split 1/3 - 2/3",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "roof-liner-dinamica-microfibre",
+    "text": "Roof Liner - DINAMICA Microfibre",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "rear-seats-heated",
+    "text": "Rear Seats - Heated",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "steering-column-electric",
+    "text": "Steering Column - Electric",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "stowage-space-package",
+    "text": "Stowage Space Package",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "automatic-climate-control",
+    "text": "Automatic Climate Control",
+    "aria": ""
+  }
+]

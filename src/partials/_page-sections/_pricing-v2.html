@@ -1,0 +1,130 @@
+<!-- FAQs -->
+<section class="position-relative custom-color
+@@ if (sectionBgType !== 'plain' && sectionBgType !== 'image' && sectionBgType !== 'video') {
+  bg-body-tertiary
+}
+"
+>
+  @@ if (sectionBgType === 'plain' || sectionBgType === 'image' || sectionBgType === 'video') {
+    @@ if (sectionBgType !== 'plain') {
+      <div class="jarallax" data-jarallax data-speed="0.2" 
+        @@ if (sectionBgType === 'video') {
+          data-video-src="@@sectionBgVideo"
+          data-video-start-time="@@sectionBgVideoStartTime" 
+          data-video-end-time="@@sectionBgVideoEndTime"
+        }
+      >
+      @@ if (sectionBgType === 'image') {
+        <img class="jarallax-img lazy" data-src="@@sectionBgImage" alt="">
+      }
+    }
+    <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" 
+    style="background-color: @@sectionBgColor; background-image: @@sectionBgGradient; opacity: @@sectionBgOpacity"></span>
+  }
+
+  <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
+    <div class="row g-4">
+  
+      <div class="plans pricing-plans">
+        <div class="row">
+  
+          <div class="col-sm-8 col-md-4 mx-sm-auto mx-md-0 px-md-2 px-lg-2">
+            <div class="plan plan-basic bg-body-tertiary rounded-2 overflow-hidden border mb-4">
+              <div class="plan-title bg-light-subtle border-bottom border-light-subtle">
+                <h3 class="">Basic</h3>
+              </div>
+              <div class="plan-price text-primary custom-color">
+                <span class="plan-currency">$</span>39<span class="plan-tenure">/ month</span>
+              </div>
+              <div class="plan-features custom-color">
+                <ul class="list-unstyled">
+                  <li>Standard vehicle listing</li>
+                  <li>5 high-quality images per listing</li>
+                  <li>Vehicle details (make, model, year, mileage, etc.)</li>
+                  <li>Contact information for interested buyers</li>
+                  <li>Basic search visibility</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Featured placement in search results</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Priority customer support</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Social media sharing options</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Enhanced search visibility</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Video tour integration</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Lead tracking and analytics</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Maximum search visibility</li>
+                </ul>
+              </div>
+              <div class="plan-action border-top py-3 mt-4">
+                <a href="#" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md fs-sm">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-8 col-md-4 mx-sm-auto mx-md-0 px-md-2 px-lg-2">
+            <div class="plan plan-featured plan-professional bg-body-tertiary rounded-2 overflow-hidden border mb-4">
+              <div class="plan-title bg-light-subtle border-bottom border-light-subtle">
+                <h3 class="">Professional</h3>
+                <span class="d-none d-md-block">Most Popular</span>
+              </div>
+              <div class="plan-price text-primary custom-color">
+                <span class="plan-currency">$</span>69<span class="plan-tenure">/ month</span>
+              </div>
+              <div class="plan-features custom-color">
+                <ul class="list-unstyled">
+                  <li>Premium vehicle listing with unlimited images</li>
+                  <li>Featured and prioritized placement in search results</li>
+                  <li>Vehicle history report integration</li>
+                  <li>Video tour integration</li>
+                  <li>Lead tracking and analytics</li>
+                  <li>Premium customer support</li>
+                  <li>Social media sharing options</li>
+                  <li>Enhanced search visibility</li>
+                  <li>Maximum search visibility</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Featured on the homepage carousel</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Exclusive access to promotions & partnerships</li>
+                  <li class="plan-feature-disabled text-decoration-line-through">Ultra search visibility</li>
+                </ul>
+              </div>
+              <div class="plan-action border-top py-3 mt-4">
+                <a href="#" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md fs-sm">30 days free trial</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-8 col-md-4 mx-sm-auto mx-md-0 px-md-2 px-lg-2">
+            <div class="plan plan-enterprise bg-body-tertiary rounded-2 overflow-hidden border mb-4">
+              <div class="plan-title bg-light-subtle border-bottom border-light-subtle">
+                <h3 class="">Enterprise</h3>
+              </div>
+              <div class="plan-price text-primary custom-color">
+                <span class="plan-currency">$</span>99<span class="plan-tenure">/ month</span>
+              </div>
+              <div class="plan-features custom-color">
+                <ul class="list-unstyled">
+                  <li>VIP vehicle listing with unlimited images</li>
+                  <li>Top-tier placement in search results</li>
+                  <li>Vehicle history report integration</li>
+                  <li>Video tour integration</li>
+                  <li>Featured on the homepage carousel</li>
+                  <li>Exclusive access to promotions & partnerships</li>
+                  <li>Advanced lead tracking & analytics</li>
+                  <li>Premium customer support with dedicated account manager</li>
+                  <li>Social media sharing options</li>
+                  <li>Ultra search visibility</li>
+                </ul>
+              </div>
+              <div class="plan-action border-top py-3 mt-4">
+                <a href="#" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md fs-sm">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  @@ if (sectionBgType === 'image' || sectionBgType === 'video') {
+    </div>
+  }
+</section>
+<!-- END FAQs -->

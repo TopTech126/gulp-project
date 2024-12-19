@@ -1,0 +1,130 @@
+<div class="container-fluid p-0 px-3 px-sm-0 bg-body-tertiary">
+  
+  <div class="jarallax" data-jarallax data-speed="0.2">
+    <img class="jarallax-img lazy" data-src="./images/cars/mercedes-benz-gle/01.jpg" alt="">
+    <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-1"></span>
+    
+    @@include('./partials/_breadcrumb.html', {
+      "breadcrumbTitle": "Contact Us",
+      "breadcrumbItems": "_contact.html",
+      "breadcrumbStyle": 2,
+      "breadcrumbBgOpacity": 0.1,
+      "breadcrumbBgImage": "",
+      "breadcrumbBgColor": "dark"
+    })
+
+    <div class="container py-5 position-relative z-1">
+      <div class="row my-4">
+
+        <div class="col-md-12">
+
+          <h1 class="text-white text-center mb-4 fw-bold">Get In Touch</h1>
+
+          <h2 class="text-white text-center mb-4 h3">Your Feedback Matters</h2>
+
+          <p class="text-white text-center mb-0 col-md-6 mx-auto">Have questions, feedback, or inquiries? We'd love to hear from you. Please feel free to get in touch with us using the contact information provided below.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-body">
+  <div class="container col-xxl-8 py-5 p-0 px-3 px-sm-0">
+    <div class="row g-5">
+
+      <div class="col-md-6 mx-auto">
+
+        <h3 class="fs-5 mb-4 custom-color">Send Us A Message</h3>
+
+        @@include("./partials/_forms/_contact-us.html")
+
+      </div>
+
+      <div class="col-md-6 mx-auto">
+        
+        <div class="row row-cols-1 g-4">
+
+          <div>
+            <div class="card border h-100 bg-body-tertiary">
+              <div class="card-body text-center d-flex flex-column">
+                <div class="card-upper flex-fill mb-4">
+                  <h5 class="card-title fs-4 mb-3 custom-color">Location</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary fs-6 mb-3"></h6>
+                  <p class="card-text opacity-75">123 Main Street, McKinney, Texas, USA. <br>Discover our conveniently located
+                    showroom in the heart of the city, making it easy for you to access our services.</p>
+                </div>
+                <h6 class="card-link text-decoration-none text-muted" role="button" data-bs-toggle="modal"
+                  data-bs-target="#mapModal">View on Google Map</h6>
+    
+                <!-- Modal -->
+                <div class="modal fade" id="mapModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="mapModalLabel">Location Map</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1280.0098549576005!2d-96.62933931344406!3d33.213511486501396!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2ske!4v1690105768767!5m2!1sen!2ske"
+                          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div>
+            <div class="card border h-100 bg-body-tertiary">
+              <div class="card-body text-center d-flex flex-column">
+                <div class="card-upper flex-fill mb-4">
+                  <h5 class="card-title fs-4 mb-3 custom-color">Phone</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary fs-6 mb-3"></h6>
+                  <p class="card-text opacity-75">Call our dedicated customer support by calling our 24/7 helpline for prompt assistance, and our representatives will be happy to help you with any questions or concerns you may have.</p>
+                </div>
+                <h6 class="text-muted"><span>Office: +1 (574) 456 789</span></h6>
+              </div>
+            </div>
+          </div>
+    
+          <div>
+            <div class="card border h-100 bg-body-tertiary">
+              <div class="card-body text-center d-flex flex-column">
+                <div class="card-upper flex-fill mb-4">
+                  <h5 class="card-title fs-4 mb-3 custom-color">Email</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary fs-6 mb-3"></h6>
+                  <p class="card-text opacity-75">Contact us via email for any inquiries or information, and we'll respond promptly to your queries, ensuring you receive the assistance you need in a timely manner.</p>
+                </div>
+                <h6 class="text-muted">info@carsmart.com</h6>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="bg-body border-top border-bottom">
+  <div class="container-fluid p-0">
+
+    <div class="row g-0">
+      <div class="col-12">
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1280.0098549576005!2d-96.62933931344406!3d33.213511486501396!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2ske!4v1690105768767!5m2!1sen!2ske" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

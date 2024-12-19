@@ -1,0 +1,16 @@
+@@for (var i = 0; i < expertReviewRating.length; i++) {
+
+  <!-- Review Criterion -->
+  <div id="review-criterion-`+expertReviewRating[i].alias+`" class="review-detailed-item border-bottom pb-2 mb-4">
+    <h4 class="fs-5 d-flex fw-semibold justify-content-between">`+expertReviewRating[i].name+`
+      <span>
+        <span class="badge Rating`+expertReviewRating[i].reviewGrade+` rounded-1 custom-color ">`+expertReviewRating[i].rating+`<span class="fs-sm fw-light">/10</span></span>
+      </span>
+    </h4>
+    <p class="">
+      `+expertReviewRating[i].review+`
+    </p>
+  </div>
+  <!-- END Review Criterion -->
+
+}

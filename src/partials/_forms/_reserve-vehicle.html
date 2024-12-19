@@ -1,0 +1,70 @@
+<!-- Reserve Vehicle Form -->
+<form id="reserve-vehicle-form" action="">
+  <div class="mb-3 pb-1 row g-0">
+    <div class="col-12 col-sm-5 mb-3 mb-sm-0">
+      <div style="max-width: 160px; max-height: 90px">
+        <img data-src="./images/cars/bmw-x5/01.jpg" class="d-block w-100 rounded-1 lazy" alt="...">
+      </div>
+    </div>
+    <div class="col-12 col-sm-7">
+      <h6 class="mb-2">2022 BMW X5</h6>
+      <div class="w-100 lh-sm">
+        <span class="fw-bold me-2 fs-sm">Color:</span><span class="text-body-secondary fs-sm">White</span>
+      </div>
+      <div class="w-100 lh-sm">
+        <span class="fw-bold me-2 fs-sm">Stock #:</span><span class="text-body-secondary fs-sm">74587</span>
+      </div>
+      <div class="w-100 lh-sm">
+        <span class="fw-bold me-2 fs-sm">VIN:</span><span class="text-body-secondary fs-sm">1G54A547136H66J98</span>
+      </div>
+    </div>
+  </div>
+  <hr class="hr opacity-15 d-block w-100 my-3">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-title" class="form-label">Title</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-salutation" aria-label="Select your title and salutation">
+          <option selected>Select title</option>
+          <option value="mr">Mr</option>
+          <option value="mrs">Mrs</option>
+          <option value="miss">Miss</option>
+          <option value="sir">Sir</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-name" class="form-label">Name</label>
+        <input type="text" class="form-control custom-color" id="user-name" name="user-name">
+      </div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span></label>
+    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
+  </div>
+  <div class="mb-3">
+    <label for="user-email" class="form-label">Email</label>
+    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="reserveVehicleEmailHelp">
+    <div id="reserveVehicleEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="vehicle-color" class="form-label">Preferred Color</label>
+    <input type="text" class="form-control custom-color" id="vehicle-color" name="vehicle-color">
+  </div>
+  <div class="mb-3">
+    <label for="pickup-date" class="form-label">Desired Pickup Date and Time</label>
+    <input type="text" class="form-control custom-color" id="pickup-date" name="pickup-date">
+  </div>
+  <div class="mb-3">
+    <label for="user-notes" class="form-label">Pickup Details / Return Details / Special Requests</label>
+    <textarea class="form-control custom-color" id="user-notes" name="user-notes" rows="3"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms-reserve-car" name="confirm-terms-reserve-car" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms-reserve-car">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
+</form>
+<!-- END Reserve Vehicle Form -->

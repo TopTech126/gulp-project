@@ -1,0 +1,28 @@
+<div class="container-fluid p-0">
+  <div class="container py-5">
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <h1 class="text-center mb-4 fw-bold custom-color">Meet Our Amazing Team</h1>
+
+        <h2 class="text-center mb-4 h3">Building the Future Together</h2>
+
+        <p class="text-center mb-0 col-md-5 mx-auto">Welcome to our team page. We are a group of dedicated professionals who are passionate about our work and committed to delivering excellence in everything we do. Get to know us better below!</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-body-tertiary">
+  <div class="container col-xxl-8 py-5 p-0 bg-body-tertiary">
+    <div class="row g-4">
+
+      @@loop("./partials/_loops/_team-member.html", "./data/team.json")
+
+    </div>
+  </div>
+</div>
+
+@@include('./partials/_modals/_team-bio.html')

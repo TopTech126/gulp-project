@@ -1,0 +1,110 @@
+[
+  {
+    "blogImage": "./images/blog/01.jpg",
+    "blogTitle": "The Top 10 Luxury Cars of the Last Decade",
+    "blogDate": "20<sup>th</sup> Aug 2023",
+    "likeCount": "22",
+    "commentCount": "55",
+    "authorName": "Tom Jones",
+    "authorImage": "./images/team/06.jpg"
+  },
+  {
+    "blogImage": "./images/blog/02.jpg",
+    "blogTitle": "Electric Cars: Shaping the Future of Automotive Industry",
+    "blogDate": "12<sup>th</sup> Sep 2023",
+    "likeCount": "45",
+    "commentCount": "32",
+    "authorName": "Jennifer Johnson",
+    "authorImage": "./images/team/03.jpg"
+  },
+  {
+    "blogImage": "./images/blog/03.jpg",
+    "blogTitle": "Exploring Classic Cars: A Journey Through Automotive History",
+    "blogDate": "5<sup>th</sup> Oct 2023",
+    "likeCount": "18",
+    "commentCount": "12",
+    "authorName": "David Brown",
+    "authorImage": "./images/team/01.jpg"
+  },
+  {
+    "blogImage": "./images/blog/04.jpg",
+    "blogTitle": "Sports Cars: Adrenaline and Precision on Wheels",
+    "blogDate": "28<sup>th</sup> Oct 2023",
+    "likeCount": "67",
+    "commentCount": "89",
+    "authorName": "Emily Taylor",
+    "authorImage": "./images/team/04.jpg"
+  },
+  {
+    "blogImage": "./images/blog/05.jpg",
+    "blogTitle": "The Art of Car Design: Beauty, Performance, and Innovation",
+    "blogDate": "14<sup>th</sup> Nov 2023",
+    "likeCount": "36",
+    "commentCount": "22",
+    "authorName": "Michael Davis",
+    "authorImage": "./images/team/02.jpg"
+  },
+  {
+    "blogImage": "./images/blog/06.jpg",
+    "blogTitle": "Off-Roading Adventures: Conquering Terrain with Powerful SUVs",
+    "blogDate": "2<sup>nd</sup> Dec 2023",
+    "likeCount": "31",
+    "commentCount": "46",
+    "authorName": "Sophia Wilson",
+    "authorImage": "./images/team/05.jpg"
+  },
+  {
+    "blogImage": "./images/blog/07.jpg",
+    "blogTitle": "The Evolution of Supercars: From Classics to Hypercars",
+    "blogDate": "18<sup>th</sup> Jan 2024",
+    "likeCount": "52",
+    "commentCount": "77",
+    "authorName": "Daniel Thompson",
+    "authorImage": "./images/team/07.jpg"
+  },
+  {
+    "blogImage": "./images/blog/08.jpg",
+    "blogTitle": "Road Trip Essentials: Must-Have Items for a Memorable Journey",
+    "blogDate": "7<sup>th</sup> Feb 2024",
+    "likeCount": "29",
+    "commentCount": "63",
+    "authorName": "Olivia Martin",
+    "authorImage": "./images/team/08.jpg"
+  },
+  {
+    "blogImage": "./images/blog/09.jpg",
+    "blogTitle": "Car Maintenance: Keeping Your Vehicle in Optimal Condition",
+    "blogDate": "23<sup>rd</sup> Mar 2024",
+    "likeCount": "41",
+    "commentCount": "18",
+    "authorName": "Benjamin Harris",
+    "authorImage": "./images/team/09.jpg"
+  },
+  {
+    "blogImage": "./images/blog/10.jpg",
+    "blogTitle": "The Future of Autonomous Cars: Revolutionizing Transportation",
+    "blogDate": "12<sup>th</sup> Apr 2024",
+    "likeCount": "24",
+    "commentCount": "50",
+    "authorName": "Emma Anderson",
+    "authorImage": "./images/team/10.jpg"
+  },
+  {
+    "blogImage": "./images/blog/11.jpg",
+    "blogTitle": "Vintage Cars: Preserving Automotive History and Nostalgia",
+    "blogDate": "30<sup>th</sup> May 2024",
+    "likeCount": "17",
+    "commentCount": "42",
+    "authorName": "Alexander Johnson",
+    "authorImage": "./images/team/05.jpg"
+  },
+  {
+    "blogImage": "./images/blog/12.jpg",
+    "blogTitle": "SUV vs. Sedan: Choosing the Right Vehicle for Your Lifestyle",
+    "blogDate": "15<sup>th</sup> Jun 2024",
+    "likeCount": "39",
+    "commentCount": "61",
+    "authorName": "Sophie Adams",
+    "authorImage": "./images/team/03.jpg"
+  }
+]

@@ -1,0 +1,12 @@
+<div class="container blog blog-grid blog-grid-4-cols py-5 mb-2 mb-md-4">
+  <div class="row g-4">
+
+    @@loop("./partials/_loops/_blog/_blog-grid-4-cols.html", "./data/blogs.json")
+    
+    <!-- Pagination -->
+    <div class="col-12 mt-4">
+      @@include('./partials/_pagination.html')
+    </div>
+
+  </row>
+</div>

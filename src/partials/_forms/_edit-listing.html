@@ -1,0 +1,778 @@
+<!-- Edit Listing -->
+<form id="add-listing-form" class="w-100 submit-listing-form" action="">
+
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-details-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-details"
+                  aria-expanded="true" aria-controls="listing-details">
+                  Listing Details
+                </button>
+              </h2>
+              <div id="listing-details" class="accordion-collapse collapse show" data-bs-parent="#listing-details-accordion">
+                <div class="accordion-body">
+                  <div class="row row-cols-sm-2 row-cols-md-3">
+                    
+                    @@loop("./partials/_loops/_listing-details.html", "./data/listing-details.json")
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-exterior-features-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-exterior-features"
+                  aria-expanded="true" aria-controls="listing-exterior-features">
+                  Exterior Features
+                </button>
+              </h2>
+              <div id="listing-exterior-features" class="accordion-collapse collapse show" data-bs-parent="#listing-exterior-features-accordion">
+                <div class="accordion-body">
+                  <div class="row row-cols-md-2 row-cols-lg-3">
+                    
+                    @@loop("./partials/_loops/_listing-exterior-features.html", "./data/listing-exterior-features.json")
+    
+                  </div>
+                    
+                  <div class="w-100">
+                    <div id="listing-exterior-features-extra" class="extra-features-fields row" data-input-name="extra-listing-exterior-features"></div>
+                    <button type="button" class="btn btn-primary px-4 mb-2 custom-color d-flex align-items-center" id="add-extra-field-listing-exterior-features"><svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plus me-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>Add Extra Feature</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-interior-features-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-interior-features"
+                  aria-expanded="true" aria-controls="listing-interior-features">
+                  Interior Features
+                </button>
+              </h2>
+              <div id="listing-interior-features" class="accordion-collapse collapse show" data-bs-parent="#listing-interior-features-accordion">
+                <div class="accordion-body">
+                  <div class="row row-cols-md-2 row-cols-lg-3">
+                    
+                    @@loop("./partials/_loops/_listing-interior-features.html", "./data/listing-interior-features.json")
+    
+                  </div>
+                    
+                  <div class="w-100">
+                    <div id="listing-interior-features-extra" class="extra-features-fields row" data-input-name="extra-listing-interior-features"></div>
+                    <button type="button" class="btn btn-primary px-4 mb-2 custom-color d-flex align-items-center" id="add-extra-field-listing-interior-features"><svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plus me-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>Add Extra Feature</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-safety-features-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-safety-features"
+                  aria-expanded="true" aria-controls="listing-safety-features">
+                  Safety Features
+                </button>
+              </h2>
+              <div id="listing-safety-features" class="accordion-collapse collapse show" data-bs-parent="#listing-safety-features-accordion">
+                <div class="accordion-body">
+                  <div class="row row-cols-md-2 row-cols-lg-3">
+                    
+                    @@loop("./partials/_loops/_listing-safety-features.html", "./data/listing-safety-features.json")
+    
+                  </div>
+                    
+                  <div class="w-100">
+                    <div id="listing-safety-features-extra" class="extra-features-fields row" data-input-name="extra-listing-safety-features"></div>
+                    <button type="button" class="btn btn-primary px-4 mb-2 custom-color d-flex align-items-center" id="add-extra-field-listing-safety-features"><svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plus me-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>Add Extra Feature</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-security-features-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-security-features"
+                  aria-expanded="true" aria-controls="listing-security-features">
+                  Security Features
+                </button>
+              </h2>
+              <div id="listing-security-features" class="accordion-collapse collapse show" data-bs-parent="#listing-security-features-accordion">
+                <div class="accordion-body">
+                  <div class="row row-cols-md-2 row-cols-lg-3">
+                    
+                    @@loop("./partials/_loops/_listing-security-features.html", "./data/listing-security-features.json")
+    
+                  </div>
+                    
+                  <div class="w-100">
+                    <div id="listing-security-features-extra" class="extra-features-fields row" data-input-name="extra-listing-security-features"></div>
+                    <button type="button" class="btn btn-primary px-4 mb-2 custom-color d-flex align-items-center" id="add-extra-field-listing-security-features"><svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plus me-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>Add Extra Feature</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-engine-features-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-engine-features"
+                  aria-expanded="true" aria-controls="listing-engine-features">
+                  Engine and Drive Train
+                </button>
+              </h2>
+              <div id="listing-engine-features" class="accordion-collapse collapse show" data-bs-parent="#listing-engine-features-accordion">
+                <div class="accordion-body">
+                  <div class="row">
+        
+                    <!-- Camshaft -->
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1">Camshaft</label><br>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input custom-color" type="radio" name="camshaft" id="dohc" value="DOHC">
+                          <label class="form-check-label" for="dohc">DOHC</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input custom-color" type="radio" name="camshaft" id="sohc" value="SOHC">
+                          <label class="form-check-label" for="sohc">SOHC</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input custom-color" type="radio" name="camshaft" id="ohv" value="OHV">
+                          <label class="form-check-label" for="ohv">OHV</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input custom-color" type="radio" name="camshaft" id="cs-none" value="NONE" checked>
+                          <label class="form-check-label" for="cs-none">None</label>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <!-- Transmission -->
+                    <div class="col-sm-2 col-md-3 col-lg-4 mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="transmission">Transmission</label>
+                        <select class="form-select custom-color" id="transmission" name="transmission">
+                          <option>Automatic</option>
+                          <option>Manual</option>
+                          <option>CVT</option>
+                        </select>
+                      </div>
+                    </div>
+        
+                    <!-- Number of Gears -->
+                    <div class="col-sm-2 col-md-3 col-lg-4 mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="gears">Number of Gears</label>
+                        <input type="text" class="form-control custom-color" id="gears" name="gears" value="9" min="1">
+                      </div>
+                    </div>
+        
+                    <!-- Cylinder Layout -->
+                    <div class="col-sm-2 col-md-3 col-lg-4 mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="cylinder-layout">Cylinder Layout</label>
+                        <select class="form-select custom-color" id="cylinder-layout" name="cylinder-layout">
+                          <option>V8</option>
+                          <option>Inline 4</option>
+                          <option>Inline 6</option>
+                          <option>V6</option>
+                          <option>V12</option>
+                        </select>
+                      </div>
+                    </div>
+        
+                    <!-- Cylinders -->
+                    <div class="col-sm-2 col-md-3 col-lg-4 mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="cylinders">Cylinders</label>
+                        <input type="text" class="form-control custom-color" id="cylinders" name="cylinders" value="8" min="1">
+                      </div>
+                    </div>
+        
+                    <!-- CC -->
+                    <div class="col-sm-2 col-md-3 col-lg-4 mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="cc">CC</label>
+                        <input type="text" class="form-control custom-color" id="cc" name="cc" value="3999" min="500">
+                      </div>
+                    </div>
+        
+                    <!-- Noise Level dB(A) -->
+                    <div class="col-sm-2 col-md-3 col-lg-4 mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="noise-level">Noise Level dB(A)</label>
+                        <input type="text" class="form-control custom-color" id="noise-level" name="noise-level" value="3800" min="0">
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-perfomance-features-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-perfomance-features"
+                  aria-expanded="true" aria-controls="listing-perfomance-features">
+                  Performance
+                </button>
+              </h2>
+              <div id="listing-perfomance-features" class="accordion-collapse collapse show" data-bs-parent="#listing-perfomance-features-accordion">
+                <div class="accordion-body">
+                  <div class="row row-cols-sm-2 row-cols-md-3">
+        
+                    <!-- Engine Size -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="engine-size">Engine Size (cc)</label>
+                        <input type="text" class="form-control custom-color" id="engine-size" name="engine-size" value="3999" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Top Speed -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="top-speed">Top Speed (mph)</label>
+                        <input type="text" class="form-control custom-color" id="top-speed" name="top-speed" value="255" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- 0-62mph -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="acceleration">0-62mph (sec)</label>
+                        <input type="text" class="form-control custom-color" id="acceleration" name="acceleration" value="2.6" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Engine Torque (lbs/ft) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="torque-lbs-ft">Engine Torque (lbs/ft)</label>
+                        <input type="text" class="form-control custom-color" id="torque-lbs-ft" name="torque-lbs-ft" value="627"
+                          min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Engine Torque (NM) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="torque-nm">Engine Torque (NM)</label>
+                        <input type="text" class="form-control custom-color" id="torque-nm" name="torque-nm" value="2500" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Engine Torque (RPM) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="torque-rpm">Engine Torque (RPM)</label>
+                        <input type="text" class="form-control custom-color" id="torque-rpm" name="torque-rpm" value="850" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Engine Power (KW) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="power-kw">Engine Power (KW)</label>
+                        <input type="text" class="form-control custom-color" id="power-kw" name="power-kw" value="430" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Engine Power (BHP) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="power-bhp">Engine Power (BHP)</label>
+                        <input type="text" class="form-control custom-color" id="power-bhp" name="power-bhp" value="577" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Engine Power (RPM) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="power-rpm">Engine Power (RPM)</label>
+                        <input type="text" class="form-control custom-color" id="power-rpm" name="power-rpm" value="6000" min="0">
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-dimension-features-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-dimension-features"
+                  aria-expanded="true" aria-controls="listing-dimension-features">
+                  Dimensions
+                </button>
+              </h2>
+              <div id="listing-dimension-features" class="accordion-collapse collapse show" data-bs-parent="#listing-dimension-features-accordion">
+                <div class="accordion-body">
+                  <div class="row row-cols-sm-2 row-cols-md-3">
+        
+                    <!-- Height -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="height">Height (mm)</label>
+                        <input type="text" class="form-control custom-color" id="height" name="height" value="1159" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Length -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="length">Length (mm)</label>
+                        <input type="text" class="form-control custom-color" id="length" name="length" value="4462" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Width -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="width">Width (mm)</label>
+                        <input type="text" class="form-control custom-color" id="width" name="width" value="1988" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Wheelbase -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="wheelbase">Wheelbase (mm)</label>
+                        <input type="text" class="form-control custom-color" id="wheelbase" name="wheelbase" value="2980" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Fuel Tank -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="fuel-tank">Fuel Tank (litres)</label>
+                        <input type="text" class="form-control custom-color" id="fuel-tank" name="fuel-tank" value="75" min="0">
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-consumption-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-consumption"
+                  aria-expanded="true" aria-controls="listing-consumption">
+                  Consumption & Emmissions
+                </button>
+              </h2>
+              <div id="listing-consumption" class="accordion-collapse collapse show" data-bs-parent="#listing-consumption-accordion">
+                <div class="accordion-body">
+                  <div class="row row-cols-sm-2 row-cols-md-3">
+    
+                    <!-- Extra Urban (mpg) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="extra-urban-mpg">Extra Urban (mpg)</label>
+                        <input type="text" class="form-control custom-color" id="extra-urban-mpg" name="extra-urban-mpg" value="17" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Urban (mpg) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="urban-mpg">Urban (mpg)</label>
+                        <input type="text" class="form-control custom-color" id="urban-mpg" name="urban-mpg" value="9.6" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Combined (mpg) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="combined-mpg">Combined (mpg)</label>
+                        <input type="text" class="form-control custom-color" id="combined-mpg" name="combined-mpg" value="13.1" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- CO2 (g/km) -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="co2">CO2 (g/km)</label>
+                        <input type="text" class="form-control custom-color" id="co2" name="co2" value="539" min="0">
+                      </div>
+                    </div>
+    
+                    <!-- Standard Euro Emissions -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="euro-emissions">Standard Euro Emissions</label>
+                        <input type="text" class="form-control custom-color" id="euro-emissions" name="euro-emissions" value="EURO 6">
+                      </div>
+                    </div>
+    
+                    <!-- Ultra Low Emission Zone -->
+                    <div class="mb-3">
+                      <div class="form-group">
+                        <label class="form-label fw-semibold fs-special mb-1" for="ultra-low-emission-zone">Ultra Low Emission Zone</label>
+                        <input type="text" class="form-control custom-color" id="ultra-low-emission-zone" name="ultra-low-emission-zone" value="Compliant">
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-information-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-information"
+                  aria-expanded="true" aria-controls="listing-information">
+                  Listing Information
+                </button>
+              </h2>
+              <div id="listing-information" class="accordion-collapse collapse show" data-bs-parent="#listing-information-accordion">
+                <div class="accordion-body">
+                  <div class="row row-cols-sm-2 row-cols-md-3">
+    
+                    @@loop("./partials/_loops/_listing-information.html", "./data/listing-information.json")
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-images-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-images"
+                  aria-expanded="true" aria-controls="listing-images">
+                  Listing Images
+                </button>
+              </h2>
+              <div id="listing-images" class="accordion-collapse collapse show" data-bs-parent="#listing-images-accordion">
+                <div class="accordion-body">
+                    
+                  <div class="form-text w-100 mn-2">
+                    Max file size is 5 MB. We accept PNG, JPG and JPEG.
+                  </div>
+    
+                  <div class="row row-cols-auto g-3 justify-content-center py-4 pt-2 my-2">
+    
+                    @@for (var i = 1; i <= 15; i++) { 
+                      <div class="text-dark-emphasis">
+                        <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
+                          <input class="form-control custom-color" type="file" id="uploadImage`+i+`" name="uploadImage`+i+`" accept="image/*">
+                          <span class="upload-icon"></span>
+                          <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
+                          <div id="previewImage`+i+`"><span class="remove-upload rounded-circle" role="button"></span></div>
+                        </div>
+                      </div>
+                    }
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-videos-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-videos"
+                  aria-expanded="true" aria-controls="listing-videos">
+                  Listing Videos
+                </button>
+              </h2>
+              <div id="listing-videos" class="accordion-collapse collapse show" data-bs-parent="#listing-videos-accordion">
+                <div class="accordion-body">
+                    
+                  <div class="form-text w-100 mn-2">
+                    Max file size is 20 MB. We accept MP4 and WEBM.
+                  </div>
+    
+                  <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 g-3 justify-content-center py-4 pt-2 my-2">
+    
+                    @@for (var i = 1; i <= 4; i++) { 
+                      <div class="text-dark-emphasis">
+                        <div class="video-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
+                          <input class="form-control custom-color" type="file" id="uploadVideos`+i+`" name="uploadVideos`+i+`" accept=".mp4, .webm">
+                          <span class="upload-icon"></span>
+                          <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Video</span>
+                          <div id="previewVideo`+i+`" class="align-content-center justify-content-center position-relative"><span class="remove-upload rounded-circle z-1" role="button"></span></div>
+                        </div>
+                      </div>
+                    }
+                    
+                  </div>
+                  
+                  <div class="w-100">
+                    <div id="listing-videos-extra" class="extra-features-fields row" data-input-name="extra-listing-videos"></div>
+                    <button type="button" class="btn btn-primary px-4 mb-2 custom-color d-flex align-items-center" id="add-listing-video-url"><svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plus me-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>Add Video URL</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-360-view-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-360-view"
+                  aria-expanded="true" aria-controls="listing-360-view">
+                  Listing 360 View Images
+                </button>
+              </h2>
+              <div id="listing-360-view" class="accordion-collapse collapse show" data-bs-parent="#listing-360-view-accordion">
+                <div class="accordion-body">
+                    
+                  <div class="form-text w-100 mn-2">
+                    Max file size is 5 MB. We accept PNG, JPG and JPEG.
+                  </div>
+    
+                  <div class="row row-cols-auto g-3 justify-content-center py-4 pt-2 my-2 mb-0 pb-0">
+                  
+                    <div class="upload-container-360 w-100 custom-color">
+                      <div id="drag-drop-area-360" class="drag-drop-area-360 bg-body-tertiary rounded border border-2 cursor-pointer text-secondary p-5 fs-6">
+                          <p class="m-0">Drag and drop images here or click to select files</p>
+                          <input class="d-none" type="file" id="file-input" name="images-360" multiple accept="image/*">
+                      </div>
+                      <div id="gallery-360" class="gallery-360 d-flex flex-wrap justify-content-center position-relative gap-2 p-4"></div>
+                    </div>
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <div class="accordion mb-4" id="listing-owner-accordion">
+            <div class="accordion-item mb-2 border rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-owner"
+                  aria-expanded="true" aria-controls="listing-owner">
+                  Vendor Details
+                </button>
+              </h2>
+              <div id="listing-owner" class="accordion-collapse collapse show" data-bs-parent="#listing-owner-accordion">
+                <div class="accordion-body">
+                  
+                  <div class="row row-cols-sm-2 row-cols-md-3">
+    
+                    <div class="mb-3">
+                      <label for="listing-owner-name" class="form-label fw-semibold fs-special mb-1">Name</label>
+                      <input type="text" class="form-control custom-color" id="listing-owner-name" name="listing-owner-name">
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="listing-owner-email" class="form-label fw-semibold fs-special mb-1">Email</label>
+                      <input type="email" class="form-control custom-color" id="listing-owner-email" name="listing-owner-email">
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="listing-owner-phone1" class="form-label fw-semibold fs-special mb-1">Phone 1</label>
+                      <input type="text" class="form-control custom-color" id="listing-owner-phone1" name="listing-owner-phone1">
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="listing-owner-phone2" class="form-label fw-semibold fs-special mb-1">Phone 2 <span class="text-secondary fs-sm">(Optional)</span></label>
+                      <input type="text" class="form-control custom-color" id="listing-owner-phone2" name="listing-owner-phone2">
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="listing-owner-country" class="form-label fw-semibold fs-special mb-1">Country</label>
+                      <select id="listing-owner-country" name="listing-owner-country" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select your country">
+                        <option selected>Select</option>
+                      </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="listing-owner-state" class="form-label fw-semibold fs-special mb-1">State/Region</label>
+                      <select id="listing-owner-state" name="listing-owner-state" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select your state">
+                        <option selected>Select</option>
+                      </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="listing-owner-city" class="form-label fw-semibold fs-special mb-1">City</label>
+                      <select id="listing-owner-city" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select your city">
+                        <option selected>Select</option>
+                      </select>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <div class="container p-0">
+            <div class="d-flex align-items-center row row-cols-1 row-cols-lg-2 g-0 gy-4 gy-lg-0">
+              <div class="m-0 form-check">
+                <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+                <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+              </div>
+              <div class="text-lg-end">
+                <button type="submit" class="btn btn-lg btn-primary custom-color fs-6 px-5 py-3 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit Listing</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="bg-body-tertiary px-3 rounded sticky-top">
+        <div class="submit-listing-nav">
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Listing Details
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Exterior Features
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Interior Features
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Safety Features
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Security Features
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Engine & Drive Train
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Performance
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Dimension
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Consumption/Emissions
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Information
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Images
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Videos
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                360 Images
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none text-truncate" href="javascript:void(0)">
+                Vendor Details
+                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"><circle fill="none" stroke-width="3" cx="20" cy="15" r="11" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</form>
+<!-- END Edit Listing -->

@@ -1,0 +1,14 @@
+<!-- FAQ Item -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button fw-bold custom-color @@if(!open) { collapsed }" type="button" data-bs-toggle="collapse" data-bs-target="#faq1@@id" aria-expanded="@@open" aria-controls="faq1@@id">
+      @@q
+    </button>
+  </h2>
+  <div id="faq1@@id" class="accordion-collapse collapse @@if(open) { show }" data-bs-parent="#faq-1">
+    <div class="accordion-body">
+      @@a
+    </div>
+  </div>
+</div>
+<!-- END FAQ Item -->

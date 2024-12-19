@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    @@include('./partials/_head.html', { 
+      "docTitle" : "Blog List - Sidebar Right", 
+      "enqueueFile" : {
+        "owlcarousel" : true, 
+        "magnificpopup" : true 
+      } 
+    })
+  </head>
+  
+  <body>
+    
+    <!-- Preloader -->
+    @@include('./partials/_preloader.html')
+    <!-- END Preloader -->
+    
+    <!-- Header -->
+    @@include('./partials/_header.html', {
+      "headerStyle": 1
+    })
+    <!-- END Header -->
+    
+    <!-- Breadcrumb -->
+    @@include('./partials/_breadcrumb.html', {
+      "breadcrumbTitle": "Blog List Right Sidebar",
+      "breadcrumbItems": "_blog-list.html"
+    })
+    <!-- END Breadcrumb -->
+    
+    <!-- Main -->
+    @@include('./partials/_main.html', {
+      "contentType" : "blog-list-sidebar-right"
+    })
+    <!-- END Main -->
+    
+    <!-- Footer -->
+    @@include('./partials/_footer.html', {
+      "footerStyle": 1
+    })
+    <!-- END Footer -->
+    
+    <!-- Scripts -->
+    @@include('./partials/_scripts.html', { 
+      "enqueueFile" : {
+        "jquery" : true,
+        "lazy" : true,
+        "owlcarousel" : true, 
+        "magnificpopup" : true 
+      } 
+    })
+    <!-- END Scripts -->
+  </body>
+  
+</html>

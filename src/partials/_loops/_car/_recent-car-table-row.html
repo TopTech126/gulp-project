@@ -1,0 +1,42 @@
+@@if (title) {
+
+<!-- Car -->
+<tr class="align-middle">
+  <th class="p-3 px-2 ps-3">
+    <img data-src="@@image1" class="m-0 object-fit-cover rounded-1 overflow-hidden border lazy" alt="" width="56" height="32">
+  </th>
+  <td class="p-3 px-2">
+    <a href="./car-details.html" class="fw-normal fs-sm fs-special text-truncate text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">@@title</a>
+  </td>
+  <td class="p-3 px-2 text-muted"><span class="rounded-circle bg-warning d-flex align-self-center border border-light-subtle shadow-sm" style="width: 15px; height: 15px; background-color: @@color !important;"  data-bs-toggle="tooltip" data-bs-placement="top"
+    data-bs-title="@@color"></span></td>
+  <td class="p-3 px-2 text-muted text-danger">
+    @@if (isSold) {Sold}
+    @@if (isReserved) {Reserved}
+    @@if (!isSold && !isReserved) {Available}
+  </td>
+  <td class="p-3 px-2 text-muted">
+    @@if (isNew) {New}
+    @@if (!isNew) {Used}
+  </td>
+  <td class="p-3 px-2 text-muted">5</td>
+  <td class="p-3 px-2 text-muted">@@fuel</td>
+  <td class="p-3 px-2 text-muted">@@engine</td>
+  <td class="p-3 px-2 text-muted">@@transmission</td>
+  <td class="p-3 px-2 text-muted">@@mileage</td>
+  <td class="p-3 px-2 text-muted">@@year</td>
+  <td class="p-3 px-2 fw-semibold fs-digits text-spacing-sm">@@price</td>
+  <td class="p-3 px-2 text-muted text-center">
+    @@if (favorites) {
+      <button type="button" class="btn btn-favorites bg-black bg-opacity-10 favorites-active p-0" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-title="Remove from favorites"></button>
+      }
+      @@if (!favorites) {
+      <button type="button" class="btn btn-favorites bg-black bg-opacity-10 p-0" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-title="Add to favorites"></button>
+      }
+  </td>
+</tr>
+<!-- END Car -->
+
+}

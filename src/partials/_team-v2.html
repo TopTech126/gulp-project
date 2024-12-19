@@ -1,0 +1,245 @@
+<div class="container-fluid p-0 px-3 px-sm-0 bg-body-tertiary">
+  
+  <div class="jarallax" data-jarallax data-speed="0.2">
+    <img class="jarallax-img lazy" data-src="./images/team/team.jpg" alt="">
+    <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-1"></span>
+    
+    @@include('./partials/_breadcrumb.html', { 
+      "breadcrumbTitle": "Our Team",
+      "breadcrumbItems": "_team.html",
+      "breadcrumbStyle": 2,
+      "breadcrumbBgOpacity": 0.1,
+      "breadcrumbBgImage": "",
+      "breadcrumbBgColor": "dark"
+    })
+
+    <div class="container py-5 position-relative z-1">
+      <div class="row my-4">
+
+        <div class="col-md-12">
+
+          <h1 class="text-white text-center mb-4 fw-bold">Meet Our Amazing Team</h1>
+  
+          <h2 class="text-white text-center mb-4 h3">Building the Future Together</h2>
+  
+          <p class="text-white text-center mb-0 col-md-5 mx-auto">Welcome to our team page. We are a group of dedicated professionals who are passionate about our work and committed to delivering excellence in everything we do. Get to know us better below!</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-body-tertiary">
+  <div class="container col-xxl-8 py-5 bg-body-tertiary">
+    <div class="row">
+      
+      <div class="col-12">
+        <h3 class="h4 text-uppercase fw-semibold pb-3 pt-4 mb-4 mt-5 custom-color">Management</h3>
+      </div>
+      
+      @@for (var i = 0; i < teamManagement.length; i++) {
+      <!-- Team Member -->
+      <div class="item col-md-4 col-sm-6">
+        <div class="team-card overflow-hidden custom-color">
+          <div class="image-holder">
+            <img data-src="`+teamManagement[i].image+`" class="img-fluid img-grayscale rounded-3 lazy" alt="Melania Turner">
+          </div>
+          <h2 class="team-name fs-3">`+teamManagement[i].name+`</h2>
+          <h3 class="team-title text-uppercase fs-sm mb-3">`+teamManagement[i].title+`</h3>
+          <div class="team-bio">
+            <button type="button" class="btn btn-dark text-uppercase fs-xs" data-bs-toggle="modal" data-bs-target="#teamBio" data-bs-member-id="`+teamManagement[i].id+`" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Read Bio
+            </button>
+          </div>
+          <div class="team-social">
+            <nav class="m-0">
+              <ul class="p-0 mb-2">
+                  <li><a href="`+teamManagement[i].x+`" class="social-brand x"><span class="label">X</span></a></li>
+                  <li><a href="`+teamManagement[i].facebook+`" class="social-brand facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="`+teamManagement[i].instagram+`" class="social-brand instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="`+teamManagement[i].linkedin+`" class="social-brand linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="mailto:`+teamManagement[i].email+`" class="social-brand email"><span class="label">Email</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- END Team Member -->
+      }
+      
+      <div class="col-12">
+        <h3 class="h4 text-uppercase fw-semibold pb-3 pt-4 mb-4 mt-5 custom-color">Human Resource</h3>
+      </div>
+      
+      @@for (var i = 0; i < teamHumanResource.length; i++) {
+      <!-- Team Member -->
+      <div class="item col-md-4 col-sm-6">
+        <div class="team-card overflow-hidden custom-color">
+          <div class="image-holder">
+            <img data-src="`+teamHumanResource[i].image+`" class="img-fluid img-grayscale rounded-3 lazy" alt="Melania Turner">
+          </div>
+          <h2 class="team-name fs-3">`+teamHumanResource[i].name+`</h2>
+          <h3 class="team-title text-uppercase fs-sm mb-3">`+teamHumanResource[i].title+`</h3>
+          <div class="team-bio">
+            <button type="button" class="btn btn-dark text-uppercase fs-xs" data-bs-toggle="modal" data-bs-target="#teamBio" data-bs-member-id="`+teamHumanResource[i].id+`" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Read Bio
+            </button>
+          </div>
+          <div class="team-social">
+            <nav class="m-0">
+              <ul class="p-0 mb-2">
+                  <li><a href="`+teamHumanResource[i].x+`" class="social-brand x"><span class="label">X</span></a></li>
+                  <li><a href="`+teamHumanResource[i].facebook+`" class="social-brand facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="`+teamHumanResource[i].instagram+`" class="social-brand instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="`+teamHumanResource[i].linkedin+`" class="social-brand linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="mailto:`+teamHumanResource[i].email+`" class="social-brand email"><span class="label">Email</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- END Team Member -->
+      }
+      
+      <div class="col-12">
+        <h3 class="h4 text-uppercase fw-semibold pb-3 pt-4 mb-4 mt-5 custom-color">Sales</h3>
+      </div>
+      
+      @@for (var i = 0; i < teamSales.length; i++) {
+      <!-- Team Member -->
+      <div class="item col-md-4 col-sm-6">
+        <div class="team-card overflow-hidden custom-color">
+          <div class="image-holder">
+            <img data-src="`+teamSales[i].image+`" class="img-fluid img-grayscale rounded-3 lazy" alt="Melania Turner">
+          </div>
+          <h2 class="team-name fs-3">`+teamSales[i].name+`</h2>
+          <h3 class="team-title text-uppercase fs-sm mb-3">`+teamSales[i].title+`</h3>
+          <div class="team-bio">
+            <button type="button" class="btn btn-dark text-uppercase fs-xs" data-bs-toggle="modal" data-bs-target="#teamBio" data-bs-member-id="`+teamSales[i].id+`" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Read Bio
+            </button>
+          </div>
+          <div class="team-social">
+            <nav class="m-0">
+              <ul class="p-0 mb-2">
+                  <li><a href="`+teamSales[i].x+`" class="social-brand x"><span class="label">X</span></a></li>
+                  <li><a href="`+teamSales[i].facebook+`" class="social-brand facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="`+teamSales[i].instagram+`" class="social-brand instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="`+teamSales[i].linkedin+`" class="social-brand linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="mailto:`+teamSales[i].email+`" class="social-brand email"><span class="label">Email</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- END Team Member -->
+      }
+      
+      <div class="col-12">
+        <h3 class="h4 text-uppercase fw-semibold pb-3 pt-4 mb-4 mt-5 custom-color">Logistics</h3>
+      </div>
+      
+      @@for (var i = 0; i < teamLogistics.length; i++) {
+      <!-- Team Member -->
+      <div class="item col-md-4 col-sm-6">
+        <div class="team-card overflow-hidden custom-color">
+          <div class="image-holder">
+            <img data-src="`+teamLogistics[i].image+`" class="img-fluid img-grayscale rounded-3 lazy" alt="Melania Turner">
+          </div>
+          <h2 class="team-name fs-3">`+teamLogistics[i].name+`</h2>
+          <h3 class="team-title text-uppercase fs-sm mb-3">`+teamLogistics[i].title+`</h3>
+          <div class="team-bio">
+            <button type="button" class="btn btn-dark text-uppercase fs-xs" data-bs-toggle="modal" data-bs-target="#teamBio" data-bs-member-id="`+teamLogistics[i].id+`" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Read Bio
+            </button>
+          </div>
+          <div class="team-social">
+            <nav class="m-0">
+              <ul class="p-0 mb-2">
+                  <li><a href="`+teamLogistics[i].x+`" class="social-brand x"><span class="label">X</span></a></li>
+                  <li><a href="`+teamLogistics[i].facebook+`" class="social-brand facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="`+teamLogistics[i].instagram+`" class="social-brand instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="`+teamLogistics[i].linkedin+`" class="social-brand linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="mailto:`+teamLogistics[i].email+`" class="social-brand email"><span class="label">Email</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- END Team Member -->
+      }
+      
+      <div class="col-12">
+        <h3 class="h4 text-uppercase fw-semibold pb-3 pt-4 mb-4 mt-5 custom-color">Marketing</h3>
+      </div>
+      
+      @@for (var i = 0; i < teamMarketing.length; i++) {
+      <!-- Team Member -->
+      <div class="item col-md-4 col-sm-6">
+        <div class="team-card overflow-hidden custom-color">
+          <div class="image-holder">
+            <img data-src="`+teamMarketing[i].image+`" class="img-fluid img-grayscale rounded-3 lazy" alt="Melania Turner">
+          </div>
+          <h2 class="team-name fs-3">`+teamMarketing[i].name+`</h2>
+          <h3 class="team-title text-uppercase fs-sm mb-3">`+teamMarketing[i].title+`</h3>
+          <div class="team-bio">
+            <button type="button" class="btn btn-dark text-uppercase fs-xs" data-bs-toggle="modal" data-bs-target="#teamBio" data-bs-member-id="`+teamMarketing[i].id+`" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Read Bio
+            </button>
+          </div>
+          <div class="team-social">
+            <nav class="m-0">
+              <ul class="p-0 mb-2">
+                  <li><a href="`+teamMarketing[i].x+`" class="social-brand x"><span class="label">X</span></a></li>
+                  <li><a href="`+teamMarketing[i].facebook+`" class="social-brand facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="`+teamMarketing[i].instagram+`" class="social-brand instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="`+teamMarketing[i].linkedin+`" class="social-brand linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="mailto:`+teamMarketing[i].email+`" class="social-brand email"><span class="label">Email</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- END Team Member -->
+      }
+      
+      <div class="col-12">
+        <h3 class="h4 text-uppercase fw-semibold pb-3 pt-4 mb-4 mt-5 custom-color">Information Technology</h3>
+      </div>
+      
+      @@for (var i = 0; i < teamInformationTechnology.length; i++) {
+      <!-- Team Member -->
+      <div class="item col-md-4 col-sm-6">
+        <div class="team-card overflow-hidden custom-color">
+          <div class="image-holder">
+            <img data-src="`+teamInformationTechnology[i].image+`" class="img-fluid img-grayscale rounded-3 lazy" alt="Melania Turner">
+          </div>
+          <h2 class="team-name fs-3">`+teamInformationTechnology[i].name+`</h2>
+          <h3 class="team-title text-uppercase fs-sm mb-3">`+teamInformationTechnology[i].title+`</h3>
+          <div class="team-bio">
+            <button type="button" class="btn btn-dark text-uppercase fs-xs" data-bs-toggle="modal" data-bs-target="#teamBio" data-bs-member-id="`+teamInformationTechnology[i].id+`" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Read Bio
+            </button>
+          </div>
+          <div class="team-social">
+            <nav class="m-0">
+              <ul class="p-0 mb-2">
+                  <li><a href="`+teamInformationTechnology[i].x+`" class="social-brand x"><span class="label">X</span></a></li>
+                  <li><a href="`+teamInformationTechnology[i].facebook+`" class="social-brand facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="`+teamInformationTechnology[i].instagram+`" class="social-brand instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="`+teamInformationTechnology[i].linkedin+`" class="social-brand linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="mailto:`+teamInformationTechnology[i].email+`" class="social-brand email"><span class="label">Email</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- END Team Member -->
+      }
+      
+    </div>
+  </div>
+</div>
+
+@@include('./partials/_modals/_team-bio.html')

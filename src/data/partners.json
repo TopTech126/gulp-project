@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Autogreen",
+    "image": "./icons/partners/autogreen.svg"
+  },
+  {
+    "name": "Firestone",
+    "image": "./icons/partners/firestone.svg"
+  },
+  {
+    "name": "Michelin",
+    "image": "./icons/partners/michelin.svg"
+  },
+  {
+    "name": "BridgeStone",
+    "image": "./icons/partners/bridgestone.svg"
+  },
+  {
+    "name": "Avon",
+    "image": "./icons/partners/avon.svg"
+  },
+  {
+    "name": "Uniroyal",
+    "image": "./icons/partners/uniroyal.svg"
+  }
+]

@@ -1,0 +1,140 @@
+#productSync1 {
+
+  max-width: 100%;
+  min-height: 100px;
+  overflow: hidden;
+
+  .item {
+    background: #fff;
+    padding: 0;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    max-width: 100%;
+    height: 480px;
+    display: flex;
+  }
+
+  &.owl-theme {
+
+    position: relative;
+
+    .owl-next,
+    .owl-prev {
+      width: 36px;
+      height: 48px;
+      margin-top: -24px;
+      position: absolute;
+      top: 50%;
+    }
+
+    .owl-prev {
+      left: 10px;
+    }
+
+    .owl-next {
+      right: 10px;
+    }
+
+  }
+}
+
+#productSync2 {
+
+  margin-top: 4px;
+
+  .item {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    height: 60px;
+    display: flex;
+
+    h1 {
+      font-size: 18px;
+    }
+  }
+
+  .owl-item:not(.current) .item::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.23)
+  }
+
+  .current .item {
+    background: #fff;
+  }
+
+  &.owl-theme {
+
+    .owl-next,
+    .owl-prev {
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .owl-prev {
+      left: 10px;
+    }
+
+    .owl-next {
+      right: 10px;
+    }
+  }
+}
+
+#productSync1,
+#productSync2 {
+
+  &.owl-theme {
+    .owl-nav {
+
+      /*default owl-theme theme reset .disabled:hover links */
+      margin: 0;
+
+      [class*="owl-"] {
+        transition: all 0.3s ease;
+      }
+
+      [class*="owl-"].disabled:hover {
+        background-color: #d6d6d6;
+      }
+
+      [class*="owl-"]:hover {
+        background: rgba(0, 0, 0, .3);
+        color: #FFF;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .owl-item {
+    border-radius: var(--#{$prefix}border-radius) !important;
+    border: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color) !important;
+    overflow: hidden;
+  }
+}
+
+[data-bs-theme=dark] #productSync2 .owl-item:not(.current) .item::after {
+  background-color: rgba(0, 0, 0, 0.6)
+}
+
+.mfp-product-zoom .mfp-figure::after {
+  background: #fff;
+}

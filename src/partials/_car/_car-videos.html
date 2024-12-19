@@ -1,0 +1,28 @@
+<div class="car-photos mb-4 pb-3 position-relative">
+
+  <div id="videoSync1" class="owl-carousel owl-theme custom-color">
+    @@for (var i = 0; i < mainCarVideos.length; i++) { 
+      <div id="video-item-`+(i+1)+`" class="video-item rounded-2">
+        <video class="car-video-player" playsinline controls data-poster="`+mainCarVideos[i].thumbnail+`" data-plyr-config='{ "title": "`+mainCarVideos[i].title+`" }'>
+            <source src="`+mainCarVideos[i].url+`" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+    } 
+    <div id="video-item-0" class="plyr__video-embed">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qZnaHOkGqNg?si=G20W5J-uEaIfavap&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="videoSync2" class="owl-carousel owl-theme">
+    @@for (var i = 0; i < mainCarVideos.length; i++) {
+      <div id="video-thumb-`+(i+1)+`" class="item video-thumb rounded-2 cursor-pointer">
+        <img class="img-fluid object-fit-cover rounded-2" src="`+mainCarVideos[i].thumbnail+`" alt="Thumbnail `+(i+1)+` &ndash; `+mainCarVideos[i].title+`" srcset="">
+      </div>
+    }
+    <div id="video-thumb-0" class="item video-thumb rounded-2 cursor-pointer">
+      <img class="img-fluid object-fit-cover rounded-2" src="./videos/cars/bmw-x5/03.jpg" alt="Thumbnail 3 &ndash; Exterior and Interior" srcset="">
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    @@include('./partials/_head.html', { 
+      "docTitle" : "BMW X5 Review", 
+      "enqueueFile" : {
+        "owlcarousel" : true, 
+        "magnificpopup" : true,
+        "plyr" : true 
+      } 
+    })
+  </head>
+  
+  <body class="review-details-v2">
+    
+    <!-- Preloader -->
+    @@include('./partials/_preloader.html')
+    <!-- END Preloader -->
+    
+    <!-- Header -->
+    @@include('./partials/_header.html', {
+      "headerStyle": 1
+    })
+
+    <!-- Hero Section Review Details Page -->
+    @@include('./partials/_review/_hero-review.html')
+    
+    <!-- Main -->
+    @@include('./partials/_main.html', {
+      "contentType" : "review-details"
+    })
+    <!-- END Main -->
+    
+    <!-- Footer -->
+    @@include('./partials/_footer.html', {
+      "footerStyle": 1
+    })
+    <!-- END Footer -->
+    
+    <!-- Scripts -->
+    @@include('./partials/_scripts.html', {
+      "enqueueFile" : {
+        "jquery" : true,
+        "lazy" : true,
+        "owlcarousel" : true, 
+        "magnificpopup" : true,
+        "judoSpin" : true,
+        "plyr" : true 
+      } 
+    })
+    <!-- END Scripts -->
+  </body>
+  
+</html>

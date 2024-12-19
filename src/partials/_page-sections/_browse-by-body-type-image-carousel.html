@@ -1,0 +1,41 @@
+<!-- Browse by body type [image] -->
+<section class="position-relative custom-color
+@@ if (sectionBgType !== 'plain' && sectionBgType !== 'image' && sectionBgType !== 'video') {
+  bg-body-tertiary
+}
+"
+>
+  @@ if (sectionBgType === 'plain' || sectionBgType === 'image' || sectionBgType === 'video') {
+    @@ if (sectionBgType !== 'plain') {
+      <div class="jarallax" data-jarallax data-speed="0.2" 
+        @@ if (sectionBgType === 'video') {
+          data-video-src="@@sectionBgVideo"
+          data-video-start-time="@@sectionBgVideoStartTime" 
+          data-video-end-time="@@sectionBgVideoEndTime"
+        }
+      >
+      @@ if (sectionBgType === 'image') {
+        <img class="jarallax-img lazy" data-src="@@sectionBgImage" alt="">
+      }
+    }
+    <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" 
+    style="background-color: @@sectionBgColor; background-image: @@sectionBgGradient; opacity: @@sectionBgOpacity"></span>
+  }
+  <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
+    <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color @@if (sectionHeaderCentered) { text-center }">Browse by Body Type</h2>
+    <div class="browse-body-types-image-carousel owl-carousel owl-theme"
+    data-loop="@@carouselLoop"
+    data-nav="@@carouselNav"
+    data-dots="@@carouselDots"
+    data-autoplay="@@carouselAutoplay"
+    >
+      
+      @@loop('./partials/_loops/_browse-by-body-type-image.html', './data/car-body-types.json')
+      
+    </div>
+  </div>
+  @@ if (sectionBgType === 'image' || sectionBgType === 'video') {
+    </div>
+  }
+</section>
+<!-- END Browse by body type [image] -->

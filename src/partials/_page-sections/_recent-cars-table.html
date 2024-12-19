@@ -1,0 +1,77 @@
+<!-- Data Table -->
+<section class="position-relative custom-color
+@@ if (sectionBgType !== 'plain' && sectionBgType !== 'image' && sectionBgType !== 'video') {
+  bg-body-tertiary
+}
+"
+>
+  @@ if (sectionBgType === 'plain' || sectionBgType === 'image' || sectionBgType === 'video') {
+    @@ if (sectionBgType !== 'plain') {
+      <div class="jarallax" data-jarallax data-speed="0.2" 
+        @@ if (sectionBgType === 'video') {
+          data-video-src="@@sectionBgVideo"
+          data-video-start-time="@@sectionBgVideoStartTime" 
+          data-video-end-time="@@sectionBgVideoEndTime"
+        }
+      >
+      @@ if (sectionBgType === 'image') {
+        <img class="jarallax-img lazy" data-src="@@sectionBgImage" alt="">
+      }
+    }
+    <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" 
+    style="background-color: @@sectionBgColor; background-image: @@sectionBgGradient; opacity: @@sectionBgOpacity"></span>
+  }
+
+  <div class="container position-relative py-5">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="section-title text-center mb-4 pb-2">
+          <h3 class="fs-5 text-uppercase pb-3 mb-4 custom-color">Recently Added Cars</h4>
+          <p class="text-muted mx-auto mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, eligendi sunt enim consectetur dolorem nostrum exercitationem fugit cum expedita consequuntur.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 mt-4 pt-2">
+        <div class="table-responsive recent-cars-table bg-white rounded-2 border border-bottom-0 overflow-hidden">
+          <table class="table mb-0 table-center table-hover">
+            <thead class="fs-special fw-semibold fs-sm">
+              <tr>
+                <th scope="col" class="border-bottom py-4 px-2 ps-3" style="width: 56px;">Image</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="min-width: 200px;">Name</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 80px;">Color</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 100px;">Status</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 80px;">Cond.</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 80px;">Doors</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 100px;">Fuel</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 100px;">Engine</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 100px;">Trans</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 100px;">Mileage</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 80px;">Year</th>
+                <th scope="col" class="border-bottom py-4 px-2" style="width: 100px;">Price</th>
+                <th scope="col" class="border-bottom py-4 px-2 text-center" style="width: 100px;">Save</th>
+              </tr>
+            </thead>
+
+            <tbody class="fs-sm">
+              
+              @@loop("./partials/_loops/_car/_recent-car-table-row.html", "./data/cars.json")
+              
+            </tbody>
+          </table>
+          <!--end table-->
+        </div>
+
+        <div class="mt-4 pt-2 text-center">
+          <a href="javascript:void(0)" class="text-primary h6">See More</a>
+        </div>
+      </div>
+      <!--end col-->
+    </div>
+    <!--end row-->
+  </div>
+  @@ if (sectionBgType === 'image' || sectionBgType === 'video') {
+    </div>
+  }
+</section>

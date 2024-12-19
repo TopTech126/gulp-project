@@ -1,0 +1,289 @@
+/* All elements under focus, remove outline */
+.form-control,
+.form-select,
+.form-check-input {
+  &:focus {
+    // outline: 0 !important;
+    // border-color: transparent;
+    box-shadow: none !important;
+  }
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  outline: 0 !important;
+  border-color: transparent;
+  box-shadow: none !important;
+}
+
+/* Accordions */
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+
+.accordion-button:focus {
+  box-shadow: none
+}
+
+.accordion-button:focus:not(.collapsed){
+  box-shadow: inset 0 calc(-1 * var(--#{$prefix}accordion-border-width)) 0 var(--#{$prefix}accordion-border-color);
+}
+
+/* Add icon for the expanded state */
+.accordion-button::after {
+  background-image: none !important;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+  background-color: var(--#{$prefix}secondary-color) !important;
+  -webkit-mask-image: url(../icons/chevron-down.svg);
+  mask-image: url(../icons/chevron-down.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 24px 24px;
+  mask-size: 24px 24px;
+}
+
+/* Add icon for the collapsed state */
+.accordion-button.collapsed::after {
+  content: "";
+  transform: rotate(0);
+  -webkit-mask-image: url(../icons/chevron-down.svg);
+  mask-image: url(../icons/chevron-down.svg);
+}
+
+
+/* Close buttons */
+.btn-close {
+  background: 0 0;
+  background-color: var(--#{$prefix}body-color);
+  font-size: 12px;
+  padding: 6px;
+  position: relative;
+  filter: none
+}
+
+.btn-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--#{$prefix}border-color);
+  -webkit-mask-image: url(../icons/x.svg);
+  mask-image: url(../icons/x.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transform: translate(-12px, -12px) scale(0.75)
+}
+
+/* Button Group */
+.btn-group {
+
+  .btn-check:checked+.btn,
+  .btn.active,
+  .btn.show,
+  .btn:first-child:active,
+  :not(.btn-check)+.btn:active {
+    color: var(--#{$prefix}btn-active-color) !important;
+    background-color: var(--#{$prefix}btn-active-bg) !important;
+    border-color: var(--#{$prefix}btn-active-border-color) !important;
+  }
+}
+
+/* Forms */
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus,
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-color: var(--#{$prefix}border-color);
+  background-image: none
+}
+
+.form-control::-moz-placeholder,
+.form-control::placeholder {
+  color: var(--#{$prefix}tertiary-color);
+  opacity: 1;
+}
+
+.form-check-input {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.125em;
+  margin-right: 0.5em
+}
+
+.form-switch .form-check-input {
+  width: 3rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background-image: none;
+  position: relative;
+}
+
+.form-switch .form-check-input::before {
+  content: "";
+  background-color: var(--#{$prefix}gray-300);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+}
+
+.form-switch .form-check-input:checked::before {
+  background-color: #fff; 
+  left: auto;
+  right: 3px;
+}
+
+/* Blockquote */
+.blockquote {
+  position: relative;
+  padding-left: 6rem !important;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--#{$prefix}emphasis-color);
+    -webkit-mask-image: url(../icons/quote.svg);
+    mask-image: url(../icons/quote.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 60px 60px;
+    mask-size: 60px 60px;
+    -webkit-transform: rotate(180deg) translate(-1.32rem, 0);
+    transform: rotate(180deg) translate(-1.32rem, 0)
+  }
+
+  cite {
+    font-size: 0.875rem;
+    position: relative;
+    display: flex;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1.5rem;
+      height: 2px;
+      margin-top: 0.75rem;
+      margin-right: 15px;
+      background-color: var(--#{$prefix}border-color);
+    }
+  }
+}
+
+/* Set background color for all form elements */
+$form-elements-bg-color: var(--#{$prefix}tertiary-bg);
+
+input,
+select,
+textarea,
+button,
+optgroup,
+option,
+fieldset,
+legend,
+datalist,
+output,
+.form-control,
+.form-select,
+.form-check-input {
+  background-color: $form-elements-bg-color
+}
+
+.form-select option:disabled {
+  color: var(--#{$prefix}tertiary-color) !important;
+}
+
+/* Modals */
+/* Adjust modal header layout when modal title is missing */
+.modal-header:not(:has(>.modal-title)) {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+
+  .btn-close {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+  }
+}
+
+[data-bs-theme=dark] {
+--#{$prefix}box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+--#{$prefix}box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+--#{$prefix}box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.85);
+--#{$prefix}box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Pagination */
+.pagination {
+  .page-item {
+    &:not(:first-child):not(:last-child) .page-link {
+      padding: 0;
+      height: 38px;
+      width: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.375rem !important;
+      margin: 0 5px;
+      color: var(--#{$prefix}emphasis-color);
+      transition: all .3s ease;
+
+      &.active,
+      &:hover {
+        background-color: var(--#{$prefix}gray-800);
+        border-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.1);
+        color: var(--#{$prefix}body-bg);
+      }
+
+      &:focus {
+        --#{$prefix}pagination-focus-box-shadow: 0 0 0 0.25rem var(--#{$prefix}gray-300);
+        box-shadow: var(--#{$prefix}pagination-focus-box-shadow);
+        background-color: var(--#{prefix}tertiary-bg);
+        color: var(--#{$prefix}emphasis-color);
+      }
+    }
+
+    &:nth-of-type(2) .page-link,
+    &:nth-last-of-type(2) .page-link {
+      border-radius: 0.375rem !important;
+    }
+  }
+}
+
+/* Background Opacities */
+.bg-opacity-10 {
+  --#{$prefix}bg-opacity: 0.1 !important;
+}
+
+.bg-opacity-25 {
+  --#{$prefix}bg-opacity: 0.25 !important;
+}
+
+.bg-opacity-50 {
+  --#{$prefix}bg-opacity: 0.5 !important;
+}
+
+.bg-opacity-75 {
+  --#{$prefix}bg-opacity: 0.75 !important;
+}
+
+.bg-opacity-100 {
+  --#{$prefix}bg-opacity: 1 !important;
+}

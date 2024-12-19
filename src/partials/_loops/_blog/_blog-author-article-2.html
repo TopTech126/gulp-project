@@ -1,0 +1,29 @@
+<!-- Blog Article -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card blog-item overflow-hidden rounded border h-100 bg-body-tertiary">
+    <div class="blog-image position-relative overflow-hidden">
+      <img data-src="@@blogImage" class="card-img-top rounded-top img-fluid h-100 object-fit-cover lazy" alt="...">
+      <div class="overlay rounded-top"></div>
+    </div>
+    <div class="blog-author position-relative d-flex align-items-center align-self-center pe-2 rounded-1 shadow-sm">
+      <span class="author-img d-inline-flex align-self-center me-2"><img data-src="./images/team/04.jpg" alt=""
+          class="object-fit-cover img-fluid rounded-start-1 lazy"></span>
+      <span class="d-block fs-sm text-muted blog-author-name text-truncate">Dino Sang</span>
+      <span class="blog-author-sep bg-secondary rounded-circle d-flex align-self-center mx-2"></span>
+      <span class="d-block fs-sm text-muted text-uppercase">@@blogDate</span>
+    </div>
+    <div class="card-body content pt-0 d-flex flex-column">
+      <div class="flex-fill clearfix">
+        <h5 class="m-0"><a href="./blog-article-classic-2.html" class="card-title title text-body text-decoration-none fs-6 text-primary custom-color">@@blogTitle</a></h5>
+      </div>
+      <div class="post-meta d-flex justify-content-between mt-3">
+        <ul class="list-unstyled mb-0">
+          <li class="blog-like-count list-inline-item me-2 pe-1 mb-0 text-muted">@@likeCount</li>
+          <li class="blog-comment-count list-inline-item text-muted">@@commentCount</li>
+        </ul>
+        <a href="./blog-article-classic-2.html" class="text-decoration-none text-muted blog-readmore">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Blog Article -->

@@ -1,0 +1,144 @@
+.submit-listing-nav {
+  li {
+    &:last-of-type a::after {
+      display: none;
+    }
+  }
+
+  a {
+    display: block;
+    position: relative;
+    padding: 1.2em 1.1em 1.2em 4.3em;
+
+    &:not(.read):not(.reading) {
+      color: rgba(var(--bs-secondary-color-rgb), 0.65)
+    }
+
+    &:hover {
+      &:not(.read):not(.reading) {
+        color: rgba(var(--bs-secondary-color-rgb), 0.85);
+      }
+
+      &::before {
+        background-color: rgba(var(--bs-secondary-color-rgb), 0.85);
+      }
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+    }
+
+    &::before {
+
+      content: "";
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 1.1em;
+      background-color: rgba(var(--bs-secondary-color-rgb), 0.65);
+      -webkit-mask-image: url(../icons/circle-dashed.svg);
+      mask-image: url(../icons/circle-dashed.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 30px 30px;
+      mask-size: 30px 30px;
+    }
+
+    &::after {
+      /* bottom separation - line */
+      content: '';
+      left: 50%;
+      right: auto;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: 0;
+      height: 1px;
+      width: 260px;
+      background-color: var(--bs-border-color) !important;
+    }
+
+    &.read {
+      opacity: 0.75;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 1.1em;
+        background-color: rgba(var(--bs-link-color-rgb), 1);
+        -webkit-mask-image: url(../icons/circle-check.svg);
+        mask-image: url(../icons/circle-check.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 30px 30px;
+        mask-size: 30px 30px;
+      }
+
+      &:hover {
+        opacity: 1
+      }
+    }
+
+    &.reading {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 1.1em;
+        background-color: rgba(var(--bs-link-color-rgb), 1);
+        -webkit-mask-image: url(../icons/circle-dashed-check.svg);
+        mask-image: url(../icons/circle-dashed-check.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 30px 30px;
+        mask-size: 30px 30px;
+      }
+
+      svg {
+        display: block;
+      }
+    }
+  }
+
+  svg {
+    /* this is the filling circle around the article number */
+    display: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 1.1em;
+    stroke: rgba(var(--bs-link-color-rgb), 1);
+  }
+
+}

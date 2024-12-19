@@ -1,0 +1,147 @@
+@import 'custom/color-schemes/colors';
+
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #302828 !default;
+// scss-docs-end gray-color-variables
+
+$gray-100-custom: #f8f9fa; 
+$gray-200-custom: #e9ecef;
+$gray-300-custom: #dee2e6;
+$gray-400-custom: #ced4da;
+$gray-500-custom: #6a8fb4;
+$gray-600-custom: #6c757d;
+$gray-700-custom: #495057;
+$gray-800-custom: #343a40;
+$gray-900-custom: #212529;
+
+$custom-grays: (
+  100: $gray-100-custom,
+  200: $gray-200-custom,
+  300: $gray-300-custom,
+  400: $gray-400-custom,
+  500: $gray-500-custom,
+  600: $gray-600-custom,
+  700: $gray-700-custom,
+  800: $gray-800-custom,
+  900: $gray-900-custom
+);
+
+$grays: map-merge(
+  (
+    100: $gray-100,
+    200: $gray-200,
+    300: $gray-300,
+    400: $gray-400,
+    500: $gray-500,
+    600: $gray-600,
+    700: $gray-700,
+    800: $gray-800,
+    900: $gray-900
+  ),
+  $custom-grays
+);
+
+// scss-docs-start color-variables
+$blue:    #1a6ce7;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #d41a2d;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #1c8719;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green!default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+// scss-docs-end theme-colors-map
+
+// Merge color maps - Uncomment this to integrate custom colors
+// $theme-colors: map_merge($theme-colors, $custom-colors); 
+
+
+$enable-negative-margins: true;
+
+$tooltip-border-radius: var(--bs-border-radius-sm);
+
+$x-logo: url('../icons/social/brand-x.svg');
+$facebook-logo: url('../icons/social/brand-facebook.svg');
+$instagram-logo: url('../icons/social/brand-instagram.svg');
+$linkedin-logo: url('../icons/social/brand-linkedin.svg');
+$whatsapp-logo: url('../icons/social/brand-whatsapp.svg');
+$telegram-logo: url('../icons/social/brand-telegram.svg');
+$mail-logo: url('../icons/mail.svg');
+$website-logo: url('../icons/link.svg');
+
+$facebook-color: #1877F2;
+$x-color: #46C1F6;
+$instagram-color: #e1306c;
+$linkedin-color: #0077b5;
+$whatsapp-color: #25D366;
+$telegram-color: #0088cc;
+$website-color: #3a3a3a;
+
+$social-media-icons: (
+  facebook: (iconColor: $facebook-color, iconLogo: $facebook-logo),
+  x: (iconColor: $x-color, iconLogo: $x-logo),
+  instagram: (iconColor: $instagram-color, iconLogo: $instagram-logo),
+  linkedin: (iconColor: $linkedin-color, iconLogo: $linkedin-logo),
+  whatsapp: (iconColor: $whatsapp-color, iconLogo: $whatsapp-logo),
+  telegram: (iconColor: $telegram-color, iconLogo: $telegram-logo),
+  website: (iconColor: $website-color, iconLogo: $website-logo),
+);
+
+$fs-sm: 0.8rem;
+$fs-xs: 0.7rem;
+$fs-xs-alt: 0.65rem;
+$fs-xxs: 0.52rem;
+
+$ratings: (RatingOutstanding, RatingGood, RatingSatisfactory, RatingPass, RatingAverage);
+
+$rating-colors: (
+  RatingOutstanding: #00a900,
+  RatingGood: #75d000,
+  RatingSatisfactory: #feba0f,
+  RatingPass: #f86520,
+  RatingAverage: #ce2021
+);
+
+$rating-colors-rgb: (
+  RatingOutstanding: rgb(0, 169, 0),
+  RatingGood: rgb(117, 208, 0),
+  RatingSatisfactory: rgb(254, 186, 15),
+  RatingPass: rgb(248, 101, 32),
+  RatingAverage: rgb(206, 32, 33)
+);

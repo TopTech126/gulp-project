@@ -1,0 +1,224 @@
+[
+  {
+    "id": "1",
+    "title": "BMW X5",
+    "price": "$95,895",
+    "year": "2024",
+    "mileage": "98m",
+    "transmission": "Automatic",
+    "engine": "2998cc",
+    "fuel": "Petrol",
+    "color": "White",
+    "isNew": true,
+    "isSold": false,
+    "isReserved": true,
+    "favorites": false,
+    "image1": "./images/cars/bmw-x5/01.jpg",
+    "image2": "./images/cars/bmw-x5/02.jpg",
+    "image3": "./images/cars/bmw-x5/03.jpg",
+    "image4": "./images/cars/bmw-x5/04.jpg",
+    "image5": "./images/cars/bmw-x5/05.jpg",
+    "image6": "./images/cars/bmw-x5/06.jpg",
+    "image7": "./images/cars/bmw-x5/07.jpg",
+    "image8": "./images/cars/bmw-x5/08.jpg",
+    "image9": "./images/cars/bmw-x5/09.jpg",
+    "features": {
+      "engine": {
+        "camshaft": "DOHC",
+        "transmission": "Automatic",
+        "gears": "8",
+        "cylinderLayout": "V6",
+        "cylinders": "6",
+        "cc": "2998",
+        "noiseLevel": "3800"
+      },
+      "performance": {
+        "topSpeed": "131 mph",
+        "zero62": "4.6 sec",
+        "torqueLbsFt": "330",
+        "torqueNm": "447",
+        "torqueRpm": "1500",
+        "enginePowerKw": "250",
+        "enginePowerBhp": "335",
+        "enginePowerRpm": "6000"
+      },
+      "dimensions": {
+        "height": "1684 mm",
+        "length": "4948 mm",
+        "width": "2004 mm",
+        "wheelbase": "2974 mm",
+        "fuelTank": "65 litres"
+      },
+      "consumptionEmissions": {
+        "city": "20",
+        "highway": "26",
+        "combined": "22",
+        "co2": "258",
+        "stdEuro": "EURO 6",
+        "ultraLow": "Compliant"
+      }
+    }
+  },
+  {
+    "id": "2",
+    "title": "Volkswagen Tiguan",
+    "price": "$225,125",
+    "year": "2019",
+    "mileage": "4,500m",
+    "transmission": "Automatic",
+    "engine": "3996cc",
+    "fuel": "Petrol",
+    "color": "Yellow",
+    "isNew": false,
+    "isSold": false,
+    "isReserved": false,
+    "favorites": true,
+    "image1": "./images/cars/volkswagen-tiguan/01.jpg",
+    "image2": "./images/cars/volkswagen-tiguan/02.jpg",
+    "image3": "./images/cars/volkswagen-tiguan/03.jpg",
+    "features": {
+      "engine": {
+        "camshaft": "OHC",
+        "transmission": "Automatic",
+        "gears": "7",
+        "cylinderLayout": "V8",
+        "cylinders": "8",
+        "cc": "3996",
+        "noiseLevel": "3800"
+      },
+      "performance": {
+        "topSpeed": "190 mph",
+        "zero62": "3.0 sec",
+        "torqueLbsFt": "627",
+        "torqueNm": "850",
+        "torqueRpm": "2300",
+        "enginePowerKw": "490",
+        "enginePowerBhp": "657",
+        "enginePowerRpm": "6000"
+      },
+      "dimensions": {
+        "height": "1620 mm",
+        "length": "5135 mm",
+        "width": "2030 mm",
+        "wheelbase": "3005 mm",
+        "fuelTank": "75 litres"
+      },
+      "consumptionEmissions": {
+        "city": "14",
+        "highway": "19",
+        "combined": "16",
+        "co2": "270",
+        "stdEuro": "EURO 6",
+        "ultraLow": "Compliant"
+      }
+    }
+  },
+  {
+    "id": "3",
+    "title": "Mercedes G63 AMG",
+    "price": "$49,675",
+    "year": "2019",
+    "mileage": "14,500m",
+    "transmission": "Automatic",
+    "engine": "2000cc",
+    "fuel": "Diesel",
+    "color": "White",
+    "isNew": false,
+    "isSold": true,
+    "isReserved": false,
+    "favorites": false,
+    "image1": "./images/cars/mercedes-g63-amg/01.jpg",
+    "image2": "./images/cars/mercedes-g63-amg/02.jpg",
+    "image3": "./images/cars/mercedes-g63-amg/03.jpg",
+    "features": {
+      "engine": {
+        "camshaft": "DOHC",
+        "transmission": "Automatic",
+        "gears": "8",
+        "cylinderLayout": "V6",
+        "cylinders": "3",
+        "cc": "2000",
+        "noiseLevel": "1900"
+      },
+      "performance": {
+        "topSpeed": "110 mph",
+        "zero62": "8.2 sec",
+        "torqueLbsFt": "133",
+        "torqueNm": "180",
+        "torqueRpm": "850",
+        "enginePowerKw": "134",
+        "enginePowerBhp": "181",
+        "enginePowerRpm": "6000"
+      },
+      "dimensions": {
+        "height": "1520 mm",
+        "length": "4500 mm",
+        "width": "1840 mm",
+        "wheelbase": "2640 mm",
+        "fuelTank": "40 litres"
+      },
+      "consumptionEmissions": {
+        "city": "41",
+        "highway": "38",
+        "combined": "39",
+        "co2": "129",
+        "stdEuro": "EURO 6",
+        "ultraLow": "Compliant"
+      }
+    }
+  },
+  {
+    "id": "4",
+    "title": "Mercedes A45 S AMG",
+    "price": "$39,458",
+    "year": "2023",
+    "mileage": "121m",
+    "transmission": "Manual",
+    "engine": "2400cc",
+    "fuel": "Petrol",
+    "color": "Orange",
+    "isNew": true,
+    "isSold": false,
+    "isReserved": false,
+    "favorites": true,
+    "image1": "./images/cars/mercedes-a45-s-amg/01.jpg",
+    "image2": "./images/cars/mercedes-a45-s-amg/02.jpg",
+    "image3": "./images/cars/mercedes-a45-s-amg/03.jpg",
+    "features": {
+      "engine": {
+        "camshaft": "DOHC",
+        "transmission": "Automatic",
+        "gears": "6",
+        "cylinderLayout": "V6",
+        "cylinders": "3",
+        "cc": "2400",
+        "noiseLevel": "3500"
+      },
+      "performance": {
+        "topSpeed": "140 mph",
+        "zero62": "6.1 sec",
+        "torqueLbsFt": "184",
+        "torqueNm": "250",
+        "torqueRpm": "3700",
+        "enginePowerKw": "170",
+        "enginePowerBhp": "228",
+        "enginePowerRpm": "7000"
+      },
+      "dimensions": {
+        "height": "1310 mm",
+        "length": "4270 mm",
+        "width": "1775 mm",
+        "wheelbase": "2575 mm",
+        "fuelTank": "50 litres"
+      },
+      "consumptionEmissions": {
+        "city": "21",
+        "highway": "31",
+        "combined": "25",
+        "co2": "137",
+        "stdEuro": "EURO 6",
+        "ultraLow": "Compliant"
+      }
+    }
+  }
+]

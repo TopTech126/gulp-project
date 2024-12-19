@@ -1,0 +1,188 @@
+[
+  {
+    "type": "checkbox",
+    "alias": "keyless-entry",
+    "text": "Keyless Entry",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "adjustable-suspension",
+    "text": "Adjustable Suspension",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "sidesteps",
+    "text": "Sidesteps",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "spoilers",
+    "text": "Spoilers",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "spotlight",
+    "text": "Spotlight",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "roof-rack",
+    "text": "Roof Rack",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "rain-sensors",
+    "text": "Rain Sensors",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "parking-sensors",
+    "text": "Parking Sensors",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "fog-lights",
+    "text": "Fog Lights",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "alloy-wheels",
+    "text": "Alloy Wheels",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "18in-alloy-wheels",
+    "text": "18in Alloy Wheels",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "19in-alloy-wheels",
+    "text": "19in Alloy Wheels",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "20in-alloy-wheels",
+    "text": "20in Alloy Wheels",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "21in-alloy-wheels",
+    "text": "21in Alloy Wheels",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "22in-alloy-wheels",
+    "text": "22in Alloy Wheels",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "ambient-lighting",
+    "text": "Ambient Lighting",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "exclusive-body-styling",
+    "text": "Exclusive Body Styling",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "performance-brake-calipers",
+    "text": "Performance Brake Calipers",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "performance-exhaust-system",
+    "text": "Performance Exhaust System",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "radiator-grille",
+    "text": "Radiator Grille",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "bumpers",
+    "text": "Bumpers",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "door-mirrors-electric",
+    "text": "Door Mirrors Electric",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "door-mirrors-heated",
+    "text": "Door Mirrors Heated",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "electric-sunroof",
+    "text": "Electric Sunroof",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "electric-windows",
+    "text": "Electric Windows",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "protective-strip",
+    "text": "Protective Strip",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "heated-windscreen",
+    "text": "Heated Windscreen",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "privacy-glass",
+    "text": "Privacy Glass",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "side-running-boards",
+    "text": "Side Running Boards",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "spare-wheel-cover",
+    "text": "Spare Wheel Cover",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "summer-tyres",
+    "text": "Summer Tyres",
+    "aria": ""
+  }
+]

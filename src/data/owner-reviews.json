@@ -1,0 +1,692 @@
+[
+  {
+    "reviewerVerdict": "I never thought I could fall in love with a machine until I drove my dream car. The sleek design, powerful engine, and smooth handling make every drive an exhilarating experience.",
+    "reviewerImage": "./images/customers/01.jpg",
+    "reviewerName": "John Smith",
+    "reviewerAge": "30 to 40",
+    "reviewerLocation": "Phuket, Thailand",
+    "reviewDate": "Nov 24, 2023",
+    "reviewTitle": "Best Car to Drive!",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "Yes",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 1
+      },
+      {
+        "name": "No",
+        "rating": 0
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 5
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 3
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 3
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 5
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 3
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 4
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 5
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 4
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "reviewerVerdict": "My new car is not just a mode of transportation; it's a symbol of freedom and independence. It has given me the ability to explore new places and create unforgettable memories. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, aut.",
+    "reviewerImage": "./images/customers/02.jpg",
+    "reviewerName": "Emily Johnson",
+    "reviewerAge": "25 to 30",
+    "reviewerLocation": "Toronto, Canada",
+    "reviewDate": "Aug 04, 2023",
+    "reviewTitle": "Exceptional!",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "Yes",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 254
+      },
+      {
+        "name": "No",
+        "rating": 1
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 4
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 5
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 4
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 3
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 4
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 5
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 5
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 4
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "reviewerVerdict": "Reliability is key when it comes to cars, and my vehicle has exceeded all expectations. From long road trips to daily commutes, it has never let me down.",
+    "reviewerImage": "./images/customers/03.jpg",
+    "reviewerName": "Sophia Miller",
+    "reviewerAge": "35 to 40",
+    "reviewerLocation": "Pretoria, South Africa",
+    "reviewDate": "Jul 20, 2023",
+    "reviewTitle": "Highly Recommended",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "Yes",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 1
+      },
+      {
+        "name": "No",
+        "rating": 0
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 4
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 5
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 5
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 5
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 4
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 3
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 5
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 4
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "reviewerVerdict": "Safety is my top priority, and my car has proven to be an exceptional protector on the road. With advanced features and sturdy construction, I feel secure knowing my loved ones are in good hands.",
+    "reviewerImage": "./images/customers/04.jpg",
+    "reviewerName": "Ethan Davis",
+    "reviewerAge": "45 to 50",
+    "reviewerLocation": "Melbourne, Australia",
+    "reviewDate": "Jul 15, 2023",
+    "reviewTitle": "The Best In Its Class",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "Yes",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 3
+      },
+      {
+        "name": "No",
+        "rating": 0
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 5
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 4
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 4
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 4
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 5
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 5
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 3
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 5
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "reviewerVerdict": "Owning a luxurious car has always been a dream of mine, and now that dream is a reality. The attention to detail, premium materials, and cutting-edge technology make it worth every penny. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellat tenetur adipisci illum, porro fugit placeat excepturi voluptas voluptates cumque!.",
+    "reviewerImage": "./images/customers/05.jpg",
+    "reviewerName": "David Lee",
+    "reviewerAge": "20 to 30",
+    "reviewerLocation": "Atlanta, USA",
+    "reviewDate": "Jun 24, 2023",
+    "reviewTitle": "Affordable and Economical",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "Yes",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 9
+      },
+      {
+        "name": "No",
+        "rating": 2
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 4
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 4
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 5
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 4
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 5
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 5
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 5
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 4
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "reviewerVerdict": "As an eco-conscious individual, I am thrilled with my electric car. Not only does it reduce my carbon footprint, but the instant torque and quiet operation make it a pleasure to drive.",
+    "reviewerImage": "./images/customers/06.jpg",
+    "reviewerName": "Michael Brown",
+    "reviewerAge": "50 to 60",
+    "reviewerLocation": "Houston, USA",
+    "reviewDate": "May 18, 2023",
+    "reviewTitle": "Amazing Fuel Efficiency",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "No",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 1
+      },
+      {
+        "name": "No",
+        "rating": 9
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 5
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 4
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 4
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 5
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 4
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 5
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 4
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 5
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "reviewerVerdict": "My car is not just a means of transportation; it's an extension of my personality. Its unique style and eye-catching color turn heads wherever I go, making a statement on the road.",
+    "reviewerImage": "./images/customers/07.jpg",
+    "reviewerName": "Olivia Wilson",
+    "reviewerAge": "35 to 40",
+    "reviewerLocation": "Bamako, Mali",
+    "reviewDate": "May 06, 2023",
+    "reviewTitle": "Very Happy With This Car",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "Yes",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 2
+      },
+      {
+        "name": "No",
+        "rating": 0
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 4
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 4
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 4
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 5
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 4
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 4
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 4
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 4
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "reviewerVerdict": "Driving used to be a chore, but ever since I got my new car, it has become a joy. The comfortable seats, advanced entertainment system, and smooth ride make every journey a delight.",
+    "reviewerImage": "./images/customers/08.jpg",
+    "reviewerName": "Ben Clark",
+    "reviewerAge": "35 to 40",
+    "reviewerLocation": "Bombay, India",
+    "reviewDate": "Apr 18, 2023",
+    "reviewTitle": "Great, Expensive Repairs",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "Yes",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 7
+      },
+      {
+        "name": "No",
+        "rating": 0
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 5
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 5
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 5
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 5
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 5
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 4
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 4
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 4
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "reviewerVerdict": "The versatility of my car has truly impressed me. Whether it's navigating city streets or tackling rugged terrains, it handles every situation with ease, providing a seamless driving experience.",
+    "reviewerImage": "./images/customers/09.jpg",
+    "reviewerName": "Liam Anderson",
+    "reviewerAge": "25 to 35",
+    "reviewerLocation": "Nice, France",
+    "reviewDate": "Mar 28, 2023",
+    "reviewTitle": "Super Reliable and Good Car",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "Yes",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 2
+      },
+      {
+        "name": "No",
+        "rating": 0
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 3
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 4
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 4
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 4
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 4
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 5
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 5
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 5
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "reviewerVerdict": "When it comes to performance, my car is a beast. The powerful engine, responsive acceleration, and precise steering make it a thrill to drive, leaving me craving more every time I get behind the wheel.",
+    "reviewerImage": "./images/customers/10.jpg",
+    "reviewerName": "Harper Thomas",
+    "reviewerAge": "40 to 45",
+    "reviewerLocation": "Taipei, Taiwan",
+    "reviewDate": "Feb 17, 2023",
+    "reviewTitle": "Fine Crossover, Elegance!",
+    "pros": "- Easy to park<br>- Quiet at highway speeds<br>- Better seats in its class<br>- Tight steering and strong breaking<br>- Blouetooth capability",
+    "cons": "- Small cargo space<br>- Outdated interior<br>- Awful display screen",
+    "recommends": "Yes",
+    "helpful": [
+      {
+        "name": "Yes",
+        "rating": 1
+      },
+      {
+        "name": "No",
+        "rating": 0
+      }
+    ],
+    "reviewRating": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 5
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 4
+      },
+      {
+        "alias": "economy",
+        "name": "Economy",
+        "rating": 5
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 5
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 5
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 4
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 5
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 4
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 5
+      }
+    ]
+  }
+]

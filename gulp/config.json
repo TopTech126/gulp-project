@@ -1,0 +1,12 @@
+{
+  "path" : {
+    "gulp": "./gulp",
+    "gulp_tasks": "./gulp/tasks",
+    "src": "./src",
+    "dist": "./dist",
+    "temp": "./.temp",
+    "css": "./src/css",
+    "scss": "./src/scss",
+    "js": "./src/js"
+  }
+}

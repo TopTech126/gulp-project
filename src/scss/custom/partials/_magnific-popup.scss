@@ -1,0 +1,27 @@
+/* Magnific popup CSS */
+button.mfp-close, button.mfp-arrow{
+  height: 70px !important;
+}
+.mfp-arrow-left {
+  background: url(../icons/arrow-big-left.svg) no-Repeat center center !important;
+  width: 50px;
+  height: 50px;
+}
+
+.mfp-arrow-right {
+  background: url(../icons/arrow-big-right.svg) no-Repeat center center !important;
+  width: 50px;
+  height: 50px;
+}
+
+.mfp-arrow-left::before,
+.mfp-arrow-right::before {
+  display: none;
+  content:''
+}
+
+.mfp-arrow-left::after,
+.mfp-arrow-right::after {
+  display: none;
+  content:''
+}

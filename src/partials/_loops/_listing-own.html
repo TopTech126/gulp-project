@@ -1,0 +1,43 @@
+@@if (title) {
+
+<!-- Listing Item -->
+<tr>
+  <td>
+    <div class="listing-image rounded-1 overflow-hidden border border-light-subtle">
+      <a href="./car-details.html"><img class="img-fluid lazy" data-src="@@image1" alt=""></a>
+    </div>
+  </td>
+  <td>
+    <h6 class="m-0">
+      <a href="./car-details.html" class="fs-6 text-decoration-none link-body-emphasis link-opacity-75 link-opacity-50-hover">@@title</a>
+    </h6>
+  </td>
+  <td><span class="text-body-secondary car-price fs-6 fw-semibold text-primary custom-color">@@price</span></td>
+  <td><span class="text-body-secondary">Jul 24, 2023</span></td>
+  <td>
+    <div class="d-flex align-items-center listing-status">
+      <span class="badge bg-success me-2  
+      @@if (status === 'Published') { status-published }
+      @@if (status === 'Pending') { status-pending }
+      @@if (status === 'Cancelled') { status-cancelled }
+      @@if (status === 'Draft') { status-draft }
+      @@if (status === 'Sold') { status-sold }
+      @@if (status === 'Archived') { status-archived }
+      "></span><span class="text-body-secondary">@@status</span>
+    </div>
+  </td>
+  <td><span class="text-body-secondary">@@views</span></td>
+  <td>
+    <div class="action">
+      <a href="./car-details.html" class="btn btn-sm action-preview position-relative btn-light border rounded-circle ms-2 fs-xs"
+        role="button" data-bs-toggle="tooltip" data-bs-title="Preview"></a>
+      <a href="./edit-listing.html" class="btn btn-sm action-edit position-relative btn-light border rounded-circle ms-2 fs-xs"
+        role="button" data-bs-toggle="tooltip" data-bs-title="Edit"></a>
+      <a href="javascript:void(0)" class="btn btn-sm action-delete position-relative btn-light border rounded-circle ms-2 fs-xs"
+        role="button" data-bs-toggle="tooltip" data-bs-title="Delete"></a>
+    </div>
+  </td>
+</tr>
+<!-- END Listing Item -->
+
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "type": "checkbox",
+    "alias": "tinted-glass",
+    "text": "Tinted Glass",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "privacy-glass",
+    "text": "Privacy Glass",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "immobilizer",
+    "text": "Immobilizer",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "alarm",
+    "text": "Alarm",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "immobilizer",
+    "text": "Immobilizer",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "keyless-entry",
+    "text": "Keyless Entry",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "keyless-ignition",
+    "text": "Keyless Ignition",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "vehicle-tracking-preparation",
+    "text": "Preparation for Vehicle Tracking",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "remote-central-locking",
+    "text": "Remote Central Locking",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "volumetric-anti-theft-alarm",
+    "text": "Volumetric Anti-Theft Alarm",
+    "aria": ""
+  }
+]

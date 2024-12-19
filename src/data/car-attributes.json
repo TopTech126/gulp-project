@@ -1,0 +1,428 @@
+[
+  {
+    "carBodyTypes": [
+      {
+        "alias": "4x4",
+        "name": "4x4",
+        "image": "./images/body-types/4x4.png",
+        "offers": 12
+      },
+      {
+        "alias": "camper",
+        "name": "Camper",
+        "image": "",
+        "offers": 16
+      },
+      {
+        "alias": "combi",
+        "name": "Combi",
+        "image": "",
+        "offers": 5
+      },
+      {
+        "alias": "commercial",
+        "name": "Commercial",
+        "image": "",
+        "offers": 18
+      },
+      {
+        "alias": "convertible",
+        "name": "Convertible",
+        "image": "./images/body-types/convertible.png",
+        "offers": 8
+      },
+      {
+        "alias": "coupe",
+        "name": "Coupe",
+        "image": "./images/body-types/coupe.png",
+        "offers": 25
+      },
+      {
+        "alias": "estate",
+        "name": "Estate",
+        "image": "",
+        "offers": 13
+      },
+      {
+        "alias": "hatchback",
+        "name": "Hatchback",
+        "image": "",
+        "offers": 33
+      },
+      {
+        "alias": "camper",
+        "name": "MPV",
+        "image": "",
+        "offers": 4
+      },
+      {
+        "alias": "off-road",
+        "name": "Off-Road",
+        "image": "./images/body-types/off-road.png",
+        "offers": 17
+      },
+      {
+        "alias": "pickup",
+        "name": "Pickup",
+        "image": "./images/body-types/pickup.png",
+        "offers": 28
+      },
+      {
+        "alias": "roadster",
+        "name": "Roadster",
+        "image": "./images/body-types/roadster.png",
+        "offers": 8
+      },
+      {
+        "alias": "saloon",
+        "name": "Saloon",
+        "image": "./images/body-types/saloon.png",
+        "offers": 16
+      },
+      {
+        "alias": "sedan",
+        "name": "Sedan",
+        "image": "./images/body-types/sedan.png",
+        "offers": 39
+      },
+      {
+        "alias": "sports",
+        "name": "Sports",
+        "image": "./images/body-types/sports.png",
+        "offers": 5
+      },
+      {
+        "alias": "station-wagon",
+        "name": "Wagon",
+        "image": "./images/body-types/station-wagon.png",
+        "offers": 19
+      },
+      {
+        "alias": "suv",
+        "name": "SUV",
+        "image": "./images/body-types/suv.png",
+        "offers": 24
+      },
+      {
+        "alias": "van",
+        "name": "Van",
+        "image": "./images/body-types/van.png",
+        "offers": 14
+      }
+    ],
+    "transmission": [
+      {
+        "alias": "automatic",
+        "name": "Automatic"
+      },
+      {
+        "alias": "semi-auto",
+        "name": "Semi Auto"
+      },
+      {
+        "alias": "manual",
+        "name": "Manual"
+      }
+    ],
+    "fuel": [
+      {
+        "alias": "petrol",
+        "name": "Petrol"
+      },
+      {
+        "alias": "diesel",
+        "name": "Diesel"
+      },
+      {
+        "alias": "hybrid-electric",
+        "name": "Hybrid Electric"
+      },
+      {
+        "alias": "hybrid-petrol-el",
+        "name": "Hybrid Petrol/EL"
+      },
+      {
+        "alias": "petrol-mhev",
+        "name": "Petrol/MHEV"
+      },
+      {
+        "alias": "diesel-mhev",
+        "name": "Diesel/MHEV"
+      }
+    ],
+    "engine": [
+      {
+        "alias": "1",
+        "name": "0 - 1L"
+      },
+      {
+        "alias": "2",
+        "name": "1L - 2L"
+      },
+      {
+        "alias": "3",
+        "name": "2L - 3L"
+      },
+      {
+        "alias": "4",
+        "name": "3L - 4L"
+      },
+      {
+        "alias": "5",
+        "name": "4L - 5L"
+      },
+      {
+        "alias": "6",
+        "name": "5L+"
+      }
+    ],
+    "driveSetup": [
+      {
+        "alias": "left-hand",
+        "name": "Left Hand"
+      },
+      {
+        "alias": "right-hand",
+        "name": "Right Hand"
+      }
+    ],
+    "drivetrain": [
+      {
+        "alias": "fwd",
+        "name": "FWD"
+      },
+      {
+        "alias": "rwd",
+        "name": "RWD"
+      },
+      {
+        "alias": "awd",
+        "name": "AWD"
+      },
+      {
+        "alias": "4wd",
+        "name": "4WD"
+      }
+    ],
+    "seats": [
+      {
+        "alias": "1",
+        "name": "1 Seat"
+      },
+      {
+        "alias": "2",
+        "name": "2 Seats"
+      },
+      {
+        "alias": "3",
+        "name": "3 Seats"
+      },
+      {
+        "alias": "4",
+        "name": "4 Seats"
+      },
+      {
+        "alias": "5",
+        "name": "5 Seats"
+      },
+      {
+        "alias": "6",
+        "name": "6 Seats"
+      },
+      {
+        "alias": "7",
+        "name": "7 Seats"
+      }
+    ],
+    "doors": [
+      {
+        "alias": "2",
+        "name": "2 Doors"
+      },
+      {
+        "alias": "3",
+        "name": "3 Doors"
+      },
+      {
+        "alias": "4",
+        "name": "4 Doors"
+      },
+      {
+        "alias": "5",
+        "name": "5 Doors"
+      },
+      {
+        "alias": "6",
+        "name": "6 Doors"
+      }
+    ],
+    "colors": [
+      {
+        "alias": "beige",
+        "name": "Beige"
+      },
+      {
+        "alias": "black",
+        "name": "Black"
+      },
+      {
+        "alias": "blue",
+        "name": "Blue"
+      },
+      {
+        "alias": "bronze",
+        "name": "Bronze"
+      },
+      {
+        "alias": "brown",
+        "name": "Brown"
+      },
+      {
+        "alias": "cream",
+        "name": "Cream"
+      },
+      {
+        "alias": "gold",
+        "name": "Gold"
+      },
+      {
+        "alias": "green",
+        "name": "Green"
+      },
+      {
+        "alias": "grey",
+        "name": "Grey"
+      },
+      {
+        "alias": "maroon",
+        "name": "Maroon"
+      },
+      {
+        "alias": "orange",
+        "name": "Orange"
+      },
+      {
+        "alias": "pink",
+        "name": "Pink"
+      },
+      {
+        "alias": "purple",
+        "name": "Purple"
+      },
+      {
+        "alias": "red",
+        "name": "Red"
+      },
+      {
+        "alias": "silver",
+        "name": "Silver"
+      },
+      {
+        "alias": "turquoise",
+        "name": "Turquoise"
+      },
+      {
+        "alias": "white",
+        "name": "White"
+      },
+      {
+        "alias": "yellow",
+        "name": "Yellow"
+      }
+    ],
+    "features": [
+      {
+        "alias": "air-conditioning",
+        "name": "Air Conditioning"
+      },
+      {
+        "alias": "alloy-wheels",
+        "name": "Alloy Wheels"
+      },
+      {
+        "alias": "bluetooth",
+        "name": "Bluetooth"
+      },
+      {
+        "alias": "remote-central-locking",
+        "name": "Remote Central Locking"
+      },
+      {
+        "alias": "cruise-control",
+        "name": "Cruise Control"
+      },
+      {
+        "alias": "isofix-child-seat-fitting",
+        "name": "Isofix Child Seat Fitting"
+      },
+      {
+        "alias": "metallic-paint",
+        "name": "Metallic Paint"
+      },
+      {
+        "alias": "pearlescent-paint",
+        "name": "Pearlescent Paint"
+      },
+      {
+        "alias": "parking-sensors",
+        "name": "Parking Sensors"
+      },
+      {
+        "alias": "roof-rails",
+        "name": "Roof Rails"
+      },
+      {
+        "alias": "sat-nav",
+        "name": "Sat Nav"
+      },
+      {
+        "alias": "electric-adjustable-seats",
+        "name": "Electric Adjustable Seats"
+      },
+      {
+        "alias": "heated-seats",
+        "name": "Heated Seats"
+      },
+      {
+        "alias": "sun-roof-electric",
+        "name": "Sun Roof Electric"
+      },
+      {
+        "alias": "sun-roof-manual",
+        "name": "Sun Roof Manual"
+      },
+      {
+        "alias": "upholstery-leather",
+        "name": "Upholstery Leather"
+      },
+      {
+        "alias": "upholstery-leather-alcantara",
+        "name": "Upholstery Leather Alcantara"
+      },
+      {
+        "alias": "upholstery-leather-fabric",
+        "name": "Upholstery Leather Fabric"
+      }
+    ],
+    "powerUnits": [
+      {
+        "alias": "kw",
+        "name": "KW"
+      },
+      {
+        "alias": "hp",
+        "name": "HP"
+      }
+    ],
+    "condition": [
+      {
+        "alias": "new",
+        "name": "New"
+      },
+      {
+        "alias": "used",
+        "name": "Used"
+      }
+    ]
+  }
+]

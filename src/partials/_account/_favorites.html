@@ -1,0 +1,54 @@
+<div class="container py-5 mb-md-4">
+  <div class="row">
+
+    <!-- Content -->
+    <section class="col-12">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-body-tertiary border rounded p-2 mb-4">
+            @@include('./partials/_account/_nav.html', { 
+              "currPage": "favorites",
+              "normalClass": "bg-body-tertiary text-body-secondary fs-6",
+              "activeClass": "bg-body text-body-emphasis text-primary custom-color border border-light-subtle",
+            })
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-favorites">
+
+        <div class="col-12">
+          <div class="bg-body border rounded p-3 mb-4">
+            <form id="vendor-favorites-search" class="row g-3 justify-content-start pt-0">
+              <div class="col-12 col-sm-auto">
+                <input type="text" class="form-control form-control-sm custom-color" id="vendor-favorites-keyword" name="vendor-favorites-keyword" placeholder="Search by car name">
+              </div>
+              <div class="col-12 col-sm-auto ms-auto">
+                <select class="form-select custom-color form-select-sm text-dark-emphasis" id="favorites-sort-by" name="favorites-sort-by" aria-label="Sort favorites">
+                  <option selected>Sort by</option>
+                  <option>Most Recent</option>
+                  <option>Most Popular</option>
+                  <option>Price: Low - High</option>
+                  <option>Price: High - Low</option>
+                  <option>Order: A - Z</option>
+                  <option>Order: Z - A</option>
+                  <option>Price Reduced</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        @@loop("./partials/_loops/_vendor/_vendor-favorites.html", "./data/cars.json")
+
+      </div>
+
+      <!-- Pagination -->
+      <div>
+        @@include('./partials/_pagination.html')
+      </div>
+      
+    </section>
+  </div>
+</div>

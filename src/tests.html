@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    @@include('./partials/_head.html', {
+    "docTitle" : "Test Page",
+    "enqueueFile" : {
+    "owlcarousel" : true
+    }
+    })
+  </head>
+
+  <body>
+    
+    <!-- Preloader -->
+    @@include('./partials/_preloader.html')
+    <!-- END Preloader -->
+
+    <!-- Header -->
+    @@include('./partials/_header.html', {
+      "headerStyle": 1
+    })
+    <!-- END Header -->
+
+    <!-- Hero Section Filter Parallax -->
+    @@include('./partials/_page-sections/_hero-filter-wide.html', { 
+      sectionBgType: 'image',
+      sectionBgImage: './images/cars/hero-02.jpg'
+    })
+
+    <main>
+
+      <!-- Hero Section Video Parallax -->
+      @@include('./partials/_page-sections/_hero-video.html', { 
+        sectionBgType: 'video',
+        sectionBgVideo: 'mp4:./videos/hero-01.mp4'
+      })
+
+      <!-- Hero Section Filter Parallax -->
+      @@include('./partials/_page-sections/_hero-filter.html', { 
+        sectionBgType: 'image',
+        sectionBgImage: './images/cars/hero-01.jpg'
+      })
+
+      <!-- Hero Section Carousel-->
+      @@include('./partials/_page-sections/_hero-slider.html')
+
+      <!-- Browse by Brand Carousel -->
+      @@include('./partials/_page-sections/_browse-by-brand.html')
+
+      <!-- Browse by Brand Logo Carousel -->
+      @@include('./partials/_page-sections/_browse-by-brand-logo.html')
+
+      <!-- Body Type Image Section -->
+      @@include('./partials/_page-sections/_browse-by-body-type-image.html')
+
+      <!-- Body Type Image Carousel Section -->
+      @@include('./partials/_page-sections/_browse-by-body-type-image-carousel.html')
+
+      <!-- Browse by Body Type -->
+      @@include('./partials/_page-sections/_browse-by-body-type.html')
+
+      <!-- Browse by Body Type Carousel -->
+      @@include('./partials/_page-sections/_browse-by-body-type-carousel.html')
+
+      <!-- Counter Section Carousel -->
+      @@include('./partials/_page-sections/_counters.html')
+
+      <!-- Team Section Carousel -->
+      @@include('./partials/_page-sections/_team-carousel.html')
+
+      <!-- Featured Cars Carousel -->
+      @@include('./partials/_page-sections/_featured-cars-carousel.html', { featuredFullWidth: true, sectionHeaderCentered: false })
+
+      <!-- Featured Cars -->
+      @@include('./partials/_page-sections/_featured-cars.html')
+
+      <!-- Featured Cars - v2 -->
+      @@include('./partials/_page-sections/_featured-cars-v2.html')
+
+      <!-- Featured Cars - v3 -->
+      @@include('./partials/_page-sections/_featured-cars-v3.html')
+
+      <!-- Featured Cars - v4 -->
+      @@include('./partials/_page-sections/_featured-cars-v4.html')
+
+      <!-- Latest Cars Section -->
+      @@include('./partials/_page-sections/_recent-cars.html')
+
+      <!-- Reviews Section -->
+      @@include('./partials/_page-sections/_recent-reviews.html')
+
+      <!-- Info Section - Why Us -->
+      @@include('./partials/_page-sections/_info.html')
+
+      <!-- Blog Section -->
+      @@include('./partials/_page-sections/_recent-blog.html')
+
+      <!-- Testimonial Card Section -->
+      @@include('./partials/_page-sections/_testimonials-card.html')
+
+      <!-- Partners Section Carousel -->
+      @@include('./partials/_page-sections/_our-partners.html')
+
+      <!-- Recent Cars Table -->
+      @@include('./partials/_page-sections/_recent-cars-table.html')
+
+      <!-- Info v2 Section -->
+      @@include('./partials/_page-sections/_info-v2.html')
+
+    </main>
+    
+    
+
+
+
+    <!-- Footer -->
+    @@include('./partials/_footer.html', {
+      "footerStyle": 1
+    })
+    <!-- END Footer -->
+
+    <!-- Scripts -->
+    @@include('./partials/_scripts.html', {
+      "enqueueFile" : {
+        "jquery" : true,
+        "lazy" : true,
+        "owlcarousel" : true
+      } 
+    })
+    <!-- END Scripts -->
+  </body>
+
+</html>

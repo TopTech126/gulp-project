@@ -1,0 +1,31 @@
+<ul class="nav nav-tabs custom-color justify-content-center mb-4" id="carTabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4 active" id="car-pictures-tab" data-bs-toggle="tab" data-bs-target="#car-pictures" type="button" role="tab" aria-controls="car-pictures" aria-selected="true">Gallery <span class="badge rounded-pill bg-secondary text-bg-secondary  text-bg-primary ms-1">15</span></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4" id="car-videos-tab" data-bs-toggle="tab" data-bs-target="#car-videos" type="button" role="tab" aria-controls="car-videos" aria-selected="false">Videos <span class="badge rounded-pill bg-secondary text-bg-secondary  text-bg-primary ms-1">2</span></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4" id="car-360-view-tab" data-bs-toggle="tab" data-bs-target="#car-360-view" type="button" role="tab" aria-controls="car-360-view" aria-selected="false">360° View</button>
+  </li>
+</ul>
+
+<div class="tab-content" id="carTabsContent">
+  <div class="tab-pane car-pictures fade show active" id="car-pictures" role="tabpanel" aria-labelledby="car-pictures-tab" tabindex="0">
+    
+    @@include('./partials/_car/_car-slider.html')
+    
+  </div>
+  
+  <div class="tab-pane fade" id="car-videos" role="tabpanel" aria-labelledby="car-videos-tab" tabindex="0">
+    
+    @@include('./partials/_car/_car-videos.html')
+
+  </div>
+
+  <div class="tab-pane fade" id="car-360-view" role="tabpanel" aria-labelledby="car-360-view-tab" tabindex="0">
+    
+    @@include('./partials/_car/_car-360-view.html')
+
+  </div>
+</div>

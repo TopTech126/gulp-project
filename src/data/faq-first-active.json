@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "q": "What financing options are available for purchasing a car?",
+    "a": "At our dealership, we offer a variety of financing options tailored to meet your needs. We work with trusted lenders to provide competitive rates and flexible terms, ensuring you find the financing solution that works best for you.",
+    "open": true
+  },
+  {
+    "id": "2",
+    "q": "Can I trade in my current vehicle for a new one?",
+    "a": "Absolutely! We accept trade-ins and offer competitive trade-in values. Our team will assess the condition of your vehicle and provide you with a fair appraisal, which can be applied toward the purchase of your new car.",
+    "open": false
+  },
+  {
+    "id": "3",
+    "q": "Can I schedule a test drive before making a purchase?",
+    "a": "Of course! We encourage you to schedule a test drive to experience the vehicle firsthand. You can conveniently schedule a test drive online or contact our sales team, who will be happy to assist you in arranging a time that works for you.",
+    "open": false
+  },
+  {
+    "id": "4",
+    "q": "Do you offer extended warranties on your vehicles?",
+    "a": "Yes, we offer extended warranty options for added peace of mind. Our dealership works with reputable warranty providers to offer comprehensive coverage plans that protect your investment and provide additional support after your purchase.",
+    "open": false
+  },
+  {
+    "id": "5",
+    "q": "What after-sales services do you provide?",
+    "a": "Our commitment to customer satisfaction extends beyond the sale. We offer a range of after-sales services, including routine maintenance, repairs, and genuine OEM parts. Our skilled service technicians and dedicated parts department are here to ensure your vehicle stays in excellent condition throughout its lifespan.",
+    "open": false
+  },
+  {
+    "id": "6",
+    "q": "Are the used cars on your lot thoroughly inspected?",
+    "a": "Yes, all our used cars undergo a rigorous inspection process performed by our certified technicians. We ensure that each vehicle meets our high standards of quality, reliability, and safety before it is made available for sale.",
+    "open": false
+  }
+]

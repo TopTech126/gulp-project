@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    @@include('./partials/_head.html', { 
+      "docTitle" : "Login"
+    })
+  </head>
+  
+  <body>
+    
+    <!-- Preloader -->
+    @@include('./partials/_preloader.html')
+    <!-- END Preloader -->
+    
+    <!-- Header -->
+    @@include('./partials/_header.html', {
+      "headerStyle": 1
+    })
+    <!-- END Header -->
+    
+    <!-- Breadcrumb -->
+    @@include('./partials/_breadcrumb.html', {
+      "breadcrumbTitle": "Login",
+      "breadcrumbItems": "_auth-login.html",
+      "breadcrumbStyle": 2,
+      "breadcrumbBgOpacity": 0.9,
+      "breadcrumbBgImage": "",
+      "breadcrumbBgColor": "light"
+    })
+    <!-- END Breadcrumb -->
+    
+    <!-- Main -->
+    @@include('./partials/_main.html', {
+      "contentType" : "auth-login"
+    })
+    <!-- END Main -->
+    
+    <!-- Footer -->
+    @@include('./partials/_footer.html', {
+      "footerStyle": 1
+    })
+    <!-- END Footer -->
+    
+    <!-- Scripts -->
+    @@include('./partials/_scripts.html', {
+      "enqueueFile" : {
+        "jquery" : true,
+        "lazy" : true
+      } 
+    })
+    <!-- END Scripts -->
+  </body>
+  
+</html>
+
+
+
+
+
+
+
+
+
+

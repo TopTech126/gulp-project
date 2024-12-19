@@ -1,0 +1,268 @@
+<div class="container py-5 mb-md-4">
+  <div class="row">
+
+    <!-- Content -->
+    <section class="col-12">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-body-tertiary border rounded p-2 mb-4">
+            @@include('./partials/_account/_nav.html', { 
+              "currPage": "dashboard",
+              "normalClass": "bg-body-tertiary text-body-secondary fs-6",
+              "activeClass": "bg-body text-body-emphasis text-primary custom-color border border-light-subtle",
+            })
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-lg-6">
+          <div class="card border mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <div class="d-flex">
+                    <div class="me-3" style="width:114px">
+                      <img data-src="./images/team/06.jpg" class="img-fluid rounded-1 lazy" alt="...">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-1">Hello,</h5>
+                      <h4 class="mb-3 h3">Martin Jones</h4>
+                      <span class="badge rounded-pill text-body-emphasis fw-medium border d-inline-flex align-items-center text-uppercase bg-body">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" class="me-1" viewBox="0 0 122.88 116.87"><defs><style>.cls-1{fill:#10a64a;fill-rule:evenodd;}.cls-2{fill:#fff;}</style></defs><title>verified-symbol</title><polygon class="cls-1" points="61.37 8.24 80.43 0 90.88 17.79 111.15 22.32 109.15 42.85 122.88 58.43 109.2 73.87 111.15 94.55 91 99 80.43 116.87 61.51 108.62 42.45 116.87 32 99.08 11.73 94.55 13.73 74.01 0 58.43 13.68 42.99 11.73 22.32 31.88 17.87 42.45 0 61.37 8.24 61.37 8.24"></polygon><path class="cls-2" d="M37.92,65c-6.07-6.53,3.25-16.26,10-10.1,2.38,2.17,5.84,5.34,8.24,7.49L74.66,39.66C81.1,33,91.27,42.78,84.91,49.48L61.67,77.2a7.13,7.13,0,0,1-9.9.44C47.83,73.89,42.05,68.5,37.92,65Z"></path></svg>Verified
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto text-end">
+                  <div class="dropdown">
+                    <button id="dash-dropdown-user-widget" class="btn btn-secondary btn-sm bg-body border-0 text-body-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-dots"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end p-0 overflow-hidden" aria-labelledby="dash-dropdown-user-widget">
+                      <a class="dropdown-item d-flex align-items-center text-body-secondary custom-color" href="#">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-refresh me-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" /><path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" /></svg>Refresh</a>
+                      <a class="dropdown-item d-flex align-items-center text-body-secondary custom-color" href="./account-settings-profile.html">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit me-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>Edit</a>
+                      <div class="dropdown-divider m-0"></div>
+                      <a class="dropdown-item d-flex align-items-center text-danger" href="./account-settings-delete.html">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-x me-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" /><path d="M22 22l-5 -5" /><path d="M17 22l5 -5" /></svg>Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="list-inline py-3 border-bottom">
+                <li class="list-inline-item mb-sm-0 mb-2 me-sm-3">
+                  <a href="mailto:dora@exampledomain.com" class="link-body-emphasis text-decoration-none"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail me-1 text-body-secondary text-decoration-none" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                    <path d="M3 7l9 6l9 -6" />
+                  </svg>
+                  martin@exampledomain.com</a>
+                </li>
+                <li class="list-inline-item mb-sm-0 mb-2">
+                  <a href="tel:+1234567890" class="link-body-emphasis text-decoration-none"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone me-1 text-body-secondary text-decoration-none" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>+1 123 456 7890</a>
+                </li>
+              </ul>
+
+              <div class="row align-items-center pt-1">
+                <div class="col-md-6">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h6 class="fw-medium fs-sm my-0">Profile Completion</h6>
+                    <p class="fs-sm mb-0">87%</p>
+                  </div>
+                  <div class="progress mt-2 mb-2" style="height: 6px;">
+                    <div class="progress-bar bg-primary custom-color" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-sm-0 mt-4">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h6 class="fw-medium fs-sm my-0">Overall Rating</h6>
+                    <p class="fs-sm mb-0">4.4 / 5</p>
+                  </div>
+                  <div class="progress mt-2 mb-2" style="height: 6px;">
+                    <div class="progress-bar bg-primary custom-color" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="dashboard-stats">
+            <div class="row g-3 mb-4">
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border bg-light-subtle">
+                  <div class="card-body">
+                    <div class="d-flex flex-column align-items-center text-center">
+                      <div class="mb-3 text-primary custom-color">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-list-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3.5 5.5l1.5 1.5l2.5 -2.5" /><path d="M3.5 11.5l1.5 1.5l2.5 -2.5" /><path d="M3.5 17.5l1.5 1.5l2.5 -2.5" /><path d="M11 6l9 0" /><path d="M11 12l9 0" /><path d="M11 18l9 0" /></svg>
+                      </div>
+                      <div class="">
+                        <h3 class="fs-6 fw-bold mt-0 mb-2 custom-color">23</h3>
+                        <p class="text-body-secondary mb-0">Active Listings</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./account-listings.html" class="stretched-link"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border bg-light-subtle">
+                  <div class="card-body">
+                    <div class="d-flex flex-column align-items-center text-center">
+                      <div class="mb-3 text-primary custom-color">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-list"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l11 0" /><path d="M9 12l11 0" /><path d="M9 18l11 0" /><path d="M5 6l0 .01" /><path d="M5 12l0 .01" /><path d="M5 18l0 .01" /></svg>
+                      </div>
+                      <div class="">
+                        <h3 class="fs-6 fw-bold mt-0 mb-2 custom-color">5</h3>
+                        <p class="text-body-secondary mb-0">Pending Listings</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./account-listings.html" class="stretched-link"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border bg-light-subtle">
+                  <div class="card-body">
+                    <div class="d-flex flex-column align-items-center text-center">
+                      <div class="mb-3 text-primary custom-color">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-3 2.928m-5.5 3.5a8916.99 8916.99 0 0 0 -6.5 -6.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /><path d="M15 19l2 2l4 -4" /></svg>
+                      </div>
+                      <div class="">
+                        <h3 class="fs-6 fw-bold mt-0 mb-2 custom-color">14</h3>
+                        <p class="text-body-secondary mb-0">Favorites</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./account-favorites.html" class="stretched-link"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border bg-light-subtle">
+                  <div class="card-body">
+                    <div class="d-flex flex-column align-items-center text-center">
+                      <div class="mb-3 text-primary custom-color">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-stars"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.8 19.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" /><path d="M6.2 19.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" /><path d="M12 9.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" /></svg>
+                      </div>
+                      <div class="">
+                        <h3 class="fs-6 fw-bold mt-0 mb-2 custom-color">18</h3>
+                        <p class="text-body-secondary mb-0">Reviews</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./account-user-reviews.html" class="stretched-link"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border bg-light-subtle">
+                  <div class="card-body">
+                    <div class="d-flex flex-column align-items-center text-center">
+                      <div class="mb-3 text-primary custom-color">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                      </div>
+                      <div class="">
+                        <h3 class="fs-6 fw-bold mt-0 mb-2 custom-color">7</h3>
+                        <p class="text-body-secondary mb-0">New Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./account-messages.html" class="stretched-link"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card border bg-light-subtle">
+                  <div class="card-body">
+                    <div class="d-flex flex-column align-items-center text-center">
+                      <div class="mb-3 text-primary custom-color">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-users-group"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" /><path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M17 10h2a2 2 0 0 1 2 2v1" /><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M3 13v-1a2 2 0 0 1 2 -2h2" /></svg>
+                      </div>
+                      <div class="">
+                        <h3 class="fs-6 fw-bold mt-0 mb-2 custom-color">39</h3>
+                        <p class="text-body-secondary mb-0">Followers</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card border mb-4 fullscreen-block">
+            <div class="card-header bg-body border-0 d-flex justify-content-between align-items-start pt-3">
+              <div>
+                <h5 class="card-title fw-medium align-items-start d-flex flex-column">Traffic</h5>
+                <h6 class="card-subtitle fw-normal fs-6 mb-2 text-body-tertiary">Traffic & Engagements</h6>
+              </div>
+              <div class="d-flex justify-content-end align-items-center">
+                <button class="btn btn-sm btn-light border me-2 position-relative" data-toggle="fullscreen"></button>
+                <select id="traffic-chart-select" class="form-select custom-color text-dark-emphasis fs-sm rounded-1" aria-label="Multiple select example">
+                  <option value="today" selected>Today</option>
+                  <option value="yesterday">Yesterday</option>
+                  <option value="last7days">Last 7 Days</option>
+                  <option value="lastweek">Last Week</option>
+                  <option value="last30days">Last 30 Days</option>
+                  <option value="lastmonth">Last Month</option>
+                  <option value="last6months">Last 6 Months</option>
+                  <option value="last12months">Last 12 Months</option>
+                  <option value="lastyear">Last Year</option>
+                </select>
+              </div>
+            </div>
+            <div class="card-body">
+              <div id="traffic-chart" class="w-100" style="height: 300px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border mb-4 fullscreen-block">
+            <div class="card-header bg-body border-0 d-flex justify-content-between align-items-start pt-3">
+              <div>
+                <h5 class="card-title fw-medium align-items-start d-flex flex-column">Engagements</h5>
+                <h6 class="card-subtitle fw-normal fs-6 mb-2 text-body-tertiary">Messages & Feedback</h6>
+              </div>
+              <div class="d-flex justify-content-end align-items-center">
+                <button class="btn btn-sm btn-light border me-2 position-relative" data-toggle="fullscreen"></button>
+                <select id="engagement-chart-select" class="form-select custom-color text-dark-emphasis fs-sm rounded-1"
+                  aria-label="Multiple select example">
+                  <option value="today" selected>Today</option>
+                  <option value="yesterday">Yesterday</option>
+                  <option value="last7days">Last 7 Days</option>
+                  <option value="lastweek">Last Week</option>
+                  <option value="last30days">Last 30 Days</option>
+                  <option value="lastmonth">Last Month</option>
+                  <option value="last6months">Last 6 Months</option>
+                  <option value="last12months">Last 12 Months</option>
+                  <option value="lastyear">Last Year</option>
+                </select>
+              </div>
+            </div>
+            <div class="card-body">
+              <div id="engagement-chart" class="w-100" style="height: 300px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+</div>

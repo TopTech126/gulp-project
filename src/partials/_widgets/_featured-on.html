@@ -1,0 +1,14 @@
+<!-- Featured On Widget  -->
+<div class="container-fluid p-0 bg-body-tertiary">
+  <div class="row">
+    <div class="container col-xxl-8 py-5 p-0 bg-body-tertiary">
+      <h2 class="fs-special fw-bold">Browse by Body Type</h2>
+      <div class="browse-body-type-image row row-cols-6 g-3">
+        
+        @@loop('./partials/_loops/_featured-on-article.html', './data/featured-on.json')
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Featured On Widget  -->

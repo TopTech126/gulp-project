@@ -1,0 +1,48 @@
+<!-- Report Review -->
+<form id="report-review-form" action="">
+  <div class="mb-3">
+    <label for="user-title" class="form-label">Report this review as:</label>
+    <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-report" aria-label="Select review report reason">
+      <option selected></option>
+      <option value="rude">Rude/Insulting</option>
+      <option value="nudity">Nudity/Adult/Improper Content</option>
+      <option value="duplicate">Duplicate Review</option>
+      <option value="incorrect-review">Incorrect Review</option>
+      <option value="blurry-images">Blurry Images</option>
+      <option value="watermarked-images">Watermarked Images</option>
+      <option value="incorrect-model-make">Incorrect Model/Make</option>
+      <option value="incorrect-year">Incorrect Year</option>
+      <option value="invalid-contact">Invalid Contact Details</option>
+      <option value="irrelevant">Irrelevancy</option>
+      <option value="misleading">Misleading Content</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="user-name" class="form-label">Name</label>
+    <input type="text" class="form-control custom-color" id="user-name" name="user-name">
+  </div>
+  <div class="mb-3">
+    <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span></label>
+    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
+  </div>
+  <div class="mb-3">
+    <label for="user-email" class="form-label">Email</label>
+    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="reportReviewEmailHelp">
+    <div id="reportReviewEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="user-phone" class="form-label">Location</label>
+    <input type="text" class="form-control custom-color" id="user-localtion" name="user-location">
+  </div>
+  <div class="mb-3">
+    <label for="user-message" class="form-label">Message</label>
+    <textarea class="form-control custom-color" id="user-message" name="user-message" rows="3"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit Report</button>
+</form>
+<!-- END Report Review -->

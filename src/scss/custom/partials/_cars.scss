@@ -1,0 +1,21 @@
+.cars {
+  .cars-sorting .view-type {
+    .nav-link:not(.active) {
+      color: rgba(var(--#{$prefix}secondary-color-rgb), .6)
+    }
+  }
+}
+
+.sold-car {
+  .sold-badge {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    .sold-badge {
+      bottom: 8px !important;
+      right: 8px !important
+    }
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "type": "select",
+    "alias": "origin",
+    "text": "Country of Origin",
+    "aria": "Select country of origin"
+  },
+  {
+    "type": "select",
+    "alias": "reg-year",
+    "text": "Registration Year",
+    "aria": "Select year of registration"
+  },
+  {
+    "type": "select",
+    "alias": "reg-month",
+    "text": "Registration Month",
+    "aria": "Select month of registration"
+  },
+  {
+    "type": "select",
+    "alias": "drive-setup",
+    "text": "Drive Setup",
+    "aria": "Select drive setup"
+  },
+  {
+    "type": "select",
+    "alias": "drive-type",
+    "text": "Drive Type",
+    "aria": "Select drive type"
+  },
+  {
+    "type": "select",
+    "alias": "body-type",
+    "text": "Body Type",
+    "aria": "Select body type"
+  },
+  {
+    "type": "select",
+    "alias": "condition",
+    "text": "Condition",
+    "aria": "Select condition"
+  },
+  {
+    "type": "text",
+    "alias": "mileage",
+    "text": "Mileage(KM)",
+    "aria": ""
+  },
+  {
+    "type": "select",
+    "alias": "price-currency",
+    "text": "Price Currency",
+    "aria": ""
+  },
+  {
+    "type": "text",
+    "alias": "price",
+    "text": "Price",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "price-negotiable",
+    "text": "Price Negotiable",
+    "aria": ""
+  },
+  {
+    "type": "textarea",
+    "alias": "description",
+    "text": "Description",
+    "aria": ""
+  }
+]

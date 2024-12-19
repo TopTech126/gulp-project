@@ -1,0 +1,100 @@
+.main-nav-1 {
+  .header-access-icons {
+    height: 53px;
+
+    .header-messages,
+    .header-compare,
+    .header-favorites,
+    .header-search {
+      .btn {
+        width: 30px;
+        height: 30px;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          top: 6px;
+          left: 5px;
+          background-color: rgba(var(--#{$prefix}body-color-rgb), 0.75);
+          -webkit-mask-image: url(../icons/heart.svg);
+          mask-image: url(../icons/heart.svg);
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-size: 18px 18px;
+          mask-size: 18px 18px;
+        }
+
+        .badge {
+          left: calc(100% - 3px) !important;
+          background-color: var(--#{$prefix}dark) !important;
+        }
+      }
+    }
+
+    .header-messages {
+      .btn {
+        &::after {
+          -webkit-mask-image: url(../icons/message.svg);
+          mask-image: url(../icons/message.svg);
+        }
+      }
+    }
+
+    .header-compare {
+      .btn {
+        &::after {
+          -webkit-mask-image: url(../icons/arrows-diff.svg);
+          mask-image: url(../icons/arrows-diff.svg);
+        }
+      }
+    }
+
+    .header-favorites {
+      .btn {
+        &::after {
+          -webkit-mask-image: url(../icons/heart.svg);
+          mask-image: url(../icons/heart.svg);
+        }
+      }
+    }
+    
+    .header-search {
+      .btn {
+        &::after {
+          -webkit-mask-image: url(../icons/search.svg);
+          mask-image: url(../icons/search.svg);
+        }
+      }
+    }
+  }
+}
+
+[data-bs-theme=dark] {
+  .main-nav-1 {
+    .header-access-icons {
+      height: 53px;
+
+      .header-messages,
+      .header-compare,
+      .header-favorites,
+      .header-search {
+        .btn {
+          background-color: var(--#{$prefix}light-bg-subtle);
+
+          &:hover {
+            background-color: var(--#{$prefix}tertiary-bg)
+          }
+
+          .badge {
+            color: var(--#{$prefix}dark) !important;
+            background-color: var(--#{$prefix}light) !important;
+          }
+        }
+      }
+
+    }
+  }
+}

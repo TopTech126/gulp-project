@@ -1,0 +1,38 @@
+<div class="comparison-toggle z-1030">
+  <div class="drawer z-1030 rounded-top-2 rounded-end-0">
+    <div class="drawer-toggle bg-secondary text-white d-inline-flex align-items-center px-3 rounded-top end-0">
+      Comparison
+      <a class="stretched-link d-lg-none position-absolute start-0 top-0 w-100 h-100 z-2" data-bs-toggle="offcanvas" href="#comparison-offcanvas" role="button" aria-controls="comparison-offcanvas"></a>
+      <span class="drawer-btn-shine d-none d-lg-block start-0 top-0 w-100 h-100 rounded-top position-absolute z-1 overflow-hidden"></span>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger z-2">
+        <span class="comparison-count">4</span>
+        <span class="visually-hidden">comparison cars</span>
+      </span>
+    </div>
+    <div id="comparison-offcanvas" class="drawer-body offcanvas-lg offcanvas-end filter-widget-simplebar" data-simplebar data-simplebar-auto-hide="false"  data-bs-delay="500">
+      <div class="offcanvas-header border-bottom">
+        <div class="d-flex w-100">
+          <div class="offcanvas-close-btn d-flex align-self-center align-items-center p-0 me-3">
+            <button class="btn p-0" type="button" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#comparison-offcanvas" aria-controls="comparison-offcanvas"></button>
+          </div>
+          <div class="d-flex align-items-center position-relative me-3">
+            <h5 id="comparisonOffcanvasLabel" class="offcanvas-title">Compare</h5>
+          </div>
+          <div class="d-flex justify-content-end w-100 my-auto">
+            <span class="badge bg-primary bg-opacity-10 text-primary ms-2 p-2 px-3 d-flex fs-6 fw-normal rounded-1">4 Cars</span>
+          </div>
+        </div>
+      </div>
+      <div class="p-3">
+        <h5 class="drawer-title d-none d-lg-block">Car Comparison</h5>
+        <h6 class="drawer-subtitle mb-2 text-body-secondary fs-sm">Differences & Similarities</h6>
+        
+        <div class="car-comparison-list mt-3">
+          @@loop("./partials/_loops/_car/_car-comparison-drawer.html", "./data/cars-compare.json")
+        </div>
+    
+        <a href="compare.html" class="btn btn-link card-link link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">View comparison table</a>
+      </div>
+    </div>
+  </div>
+</div>

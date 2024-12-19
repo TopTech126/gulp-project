@@ -1,0 +1,61 @@
+<div class="cars-sorting bg-body-tertiary border rounded d-sm-flex align-items-center justify-content-between p-3 mb-4">
+  <div class="d-flex align-items-center me-sm-4">
+    <label class="me-2 pe-1 text-nowrap d-flex align-items-center" for="cars-sort">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-sort me-1" width="20" height="20"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 9l4 -4l4 4m-4 -4v14"></path>
+        <path d="M21 15l-4 4l-4 -4m4 4v-14"></path>
+      </svg>Sort by:
+    </label>
+    <select class="form-select custom-color text-dark-emphasis form-select-sm bg-body" id="cars-sort">
+      <option>Recent</option>
+      <option>Popular</option>
+      <option>Price: Low - High</option>
+      <option>Price: High - Low</option>
+      <option>Order: A - Z</option>
+      <option>Order: Z - A</option>
+      <option>Price Reduced</option>
+    </select>
+    <div class="d-none d-sm-block fw-bold opacity-70 text-nowrap ps-md-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-diff" width="20" height="20"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M11 16h10"></path>
+        <path d="M11 16l4 4"></path>
+        <path d="M11 16l4 -4"></path>
+        <path d="M13 8h-10"></path>
+        <path d="M13 8l-4 4"></path>
+        <path d="M13 8l-4 -4"></path>
+      </svg>
+      <span class="sort-compare">
+        <a href="./compare.html" class="text-decoration-none link-body-emphasis link-opacity-50-hover">Compare (<span class="compare-count">4</span>)</a>
+      </span>
+    </div>
+  </div>
+  <div class="view-type d-none d-sm-flex">
+    <a class="nav-link nav-link-light p-1 me-2 @@if (listView) { active border rounded-1 bg-body }" href="./car-filter-list.html" data-bs-toggle="tooltip"
+      aria-label="List view" data-bs-original-title="List view">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-list" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+        <path d="M4 14m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+      </svg>
+    </a>
+    <a class="nav-link nav-link-light p-1 @@if (gridView) { active border rounded-1 bg-body }" href="./car-filter-grid.html" data-bs-toggle="tooltip"
+      aria-label="Grid view" data-bs-original-title="Grid view"><svg xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-layout-grid" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+        <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+        <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+        <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+      </svg>
+    </a>
+  </div>
+</div>

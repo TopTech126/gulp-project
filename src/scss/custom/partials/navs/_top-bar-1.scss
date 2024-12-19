@@ -1,0 +1,23 @@
+.top-bar-1 {
+  .user-dropdown {
+    &:hover>.dropdown-menu {
+      display: block;
+      right: 0
+    }
+
+    .dropdown-toggle {
+      &::after {
+        display: none
+      }
+    }
+
+    .dropdown-menu {
+      // z-index: 9999;
+
+      .dropdown-item {
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<!-- Editor's Pick Widget  -->
+<div class="widget editors-choice-widget p-3 bg-body-tertiary rounded mb-4">
+  <h3 class="widget-title fs-6 text-uppercase mb-3">Editor's Pick</h3>
+  <div class="widget-body">
+    <div id="editors-pick-carousel" class="owl-carousel owl-theme"
+    data-loop="@@carouselLoop"
+    data-nav="@@carouselNav"
+    data-dots="@@carouselDots"
+    data-autoplay="@@carouselAutoplay"
+    >
+      @@for (var i = 5; i < 9; i++) {
+        <div class="d-flex flex-column align-items-start">
+          <div class="overflow-hidden mb-2" style="max-width: 500px; min-width: 100%; height: 220px">
+            <img data-src="`+blogs[i].blogImage+`" class="rounded-1 img-fluid h-100 w-100 object-fit-cover lazy" alt="`+blogs[i].blogTitle+`">
+          </div>
+          <div class="">
+            <a href="./blog-article-minimal.html" class="d-block text-decoration-none lh-sm link-body-emphasis fs-special fs-6 mb-1">`+blogs[i].blogTitle+`</a>
+            <span class="text-muted">`+blogs[i].blogDate+`</span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>
+<!-- END Editor's Pick Widget  -->

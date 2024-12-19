@@ -1,0 +1,49 @@
+<!-- Contact Seller -->
+<form id="add-enquiry-form" action="">
+  <div class="mb-3">
+    <h4>Philip James</h4>
+    <span class="fs-sm text-body-secondary">New York</span>
+    <hr class="hr opacity-15">
+    <div class="d-flex align-items-center">
+      <span class="phone-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+      </svg></span>
+      <span class="phone-number fs-4 text-info ms-3">+1 (800) 445 6677</span>
+    </div>
+    <hr class="hr opacity-15">
+  </div>
+  <div class="mb-3">
+    <label for="user-title" class="form-label">Title</label>
+    <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-salutation" aria-label="Select your title and salutation">
+      <option selected>Select title</option>
+      <option value="mr">Mr</option>
+      <option value="mrs">Mrs</option>
+      <option value="miss">Miss</option>
+      <option value="sir">Sir</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="user-name" class="form-label">Name</label>
+    <input type="text" class="form-control custom-color" id="user-name" name="user-name">
+  </div>
+  <div class="mb-3">
+    <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span></label>
+    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
+  </div>
+  <div class="mb-3">
+    <label for="user-email" class="form-label">Email</label>
+    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="enquiryEmailHelp">
+    <div id="enquiryEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="user-enquiry" class="form-label">Notes</label>
+    <textarea class="form-control custom-color" id="user-enquiry" name="user-enquiry" rows="3"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
+</form>
+<!-- END Contact Seller -->

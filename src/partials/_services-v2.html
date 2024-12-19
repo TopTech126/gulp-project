@@ -1,0 +1,26 @@
+<div class="container-fluid p-0">
+  <div class="container py-5">
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <h1 class="text-center mb-4 fw-bold custom-color">Welcome to CarMart Car Services</h1>
+
+        <h2 class="text-center mb-4 h3">Your Trusted Partner for Vehicle Maintenance</h2>
+
+        <p class="text-center mb-0 col-md-8 mx-auto">At CarMart Car Services, we are dedicated to keeping your vehicle in top-notch condition. Our expert team offers a wide range of automotive services to ensure your car runs smoothly and safely. Whether it's routine maintenance like oil changes and tire rotations or more extensive repairs, we've got you covered. Trust us with your vehicle, and we'll make sure it continues to perform at its best. Explore our services below and schedule an appointment today.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-body-tertiary">
+  <div class="container col-xxl-8 py-5 p-0 bg-body-tertiary">
+    <div class="row g-4">
+
+      @@loop("./partials/_loops/_service-v2.html", "./data/services.json")
+
+    </div>
+  </div>
+</div>

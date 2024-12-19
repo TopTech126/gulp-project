@@ -1,0 +1,257 @@
+<div class="container pt-5 mb-5">
+  <div class="table-responsive comparison-table" style="--comparison-items: 4">
+    <table class="table m-0">
+      <thead class="sticky-top comparison-head bg-white">
+        <tr class="h-100">
+          <th class="align-middle">
+            <div class="h-100 py-0 d-flex flex-column justify-content-center">
+              <div class="form-check d-flex align-item-start">
+                <input class="form-check-input custom-color" type="checkbox" value="" id="compareHideSimilarities">
+                <label class="form-check-label fw-normal" for="compareHideSimilarities">
+                  Hide Similarities
+                </label>
+              </div>
+              <div class="form-check d-flex align-item-start">
+                <input class="form-check-input custom-color" type="checkbox" value="" id="compareHighlightDifferences">
+                <label class="form-check-label fw-normal" for="compareHighlightDifferences">
+                  Highlight Differences
+                </label>
+              </div>
+            </div>
+          </th>
+          
+          @@loop("./partials/_loops/_car/_car-comparison-th.html", "./data/cars-compare.json")
+
+          @@include('./partials/_modals/_add-to-compare.html')
+          
+        </tr>
+      </thead>
+      <tbody class="accordion">
+        <tr class="">
+          <td class="p-0" colspan="5">
+            <table class="accordion-item table m-0">
+              <tr class="accordion-header">
+                <td class="p-0">
+                  <button class="accordion-button fs-5 fw-bold custom-color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#engineFeatures" aria-expanded="true" aria-controls="engineFeatures">
+                    Engine & Drivetrain
+                  </button>
+                </td>
+              </tr>
+              <tr id="engineFeatures" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <td class="accordion-body p-0">
+                  <table class="table table-hover m-0">
+                    <tr>
+                      <th scope="row">Camshaft</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.engine.camshaft+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Transmission</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.engine.transmission+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Number of Gears</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.engine.gears+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Cylinder Layout</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.engine.cylinderLayout+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Cylinders</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.engine.cylinders+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">CC</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.engine.cc+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Noise Level dB(A)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.engine.noiseLevel+`</td>
+                      }
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="accordion-item table m-0">
+              <tr class="accordion-header">
+                <td class="p-0">
+                  <button class="accordion-button fs-5 fw-bold custom-color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#performanceFeatures" aria-expanded="true" aria-controls="performanceFeatures">
+                    Performance
+                  </button>
+                </td>
+              </tr>
+              <tr id="performanceFeatures" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <td class="accordion-body p-0">
+                  <table class="table table-hover m-0">
+                    <tr>
+                      <th scope="row">Top Speed</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.performance.topSpeed+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">0-62mph</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.performance.zero62+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Engine Torque (lbs/ft)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.performance.torqueLbsFt+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Engine Torque (NM)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.performance.torqueNm+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Engine Torque (RPM)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.performance.torqueRpm+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Engine Power (KW)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.performance.enginePowerKw+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Engine Power (BHP)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.performance.enginePowerBhp+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Engine Power (RPM)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.performance.enginePowerRpm+`</td>
+                      }
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="accordion-item table m-0">
+              <tr class="accordion-header">
+                <td class="p-0">
+                  <button class="accordion-button fs-5 fw-bold custom-color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#dimensionFeatures" aria-expanded="true" aria-controls="dimensionFeatures">
+                    Dimensions
+                  </button>
+                </td>
+              </tr>
+              <tr id="dimensionFeatures" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <td class="accordion-body p-0">
+                  <table class="table table-hover m-0">
+                    <tr>
+                      <th scope="row">Height</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.dimensions.height+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Length</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.dimensions.length+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Width</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.dimensions.width+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Wheelbase</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.dimensions.wheelbase+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Fuel Tank</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.dimensions.fuelTank+`</td>
+                      }
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="accordion-item table m-0">
+              <tr class="accordion-header">
+                <td class="p-0">
+                  <button class="accordion-button fs-5 fw-bold custom-color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#consumptionFeatures" aria-expanded="true" aria-controls="consumptionFeatures">
+                    Consumption & Emmission
+                  </button>
+                </td>
+              </tr>
+              <tr id="consumptionFeatures" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <td class="accordion-body p-0">
+                  <table class="table table-hover m-0">
+                    <tr>
+                      <th scope="row">City (mpg)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.consumptionEmissions.city+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Highway (mpg)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.consumptionEmissions.highway+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Combined (mpg)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.consumptionEmissions.combined+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">CO2 (g/km)</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.consumptionEmissions.co2+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Standard Euro Emmissions</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.consumptionEmissions.stdEuro+`</td>
+                      }
+                    </tr>
+                    <tr>
+                      <th scope="row">Ultra Low Emmission Zone</th>
+                      @@for (var i = 0; i < carsDataCompare.length; i++) { 
+                        <td class="text-muted">`+carsDataCompare[i].features.consumptionEmissions.ultraLow+`</td>
+                      }
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

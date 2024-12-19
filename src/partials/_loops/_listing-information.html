@@ -1,0 +1,80 @@
+@@if (type === 'select') {
+
+  <!-- Listing @@alias -->
+  <div class="mb-3">
+    <label for="listing-@@alias" class="form-label fw-semibold fs-special mb-1">@@text</label>
+    <select id="listing-@@alias" name="listing-@@alias" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="@@aria">
+      <option selected>Select</option>
+      @@if (alias === 'drive-setup') {
+        @@for (var i = 0; i < carDriveSetups.length; i++) {
+          <option value="`+carDriveSetups[i].name+`">`+carDriveSetups[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'drive-type') {
+        @@for (var i = 0; i < carDriveTypes.length; i++) {
+          <option value="`+carDriveTypes[i].name+`">`+carDriveTypes[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'body-type') {
+        @@for (var i = 0; i < carBodyTypes.length; i++) {
+          <option value="`+carBodyTypes[i].name+`">`+carBodyTypes[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'condition') {
+        @@for (var i = 0; i < carCondition.length; i++) {
+          <option value="`+carCondition[i].name+`">`+carCondition[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'price-currency') {
+        <option value="USD">United States Dollar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+        <option value="GBP">British Pound Sterling (GBP)</option>
+        <option value="AUD">Australian Dollar (AUD)</option>
+        <option value="CAD">Canadian Dollar (CAD)</option>
+        <option value="CHF">Swiss Franc (CHF)</option>
+        <option value="CNY">Chinese Yuan (CNY)</option>
+        <option value="SEK">Swedish Krona (SEK)</option>
+        <option value="NZD">New Zealand Dollar (NZD)</option>
+        <option value="INR">Indian Rupee (INR)</option>
+        <option value="BRL">Brazilian Real (BRL)</option>
+      }
+    </select>
+  </div>
+  <!-- END Listing @@alias -->
+
+}
+
+@@if (type === 'text') {
+
+  <!-- Listing @@alias -->
+  <div class="mb-3">
+    <label for="listing-@@alias" class="form-label fw-semibold fs-special mb-1">@@text</label>
+    <input type="text" class="form-control custom-color" id="listing-@@alias" name="listing-@@alias">
+  </div>
+  <!-- END Listing @@alias -->
+}
+
+@@if (type === 'checkbox') {
+
+  <!-- Listing @@alias -->
+  <div class="mb-3 d-inline-flex align-items-end">
+    <div class="form-check d-flex align-items-top mb-1">
+      <input class="form-check-input custom-color" type="checkbox" id="listing-@@alias" name="listing-@@alias">
+      <label class="form-check-label" for="listing-@@alias">@@text</label>
+    </div>
+  </div>
+  <!-- END Listing @@alias -->
+
+}
+
+@@if (type === 'textarea') {
+
+  <!-- Listing @@alias -->
+  <div class="mb-2 w-100">
+    <label for="listing-@@alias" class="form-label fw-semibold fs-special mb-1">@@text</label>
+    <textarea class="form-control custom-color" id="listing-@@alias" name="listing-@@alias" rows="6"></textarea>
+  </div>
+  <!-- END Listing @@alias -->
+
+}

@@ -1,0 +1,58 @@
+@@if (type === 'select') {
+
+  <!-- Listing @@alias -->
+  <div class="mb-3">
+    <label for="listing-@@alias" class="form-label fw-semibold fs-special mb-1">@@text</label>
+    <select id="listing-@@alias" name="listing-@@alias" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="@@aria">
+      <option selected>Select</option>
+      @@if (alias === 'manufacturer') {
+        @@for (var i = 0; i < carBrands.length; i++) {
+          <option value="`+carBrands[i].name+`">`+carBrands[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'body') {
+        @@for (var i = 0; i < carBodyTypes.length; i++) {
+          <option value="`+carBodyTypes[i].alias+`">`+carBodyTypes[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'transmission') {
+        @@for (var i = 0; i < carTransmissionTypes.length; i++) {
+          <option value="`+carTransmissionTypes[i].alias+`">`+carTransmissionTypes[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'fuel') {
+        @@for (var i = 0; i < carFuelTypes.length; i++) {
+          <option value="`+carFuelTypes[i].alias+`">`+carFuelTypes[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'engine') {
+        @@for (var i = 0; i < carEngineTypes.length; i++) {
+          <option value="`+carEngineTypes[i].alias+`">`+carEngineTypes[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'doors') {
+        @@for (var i = 0; i < carDoorsTypes.length; i++) {
+          <option value="`+carDoorsTypes[i].alias+`">`+carDoorsTypes[i].name+`</option> 
+        }
+      }
+      @@if (alias === 'power-unit') {
+        @@for (var i = 0; i < carPowerUnits.length; i++) {
+          <option value="`+carPowerUnits[i].alias+`">`+carPowerUnits[i].name+`</option> 
+        }
+      }
+    </select>
+  </div>
+  <!-- END Listing @@alias -->
+
+}
+
+@@if (type === 'text') {
+
+  <!-- Listing @@alias -->
+  <div class="mb-3">
+    <label for="listing-@@alias" class="form-label fw-semibold fs-special mb-1">@@text</label>
+    <input type="text" class="form-control custom-color" id="listing-@@alias" name="listing-@@alias">
+  </div>
+  <!-- END Listing @@alias -->
+
+}

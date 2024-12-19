@@ -1,0 +1,164 @@
+<!-- Add Review -->
+<form id="add-review-form" action="">
+  <div class="row row-cols-1 row-cols-sm-3">
+    <div class="mb-3">
+      <label for="user-title" class="form-label">Model Year</label>
+      <select class="form-select custom-color text-dark-emphasis rounded-1" name="model-year" aria-label="Select car model year">
+        <option selected></option>
+        @@for (var i = 2024; i >= 1960; i--) {
+          <option value="`+i+`">`+i+`</option> 
+        }
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="user-title" class="form-label">Series</label>
+      <select class="form-select custom-color text-dark-emphasis rounded-1" name="model-series" aria-label="Select car model series">
+        <option selected></option>
+        <option value="v12">V12</option>
+        <option value="v10">V10</option>
+        <option value="v8">V8</option>
+        <option value="v6">V6</option>
+        <option value="amg">AMG</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="vehicle-mileage" class="form-label">Mileage</label>
+      <input type="text" class="form-control custom-color" id="vehicle-mileage" name="vehicle-mileage">
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-sm-3 mt-2">
+    <div class="mb-3">
+      <label for="rating-field" class="form-label mb-0">Safety</label>
+      <div id="rating-field" class="rating-field">
+        @@for (var i = 5; i >= 1; i--) {
+          <input type="radio" name="rating-safety" value="`+i+`" class="form-check-input custom-color" id="rating-safety-`+i+`">
+          <label class="form-check-label" for="rating-safety-`+i+`"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg></label>
+        }
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="rating-field" class="form-label mb-0">Comfort</label>
+      <div id="rating-field" class="rating-field">
+        @@for (var i = 5; i >= 1; i--) {
+          <input type="radio" name="rating-comfort" value="`+i+`" class="form-check-input custom-color" id="rating-comfort-`+i+`">
+          <label class="form-check-label" for="rating-comfort-`+i+`"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg></label>
+        }
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="rating-field" class="form-label mb-0">Fuel Economy</label>
+      <div id="rating-field" class="rating-field">
+        @@for (var i = 5; i >= 1; i--) {
+          <input type="radio" name="rating-fuel-economy" value="`+i+`" class="form-check-input custom-color" id="rating-fuel-economy-`+i+`">
+          <label class="form-check-label" for="rating-fuel-economy-`+i+`"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg></label>
+        }
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="rating-field" class="form-label mb-0">Interior</label>
+      <div id="rating-field" class="rating-field">
+        @@for (var i = 5; i >= 1; i--) {
+          <input type="radio" name="rating-interior" value="`+i+`" class="form-check-input custom-color" id="rating-interior-`+i+`">
+          <label class="form-check-label" for="rating-interior-`+i+`"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg></label>
+        }
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="rating-field" class="form-label mb-0">Exterior</label>
+      <div id="rating-field" class="rating-field">
+        @@for (var i = 5; i >= 1; i--) {
+          <input type="radio" name="rating-exterior" value="`+i+`" class="form-check-input custom-color" id="rating-exterior-`+i+`">
+          <label class="form-check-label" for="rating-exterior-`+i+`"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg></label>
+        }
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="rating-field" class="form-label mb-0">Driving</label>
+      <div id="rating-field" class="rating-field">
+        @@for (var i = 5; i >= 1; i--) {
+          <input type="radio" name="rating-driving" value="`+i+`" class="form-check-input custom-color" id="rating-driving-`+i+`">
+          <label class="form-check-label" for="rating-driving-`+i+`"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg></label>
+        }
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="rating-field" class="form-label mb-0">Performance</label>
+      <div id="rating-field" class="rating-field">
+        @@for (var i = 5; i >= 1; i--) {
+          <input type="radio" name="rating-performance" value="`+i+`" class="form-check-input custom-color" id="rating-performance-`+i+`">
+          <label class="form-check-label" for="rating-performance-`+i+`"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg></label>
+        }
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="rating-field" class="form-label mb-0">Reliability</label>
+      <div id="rating-field" class="rating-field">
+        @@for (var i = 5; i >= 1; i--) {
+          <input type="radio" name="rating-reliability" value="`+i+`" class="form-check-input custom-color" id="rating-reliability-`+i+`">
+          <label class="form-check-label" for="rating-reliability-`+i+`"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg></label>
+        }
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="rating-field" class="form-label mb-0">Practicality</label>
+      <div id="rating-field" class="rating-field">
+        @@for (var i = 5; i >= 1; i--) {
+          <input type="radio" name="rating-practicality" value="`+i+`" class="form-check-input custom-color" id="rating-practicality-`+i+`">
+          <label class="form-check-label" for="rating-practicality-`+i+`"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg></label>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="review-title" class="form-label">Title</label>
+    <input type="text" class="form-control custom-color" id="review-title" name="review-title" placeholder="Example: Great Car">
+  </div>
+  <div class="mb-3">
+    <label for="review-pros" class="form-label">Pros <em>(Advantages)</em></label>
+    <textarea class="form-control custom-color" id="review-pros" name="review-pros" rows="3" placeholder="List the things you like about this car"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="review-cons" class="form-label">Cons <em>(Disadvantages)</em></label>
+    <textarea class="form-control custom-color" id="review-cons" name="review-cons" rows="3" placeholder="List the things you dislike about this car"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="review-comments" class="form-label">Comments <em>(Verdict)</em></label>
+    <textarea class="form-control custom-color" id="review-comments" name="review-comments" rows="3" placeholder="Provide your overall insight about this car"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="review-comments" class="form-label">Would you recommend this car to your friends?</em></label>
+    <div class="btn-group d-flex" role="group" aria-label="Basic radio toggle button group">
+      @@for (var i = 0; i <= 10; i++) {
+        <input type="radio" class="btn-check" name="recommend" id="recommend`+i+`" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="recommend`+i+`">`+i+`</label>
+      }
+    </div>
+    <div class="d-flex justify-content-between text-body-secondary mt-1">
+      <span>Never</span><span>Definitely</span>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="user-name" class="form-label">Name</label>
+    <input type="text" class="form-control custom-color" id="user-name" name="user-name">
+  </div>
+  <div class="mb-3">
+    <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span></label>
+    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone" aria-describedby="reviewPhoneHelp">
+    <div id="reviewPhoneHelp" class="form-text">Will not be shared publicly.</div>
+  </div>
+  <div class="mb-3">
+    <label for="user-email" class="form-label">Email</label>
+    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="reviewEmailHelp">
+    <div id="reviewEmailHelp" class="form-text">Will not be shared publicly.</div>
+  </div>
+  <div class="mb-3">
+    <label for="user-phone" class="form-label">Location</label>
+    <input type="text" class="form-control custom-color" id="user-localtion" name="user-location">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms-add-review" name="confirm-terms-add-review" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms-add-review">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit Review</button>
+</form>
+<!-- END Add Review -->

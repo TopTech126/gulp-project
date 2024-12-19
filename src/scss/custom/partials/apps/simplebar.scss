@@ -1,0 +1,53 @@
+$simplebar-width: 0.1875rem;
+$simplebar-width-large: 0.3875rem;
+
+[data-simplebar][data-simplebar-auto-hide="false"] {
+
+  .simplebar-track {
+    background-color: rgba(#000, 0.1);
+    border-radius: 0.5rem;
+    transition: width 0.3s ease;
+
+    &.simplebar-vertical {
+      width: $simplebar-width;
+
+      &.simplebar-hover {
+        width: $simplebar-width-large !important;
+      }
+    }
+
+    .simplebar-scrollbar {
+      &::before {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(#000, 0.4);
+        border-radius: 0.5rem
+      }
+  
+      &.simplebar-visible::before {
+        opacity: 1
+      }
+    }
+  }
+
+  &.simplebar-dragging .simplebar-track.simplebar-vertical {
+    width: $simplebar-width-large !important;
+  }
+}
+
+[data-bs-theme=dark] {
+  [data-simplebar][data-simplebar-auto-hide="false"] {
+
+    .simplebar-track {
+      background-color: rgba(#fff, 0.1);
+      
+      .simplebar-scrollbar {
+        &::before {
+          background-color: rgba(#fff, 0.4);
+        }
+      }
+    }  
+  }
+}

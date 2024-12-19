@@ -1,0 +1,116 @@
+[
+  {
+    "expert": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 100,
+        "reviewGrade": "Outstanding"
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 70,
+        "reviewGrade": "Satisfactory"
+      },
+      {
+        "alias": "fuel-economy",
+        "name": "Fuel Economy",
+        "rating": 70,
+        "reviewGrade": "Satisfactory"
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 50,
+        "reviewGrade": "Average"
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 80,
+        "reviewGrade": "Good"
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 70,
+        "reviewGrade": "Pass"
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 90,
+        "reviewGrade": "Outstanding"
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 70,
+        "reviewGrade": "Satisfactory"
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 60,
+        "reviewGrade": "Pass"
+      }
+    ],
+    "owner": [
+      {
+        "alias": "safety",
+        "name": "Saftety",
+        "rating": 90,
+        "reviewGrade": "Outstanding"
+      },
+      {
+        "alias": "comfort",
+        "name": "Comfort",
+        "rating": 60,
+        "reviewGrade": "Pass"
+      },
+      {
+        "alias": "fuel-economy",
+        "name": "Fuel Economy",
+        "rating": 70,
+        "reviewGrade": "Satisfactory"
+      },
+      {
+        "alias": "interior",
+        "name": "Interior",
+        "rating": 50,
+        "reviewGrade": "Average"
+      },
+      {
+        "alias": "exterior",
+        "name": "Exterior",
+        "rating": 80,
+        "reviewGrade": "Good"
+      },
+      {
+        "alias": "driving",
+        "name": "Driving",
+        "rating": 80,
+        "reviewGrade": "Good"
+      },
+      {
+        "alias": "performance",
+        "name": "Performance",
+        "rating": 80,
+        "reviewGrade": "Good"
+      },
+      {
+        "alias": "reliability",
+        "name": "Reliability",
+        "rating": 70,
+        "reviewGrade": "Pass"
+      },
+      {
+        "alias": "practicality",
+        "name": "Practicality",
+        "rating": 90,
+        "reviewGrade": "Outstanding"
+      }
+    ]
+  }
+]

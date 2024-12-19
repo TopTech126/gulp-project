@@ -1,0 +1,29 @@
+[
+  {
+    "blogImage": "./images/blog/01.jpg",
+    "blogTitle": "The Top 10 Luxury Cars of the Last Decade",
+    "blogDate": "20<sup>th</sup> Aug 2023",
+    "likeCount": "22",
+    "commentCount": "55",
+    "authorName": "Tom Jones",
+    "authorImage": "./images/team/06.jpg"
+  },
+  {
+    "blogImage": "./images/blog/02.jpg",
+    "blogTitle": "Electric Cars: Shaping the Future of Automotive Industry",
+    "blogDate": "12<sup>th</sup> Sep 2023",
+    "likeCount": "45",
+    "commentCount": "32",
+    "authorName": "Jennifer Johnson",
+    "authorImage": "./images/team/03.jpg"
+  },
+  {
+    "blogImage": "./images/blog/03.jpg",
+    "blogTitle": "Exploring Classic Cars: A Journey Through Automotive History",
+    "blogDate": "5<sup>th</sup> Oct 2023",
+    "likeCount": "18",
+    "commentCount": "12",
+    "authorName": "David Brown",
+    "authorImage": "./images/team/01.jpg"
+  }
+]

@@ -1,0 +1,15 @@
+@@for (var i = 0; i < expertReviewRating.length; i++) {
+
+  <!-- Review Criterion -->
+  <div class="review-criterion position-relative">
+    <p class="fs-sm fs-special mb-1 d-flex justify-content-between"><span>`+expertReviewRating[i].name+`</span><span>`+expertReviewRating[i].rating+`</span>
+    </p>
+    <div class="progress mb-4 rounded-1">
+      <div class="progress-bar custom-color Rating`+expertReviewRating[i].reviewGrade+`" role="progressbar" style="width: `+expertReviewRating[i].rating*10+`%" aria-valuenow="`+expertReviews[i].rating+`"
+        aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <a href="#review-criterion-`+expertReviewRating[i].alias+`" class="stretched-link"></a>
+  </div>
+  <!-- END Review Criterion -->
+  
+}

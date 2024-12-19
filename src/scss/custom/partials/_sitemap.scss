@@ -1,0 +1,87 @@
+.sitemap {
+  ul.sitemap-links {
+
+    a:hover {
+      color: #333
+    }
+
+    li {
+      padding-left: 20px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 16px;
+        height: 16px;
+        background-color: #333;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 16px 16px;
+        mask-size: 16px 16px
+      }
+    }
+
+    &.sitemap-pages {
+      li {
+        &::before {
+          -webkit-mask-image: url(../icons/file-text.svg);
+          mask-image: url(../icons/file-text.svg);
+        }
+      }
+    }
+
+    &.sitemap-cars {
+      li {
+        &::before {
+          -webkit-mask-image: url(../icons/car.svg);
+          mask-image: url(../icons/car.svg);
+        }
+      }
+    }
+
+    &.sitemap-blogs {
+      li {
+        &::before {
+          -webkit-mask-image: url(../icons/article.svg);
+          mask-image: url(../icons/article.svg);
+        }
+      }
+    }
+    
+    &.sitemap-reviews {
+      li {
+        &::before {
+          -webkit-mask-image: url(../icons/star-half-filled.svg);
+          mask-image: url(../icons/star-half-filled.svg);
+        }
+      }
+    }
+
+    &.sitemap-authentication {
+      li {
+        &::before {
+          -webkit-mask-image: url(../icons/user-shield.svg);
+          mask-image: url(../icons/user-shield.svg);
+        }
+      }
+    }
+  }
+}
+
+
+[data-bs-theme=dark] {
+  ul.sitemap-links {
+    a:hover {
+      color: #fff
+    }
+
+    li {
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
+}

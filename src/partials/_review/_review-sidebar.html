@@ -1,0 +1,49 @@
+<!-- Review Sidebar -->
+<div class="review-detail-sidebar">
+
+  <!-- Similar Reviews -->
+  <div class="card border bg-body-tertiary mb-4">  
+    <div class="card-body">
+      <div class="container p-0">
+        <div class="widget reviews-widget">
+          
+          <h3 class="fs-5 text-uppercase mb-4">Similar Reviews</h3>
+          
+          <div class="row g-3 mb-3">
+            
+            @@include("./partials/_loops/_review/_recent-reviews-article.html")
+            
+          </div>
+          
+          <a href="./reviews.html" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover text-center">Read All Reviews</a>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Similar Reviews -->
+  
+  <!-- Recent News -->
+  <div class="card border">
+    <div class="card-body">
+      <div class="container p-0">
+        <div class="widget">
+
+          <h3 class="fs-5 text-uppercase mb-4">Recent News</h3>
+
+          @@include("./partials/_widget-blogs-recent.html")
+
+        </div>
+  
+        <a href="./blog-grid-3-cols.html" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover text-center">Read All News</a>
+      </div>
+    </div>
+  </div>
+  <!-- END Recent News -->
+
+</div>
+<!-- END Review Sidebar -->
+
+@@include('./partials/_modals/_reserve-vehicle.html')
+@@include('./partials/_modals/_book-testdrive.html')
+@@include('./partials/_modals/_send-enquiry.html')

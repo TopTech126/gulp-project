@@ -1,0 +1,99 @@
+$tc_blue: #0075C6;
+$tc_green: #078D26;
+$tc_red: #BC0000;
+$tc_purple: #800080;
+$tc_brown: #4d2626;
+$tc_orange: #DF4800;
+$tc_gray: #636363;
+$tc_tangerine: #F28500;
+$tc_yellow: #B8A500;
+$tc_cyan: #00A7A7;
+$tc_pink: #FF2283;
+$tc_olive: #8DAE00;
+$tc_navy: #000080;
+$tc_bronze: #CD7F32;
+$tc_cerulean: #007BA7;
+$tc_lavender: #764997;
+$tc_denim: #1560BD;
+$tc_beige: #A38B5F;
+$tc_sinopia: #CB410B;
+$tc_jade: #00A86B;
+// $tc_mycolor: #006C7A;
+
+
+// Only include variables that are defined
+$variables: ();
+
+@if variable-exists(tc_blue) {
+  $variables: map-merge($variables, ("tc_blue": $tc_blue));
+}
+@if variable-exists(tc_green) {
+  $variables: map-merge($variables, ("tc_green": $tc_green));
+}
+@if variable-exists(tc_red) {
+  $variables: map-merge($variables, ("tc_red": $tc_red));
+}
+@if variable-exists(tc_purple) {
+  $variables: map-merge($variables, ("tc_purple": $tc_purple));
+}
+@if variable-exists(tc_brown) {
+  $variables: map-merge($variables, ("tc_brown": $tc_brown));
+}
+@if variable-exists(tc_orange) {
+  $variables: map-merge($variables, ("tc_orange": $tc_orange));
+}
+@if variable-exists(tc_gray) {
+  $variables: map-merge($variables, ("tc_gray": $tc_gray));
+}
+@if variable-exists(tc_tangerine) {
+  $variables: map-merge($variables, ("tc_tangerine": $tc_tangerine));
+}
+@if variable-exists(tc_yellow) {
+  $variables: map-merge($variables, ("tc_yellow": $tc_yellow));
+}
+@if variable-exists(tc_cyan) {
+  $variables: map-merge($variables, ("tc_cyan": $tc_cyan));
+}
+@if variable-exists(tc_pink) {
+  $variables: map-merge($variables, ("tc_pink": $tc_pink));
+}
+@if variable-exists(tc_olive) {
+  $variables: map-merge($variables, ("tc_olive": $tc_olive));
+}
+@if variable-exists(tc_navy) {
+  $variables: map-merge($variables, ("tc_navy": $tc_navy));
+}
+@if variable-exists(tc_bronze) {
+  $variables: map-merge($variables, ("tc_bronze": $tc_bronze));
+}
+@if variable-exists(tc_cerulean) {
+  $variables: map-merge($variables, ("tc_cerulean": $tc_cerulean));
+}
+@if variable-exists(tc_lavender) {
+  $variables: map-merge($variables, ("tc_lavender": $tc_lavender));
+}
+@if variable-exists(tc_denim) {
+  $variables: map-merge($variables, ("tc_denim": $tc_denim));
+}
+@if variable-exists(tc_beige) {
+  $variables: map-merge($variables, ("tc_beige": $tc_beige));
+}
+@if variable-exists(tc_sinopia) {
+  $variables: map-merge($variables, ("tc_sinopia": $tc_sinopia));
+}
+@if variable-exists(tc_jade) {
+  $variables: map-merge($variables, ("tc_jade": $tc_jade));
+}
+@if variable-exists(tc_mycolor) {
+  $variables: map-merge($variables, ("tc_mycolor": $tc_mycolor));
+}
+
+$custom-colors: ();
+
+@each $name, $color in $variables {
+  @if type-of($color) == color {
+    $custom-colors: map-merge($custom-colors, ($name: $color));
+  }
+}
+
+// @debug $custom-colors;

@@ -1,0 +1,68 @@
+<div class="container py-5 mb-md-4">
+  <div class="row">
+
+    <!-- Content -->
+    <section class="col-12">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-body-tertiary border rounded p-2 mb-4">
+            @@include('./partials/_account/_nav.html', { 
+              "currPage": "messages",
+              "normalClass": "bg-body-tertiary text-body-secondary fs-6",
+              "activeClass": "bg-body text-body-emphasis text-primary custom-color border border-light-subtle",
+            })
+          </div>
+        </div>
+      </div>
+
+      <div class="row gx-2">
+        <div class="col-lg-4">
+          <div  class="chat-container">
+            <div class="card border">
+              <div class="card-header border-bottom d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-start">
+                  <div class="chat-owner-image chat-status-online position-relative me-3">
+                    <img data-src="./images/team/06.jpg" alt="User Photo" class="img-fluid rounded-circle border border-light-subtle lazy">
+                    <span class="badge position-absolute bottom-0 end-0 me-1 bg-opacity-75"></span>
+                  </div>
+                  <h5 class="card-title m-0">Chats <span class="badge bg-success bg-opacity-10 text-success ms-2">12</span></h5>
+                </div>
+                <div class="chat-start-btn p-0">
+                  <span class="btn p-0" role="button" data-bs-toggle="modal" data-bs-target="#startChat"></span>
+                </div>
+              </div>
+              <div id="chat-contacts" class="card-body p-0">
+                <div class="p-3">
+                  <form class="position-relative mb-3">
+                    <input class="form-control py-2 custom-color" type="search" placeholder="Search by name or email" aria-label="Search">
+                    <button class="btn bg-transparent text-secondary px-2 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path d="M21 21l-6 -6"></path></svg>
+                    </button>
+                  </form>
+                  <div class="chat-list" data-simplebar data-simplebar-auto-hide="false" style="max-height: 585px; height: 585px;">
+                    <ul class="nav flex-column">
+                      
+                      @@loop("./partials/_loops/_chat-tab.html", "./data/chat-items.json")
+                    
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Put the chat modal outside the .chat-container -->
+          @@include('./partials/_modals/_start-chat.html')
+        </div>
+        <div class="col-lg-8">
+          <div class="tab-content">
+
+            @@loop("./partials/_loops/_chat-tab-pane.html", "./data/chat-items.json")
+            
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+</div>

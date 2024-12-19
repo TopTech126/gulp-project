@@ -1,0 +1,92 @@
+<!-- Shipping Details Form -->
+<form id="shipping-details-form" action="">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="shipping-title" class="form-label">Title</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" name="shipping-salutation" aria-label="Select your title and salutation">
+          <option selected>Select title</option>
+          <option value="mr">Mr</option>
+          <option value="mrs">Mrs</option>
+          <option value="miss">Miss</option>
+          <option value="sir">Sir</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="shipping-name" class="form-label">Name</label>
+        <input type="text" class="form-control custom-color" id="shipping-name" name="shipping-name">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="shipping-email" class="form-label">Email</label>
+        <input type="email" class="form-control custom-color" id="shipping-email" name="shipping-email" aria-describedby="shippingEmailHelp">
+        <div id="shippingEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="shipping-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span></label>
+        <input type="text" class="form-control custom-color" id="shipping-phone" name="shipping-phone">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="shipping-country" class="form-label">Country</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" name="shipping-country" aria-label="Select your country">
+          <option selected>Select country</option>
+          <option value="germany">Germany</option>
+          <option value="india">India</option>
+          <option value="mali">Mali</option>
+          <option value="papua-new-guinea">Papua New Guinea</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="shipping-city" class="form-label">City</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" name="shipping-city" aria-label="Select your city or town">
+          <option selected>Select city/town</option>
+          <option value="hamburg">Hamburg</option>
+          <option value="bombay">Bombay</option>
+          <option value="bamako">Bamako</option>
+          <option value="port-moresby">Port Moresby</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="shipping-zip" class="form-label">Zip Code</label>
+        <input type="text" class="form-control custom-color" id="shipping-zip" name="shipping-zip">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="shipping-address-type" class="form-label">Address Type</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" name="shipping-address-type" aria-label="Select your address type">
+          <option selected>Select address type</option>
+          <option value="home">Home</option>
+          <option value="work">Work</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="shipping-address" class="form-label">Full Address</label>
+    <textarea class="form-control custom-color" id="shipping-address" name="shipping-address" rows="3"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Save Shipping Details</button>
+</form>
+<!-- END Shipping Details Form -->

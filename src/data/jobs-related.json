@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Digital Media Manager",
+    "department": "Marketing",
+    "type": "Part-time",
+    "location": "Remote, Anywhere"
+  },
+  {
+    "title": "E-Commerce Manager",
+    "department": "e-Commerce",
+    "type": "Full-time",
+    "location": "Remote, USA"
+  },
+  {
+    "title": "PHP Web Developer",
+    "department": "Information Technology",
+    "type": "Full-time",
+    "location": "Remote, UK"
+  }
+]

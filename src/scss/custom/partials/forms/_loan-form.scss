@@ -1,0 +1,12 @@
+
+#loan-calculator-form {
+  
+  .loan-currency-btn.dropdown-toggle::after {
+    content: none; /* Remove the caret icon */
+  }
+
+  .loan-currencies {
+    min-width: auto
+  }
+
+}

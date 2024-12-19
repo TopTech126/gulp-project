@@ -1,0 +1,49 @@
+<div class="container col-xxl-8 py-5">
+  <div class="row g-4">
+    <div class="col-12 col-md-6">
+      <div class="pe-4">
+        <h2 class="fs-5 text-uppercase mb-3 custom-color">About Us</h2>
+        <p>Welcome to CarMart, where passion meets precision on the road. At CarMart, we are more than just a dealership; we are automotive enthusiasts dedicated to delivering unparalleled driving adventures. Our commitment to excellence extends beyond the vehicles we offer - it's embedded in our culture. </p> 
+        
+        <p>As avid automotive enthusiasts, we've crafted a haven for fellow car connoisseurs and seekers of driving exhilaration. We transcend the ordinary, curating an immersive experience that celebrates the artistry, innovation, and sheer thrill of the automotive world.</p>
+
+        <p>Join us as we navigate the highways of style, performance, and cutting-edge technology, steering towards a horizon of automotive excellence. Drive with us, where the journey is as extraordinary as the destination.</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <img class="img-fluid object-fit-cover lazy" data-src="./images/yard.jpg" alt="Our Showroom">
+    </div>
+  </div>
+</div>
+
+@@include('./partials/_page-sections/_counters.html', {
+  sectionBgType: 'plain',
+  sectionBgGradient: '',
+  sectionHeaderCentered: true,
+})
+
+@@include('./partials/_page-sections/_team-carousel.html', { 
+  sectionHeaderCentered: true, 
+  carouselNav: false, 
+  carouselDots: true 
+})
+
+@@include('./partials/_page-sections/_careers.html', {
+  sectionBgType: 'plain',
+  sectionBgGradient: '',
+  sectionHeaderCentered: true,
+})
+
+@@include('./partials/_page-sections/_testimonials-card.html', {
+  sectionHeaderCentered: true,
+})
+
+@@include('./partials/_page-sections/_our-partners.html', { 
+  sectionBgType: 'plain',
+  sectionBgColor: 'var(--bs-primary)',
+  sectionBgOpacity: '0.04',
+  sectionBgGradient: '',
+  sectionHeaderCentered: true, 
+  carouselNav: false, 
+  carouselDots: true 
+})

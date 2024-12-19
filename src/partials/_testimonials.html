@@ -1,0 +1,36 @@
+<div class="container-fluid p-0">
+  <div class="container py-5">
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <h1 class="text-center mb-4 fw-bold custom-color">What Our Customers Say About Us</h1>
+
+        <h5 class="text-center mb-3">Customer Testimonials</h5>
+
+        <p class="text-center mb-5">We are passionate about motor vehicles and we specialize in delivering <br> the best
+          services to all out clients.</p>
+
+        <div class="text-center">
+          <button type="button" class="btn btn-md btn-warning fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-bs-toggle="modal" data-bs-target="#addTestimonialModal">Add Testimonial</button>
+        </div>
+
+        @@include('./partials/_modals/_add-testimonial.html')
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-body-tertiary py-5 pb-5">
+  <div class="container testimonials-wrapper py-2 pb-4">
+    <div class="row">
+
+      @@loop("./partials/_loops/_testimonial.html", "./data/testimonials.json")
+
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center"><button class="btn btn-md btn-info get-testimonials px-4 py-2">Load More
+      Testimonials</button></div>
+</div>

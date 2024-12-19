@@ -1,0 +1,140 @@
+[
+  {
+    "type": "checkbox",
+    "alias": "abs",
+    "text": "ABS - Anti-Lock Braking System",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "active-brake-assist",
+    "text": "Active Brake Assist",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "active-lane-keeping-assist",
+    "text": "Active Lane Keeping Assist",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "adaptive-brake-assist",
+    "text": "Adaptive Brake Assist ",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "autopilot",
+    "text": "Autopilot",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "hills-start-assist",
+    "text": "Hill Start Assist",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "airbags-driver",
+    "text": "Airbags - Driver",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "airbags-front-passenger",
+    "text": "Airbags - Front Passenger",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "airbags-front-side",
+    "text": "Airbags - Front Side",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "airbags-rear-sidebags",
+    "text": "Airbags - Rear Sidebags",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "airbags-windowbags",
+    "text": "Airbags - Windowbags",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "anti-theft-alarm",
+    "text": "Anti Theft Alarm System",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "driving-assistance-package",
+    "text": "Driving Assistance Package",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "esp",
+    "text": "ESP - Electronic Stability Programme",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "asr",
+    "text": "ASR - Acceleration Skid Control",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "diff-lock",
+    "text": "Differential Lock",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "4ets",
+    "text": "4ETS - Four-Wheel Electronic Traction System",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "i-size-child-seat-attachment",
+    "text": "i-Size Child Seat Attachment for Outer Rear Seats",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "pre-safe-system",
+    "text": "PRE-SAFE System for Preventive Occupant Protection",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "seat-belt-pre-tensioners",
+    "text": "Seat Belt Pre-Tensioners - 4",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "seat-belts-3-point",
+    "text": "Seat Belts - 3-Point Design in Black",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "traction-control",
+    "text": "Traction Control",
+    "aria": ""
+  },
+  {
+    "type": "checkbox",
+    "alias": "trailer-coupling-esp",
+    "text": "Trailer Coupling with ESP Trailer Stabilisation",
+    "aria": ""
+  }
+]

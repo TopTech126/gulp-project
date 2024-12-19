@@ -1,0 +1,42 @@
+<!-- Contact Vendor Form -->
+<form id="contact-vendor-form" action="">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-title" class="form-label">Title</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-salutation" aria-label="Select your title and salutation">
+          <option selected>Select title</option>
+          <option value="mr">Mr</option>
+          <option value="mrs">Mrs</option>
+          <option value="miss">Miss</option>
+          <option value="sir">Sir</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-name" class="form-label">Name</label>
+        <input type="text" class="form-control custom-color" id="user-name" name="user-name">
+      </div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="user-email" class="form-label">Email</label>
+    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="enquiryEmailHelp">
+    <div id="enquiryEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span></label>
+    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
+  </div>
+  <div class="mb-3">
+    <label for="user-message" class="form-label">Message</label>
+    <textarea class="form-control custom-color" id="user-message" name="user-message" rows="3"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Send</button>
+</form>
+<!-- END Contact Vendor Form -->

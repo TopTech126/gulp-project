@@ -1,0 +1,23 @@
+<div class="container py-5">
+  <div class="row g-lg-4 g-5">
+
+    <div class="col-lg-8">
+      <div class="container blog blog-grid p-0">
+        <div class="row g-4">
+
+          @@loop("./partials/_loops/_blog/_blog-grid-2-cols.html", "./data/blogs.json")
+    
+          <!-- Pagination -->
+          <div class="col-12 mt-4">
+            @@include('./partials/_pagination.html')
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-7 col-sm-10 order-lg-1 order-0 mx-sm-auto mt-4">
+      @@include('./partials/_blog/_blog-sidebar.html')
+    </div>
+
+  </div>
+</div>

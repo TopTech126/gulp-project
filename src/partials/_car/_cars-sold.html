@@ -1,0 +1,17 @@
+<div class="container py-5 mb-md-4">
+  <div class="row">
+    
+    <!-- Content -->
+    <section class="col-12">
+      
+      <div class="row">
+
+        @@loop("./partials/_loops/_car/_car-sold-details.html", "./data/cars.json")
+
+      </div>
+
+      <!-- Pagination -->
+      @@include('./partials/_pagination.html')
+    </section>
+  </div>
+</div>

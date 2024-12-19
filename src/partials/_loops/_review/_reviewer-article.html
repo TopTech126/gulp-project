@@ -1,0 +1,37 @@
+@@for (var i = 0; i < carsDataShuffled.length; i++) { 
+
+  <!-- Review -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <div class="card review-item h-100 bg-body-tertiary border overflow-hidden">
+      <div class="card-image position-relative">
+        <img data-src="`+carsDataShuffled[i].image1+`" class="d-block w-100 rounded-top img-fluid object-fit-cover lazy" alt="...">
+        <div class="review-progress position-absolute bottom-0 start-50 z-4">
+          <div class="barOverflow">
+            <div class="bar Rating`+carsDataShuffled[i].reviewGrade+`"></div>
+          </div>
+          <span class="bar-text"><strong>`+carsDataShuffled[i].rating+`</strong></span>
+        </div>
+      </div>
+      <div class="card-body d-flex flex-column">
+        <div class="flex-fill">
+          <h3 class="card-title text-truncate-double">
+            <a href="./review-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">`+carsDataShuffled[i].title+`</a>
+          </h3>
+          <p class="card-text">
+            <span class="car-price text-primary fs-special fs-6 fw-bold custom-color">`+carsDataShuffled[i].priceLow+`&nbsp;&ndash;&nbsp;`+carsDataShuffled[i].price+`</span>
+          </p>
+        </div>
+        <div class="review-author position-relative d-flex align-self-start rounded-1 m-0 border-top pt-3 mt-3 w-100">
+          <span class="author-img d-inline-flex align-self-center me-3"><img src="./images/team/06.jpg" alt="" class="object-fit-cover img-fluid rounded-1"></span>
+          <div class="d-flex flex-column align-items-start justify-content-between">
+            <span class="d-block fs-6 text-body-emphasis">Josh Passman</span>
+            <br>
+            <span class="d-block fs-xs text-muted text-uppercase text-spacing-sm">Auto Expert</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Review -->
+  
+}

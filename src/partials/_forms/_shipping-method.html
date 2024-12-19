@@ -1,0 +1,64 @@
+<!-- Shipping Method Form -->
+<form id="shipping-method-form" action="">
+
+  <div class="table-responsive mb-3">
+    <table id="shipping-table" class="table table-centered mb-0 table-nowrap">
+      <thead class="bg-body-tertiary text-uppercase fs-sm border-top border-bottom">
+        <tr>
+          <th class="shipping-th-select border-0 bg-transparent text-body-secondary ps-3"></th>
+          <th class="shipping-th-method border-0 bg-transparent text-body-secondary ps-3">Shipping Method</th>
+          <th class="shipping-th-time border-0 bg-transparent text-body-secondary ps-3">Delivery Time</th>
+          <th class="shipping-th-fee border-0 bg-transparent text-body-secondary ps-3">Handling Fee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="shipping-method-item">
+          <td class="text-center"><input type="radio" name="shipping-method" value="standard-shipping"></td>
+          <td>Standard Shipping</td>
+          <td>3-5 business days</td>
+          <td>$5.00</td>
+        </tr>
+        <tr class="shipping-method-item">
+          <td class="text-center"><input type="radio" name="shipping-method" value="express-shipping"></td>
+          <td>Express Shipping</td>
+          <td>1-2 business days</td>
+          <td>$10.00</td>
+        </tr>
+        <tr class="shipping-method-item">
+          <td class="text-center"><input type="radio" name="shipping-method" value="priority-shipping"></td>
+          <td>Priority Shipping</td>
+          <td>Next business day</td>
+          <td>$15.00</td>
+        </tr>
+        <tr class="shipping-method-item selected-shipping-method">
+          <td class="text-center"><input type="radio" name="shipping-method" value="free-shipping" checked></td>
+          <td>Free Shipping</td>
+          <td>5-7 business days</td>
+          <td>$0.00</td>
+        </tr>
+        <tr class="shipping-method-item">
+          <td class="text-center"><input type="radio" name="shipping-method" value="two-day-shipping"></td>
+          <td>Two-Day Shipping</td>
+          <td>2 business days</td>
+          <td>$7.50</td>
+        </tr>
+        <tr class="shipping-method-item">
+          <td class="text-center"><input type="radio" name="shipping-method" value="salutation"></td>
+          <td>Same-Day Shipping</td>
+          <td>Same day</td>
+          <td>$20.00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="p-4">
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+      <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+    </div>
+    <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Save Shipping Method</button>
+  </div>
+</form>
+<!-- END Shipping Method Form -->

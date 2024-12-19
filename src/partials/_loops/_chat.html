@@ -1,0 +1,73 @@
+<!-- Chat Message -->
+<div class="chat-msg 
+  @@if (identity === 'staff') { msg-mine }
+  @@if (identity === 'guest') { msg-guest }">
+  <div class="d-flex align-items-end">
+    
+    @@if (identity === 'guest') { 
+    <div class="chat-msg-avatar me-3">
+      <img src="@@userImage" alt="User Image" width="36" class="rounded-circle border border-light-subtle">
+    </div>
+    }
+    
+    <div class="chat-msg-content
+    @@if (identity === 'staff') { ps-0 ps-sm-5 ms-0 ms-sm-5 }
+    @@if (identity === 'guest') { pe-0 pe-sm-5 me-0 me-sm-5 }">
+      <div class="chat-bubbles fs-0">
+        @@for (var i = 0; i < messageTexts.length; i++) {
+          <div class="chat-bubble d-flex mt-1 fs-6">
+            <div class="chat-bubble-text d-inline-block text-body-secondary bg-body-tertiary rounded p-2 px-3 custom-color">
+              <span>`+messageTexts[i].text+`</span>
+            </div>
+          </div>
+        }
+        @@if (messageFiles.length > 0) {
+          @@for (var i = 0; i < messageFiles.length; i++) {
+          <div class="chat-bubble d-inline-flex mt-1 ms-1 
+          @@if (identity === 'staff') { float-end }
+          @@if (identity === 'guest') { float-start }">
+            <a href="javascript:void(0);" class="chat-bubble-file d-inline-block text-decoration-none text-body-secondary border rounded-1 p-2 d-flex justify-content-start">
+              <div class="file-icon file-type-`+messageFiles[i].type+` position-relative me-2 rounded-1 flex-shrink-0"></div>
+              <div class="file-details">                  
+                <span class="file-name d-block text-truncate" title="`+messageFiles[i].file+`">`+messageFiles[i].file+`</span>
+                <span class="file-size d-block fs-xs text-uppercase fw-semibold">`+messageFiles[i].size+`</span>
+              </div>
+            </a>
+          </div>
+          }
+          <div class="clearfix"></div>
+        }
+        @@if (messageImages.length > 0) {
+          @@for (var i = 0; i < messageImages.length; i++) {
+          <div class="chat-bubble d-inline-flex mt-1 ms-1 
+          @@if (identity === 'staff') { float-end }
+          @@if (identity === 'guest') { float-start }">
+            <a href="javascript:void(0);" class="chat-bubble-image d-inline-block text-decoration-none text-body-secondary border rounded-1 p-1 d-flex justify-content-start">
+              <div class="image-details">     
+                <img src="`+messageImages[i].image+`" alt="Image" class="img-fluid image-file d-block">
+              </div>
+            </a>
+          </div>
+          }
+          <div class="clearfix"></div>
+        }
+      </div>
+      <div class="chat-meta fs-xs text-body-secondary mt-1">
+        <span class="chat-clock"></span>
+        <span class="chat-date" data-timestamp="@@timestamp"></span>
+        <span class="chat-time" data-timestamp="@@timestamp"></span>   
+        @@if (identity === 'staff') {      
+        <span class="@@if (read) {chat-read custom-color}@@if (!read) {chat-unread}"></span>
+        }      
+      </div>
+    </div>
+
+    @@if (identity === 'staff') { 
+    <div class="chat-msg-avatar ms-3">
+      <img src="@@userImage" alt="User Image" width="36" class="rounded-circle border border-light-subtle">
+    </div>
+    }
+    
+  </div>
+</div>
+<!-- END Chat Message -->

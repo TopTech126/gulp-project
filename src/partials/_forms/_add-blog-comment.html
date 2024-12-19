@@ -1,0 +1,27 @@
+<!-- Add Blog Comment -->
+<form id="add-blog-comment-form" action="">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="mb-3">
+        <label for="user-name" class="form-label fw-bold">Name</label>
+        <input type="text" class="form-control custom-color" id="user-name" name="user-name" placeholder="Full name">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="mb-3">
+        <label for="user-email" class="form-label fw-bold">Email</label>
+        <input type="email" class="form-control custom-color" id="user-email" name="user-email" placeholder="Email address">
+      </div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="user-comment" class="form-label fw-bold">Comment</label>
+    <textarea class="form-control custom-color" id="user-comment" name="user-comment" rows="3" placeholder="Your comment"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit Comment</button>
+</form>
+<!-- END - Add Blog Comment -->

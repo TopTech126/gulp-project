@@ -1,0 +1,103 @@
+.account-listings {
+  .table {
+    tbody {
+      tr {
+        &:last-child {
+          border-style: none !important;
+          border-color: transparent;
+        }
+
+        td {
+          padding: 1rem 1rem;
+
+          &:first-child {
+            padding-right: 0;
+          }
+
+          .listing-image {
+            width: 120px;
+            height: 65px
+          }
+
+          .listing-status {
+            .status-published {
+              background-color: $green-500 !important
+            }
+
+            .status-pending {
+              background-color: $orange-500 !important
+            }
+
+            .status-cancelled {
+              background-color: $red-500 !important
+            }
+
+            .status-draft {
+              background-color: $blue-500 !important
+            }
+
+            .status-sold {
+              background-color: $yellow-500 !important
+            }
+
+            .status-archived {
+              background-color: $gray-500 !important
+            }
+          }
+
+          .action .btn {
+            width: 30px;
+            height: 30px;
+
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 18px;
+              height: 18px;
+              top: 6px;
+              left: 5px;
+              background-color: rgba(var(--#{$prefix}body-color-rgb), .75);
+              -webkit-mask-image: url(../icons/eye.svg);
+              mask-image: url(../icons/eye.svg);
+              -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat;
+              -webkit-mask-size: 18px 18px;
+              mask-size: 18px 18px;
+            }
+
+            &.action-edit::after {
+              -webkit-mask-image: url(../icons/edit.svg);
+              mask-image: url(../icons/edit.svg);
+            }
+
+            &.action-delete::after {
+              -webkit-mask-image: url(../icons/trash.svg);
+              mask-image: url(../icons/trash.svg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-bs-theme=dark] {
+  .account-listings {
+    .table {
+      tbody {
+        tr {
+          td {
+            .action .btn {
+              background-color: var(--#{$prefix}light-bg-subtle);
+
+              &:hover {
+                background-color: var(--#{$prefix}tertiary-bg)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

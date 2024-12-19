@@ -1,0 +1,23 @@
+.featured-cars-grid {
+  .card.card-first img {
+    height: 300px;
+    max-height: 300px;
+  }
+
+  &.featured-cars-v4 {
+    .carousel-item {
+      height: 450px;
+      max-height: 450px;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+
+  .featured-cars-grid .card:not(.card-first) .rounded-start,
+  .cars .cars-list .car-item .rounded-start {
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: var(--#{$prefix}border-radius) !important;
+  }
+}

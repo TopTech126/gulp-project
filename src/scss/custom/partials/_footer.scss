@@ -1,0 +1,81 @@
+footer {
+  min-height: 300px;
+
+  .logo img {
+    height: 30px;
+  }
+
+  .social-media-icons {
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      transition: all 300ms ease;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-13px, -13px);
+        width: 26px;
+        height: 26px;
+        background-color: #fff;
+        -webkit-mask-image: $facebook-logo;
+        mask-image: $facebook-logo;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 26px 26px;
+        mask-size: 26px 26px;
+      }
+
+      &:hover {
+        &::after {
+          background-color: #fff !important;
+        }
+      }
+
+      @mixin footer-social-icon($logo) {
+        &::after {
+          content: "";
+          -webkit-mask-image: $logo;
+          mask-image: $logo;
+        }
+      }
+
+      @each $social,
+      $values in $social-media-icons {
+        &.#{$social} {
+          @include footer-social-icon(map-get($values, iconLogo));
+        }
+      }
+    }
+  }
+
+  &.footer-style-5 {
+    .opening-hours {
+      
+      .week-day {
+        position: relative;
+        padding-left: 26px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: -1px;
+          width: 20px;
+          height: 20px;
+          background-color: #777;
+          -webkit-mask-image: url(../icons/calendar.svg);
+          mask-image: url(../icons/calendar.svg);
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-size: 20px 20px;
+          mask-size: 20px 20px
+        }
+      }
+    }
+  }
+}

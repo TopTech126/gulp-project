@@ -1,0 +1,39 @@
+<!-- Info Split -->
+<section class="info-split position-relative custom-color">
+	<div class="split-content container">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<div class="my-4 py-5 pe-4">
+					<h2 class="text-uppercase mb-4 custom-color">Why Choose Us?</h2>
+					<ul class="list-unstyled">
+						<li class="mb-4">					
+							<h4 class="text-uppercase fw-bold fs-6 fs-special"><i class="fa fa-check"></i> Wide Selection of Top Brands</h4>
+							<p class="text-muted">Whether you're looking for the latest models from renowned manufacturers like Audi, BMW, or Mercedes-Benz, or seeking the thrill of a high-performance sports car from Ferrari or Lamborghini, we have it all.</p>
+						</li>
+
+						<li class="mb-4">					
+							<h4 class="text-uppercase fw-bold fs-6 fs-special"><i class="fa fa-check"></i> Unmatched Customer Service</h4>
+							<p class="text-muted">Our team of knowledgeable and friendly sales professionals is dedicated to assisting you every step of the way. From providing detailed information about each car to offering test drives, we strive to ensure you make an informed decision that fits your needs. </p>
+						</li>
+
+						<li class="mb-4">					
+							<h4 class="text-uppercase fw-bold fs-6 fs-special"><i class="fa fa-check"></i> Transparent and Hassle-Free Buying Process</h4>
+							<p class="text-muted">Our dealership upholds a policy of honesty and integrity, ensuring that you receive accurate and upfront information about each vehicle. We provide clear pricing and financing options, with no hidden fees or surprises.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+  @@ if (sectionBgType === 'image') {
+    <div class="split-media position-absolute top-0 end-0 w-50 h-100 bg-size-cover overflow-hidden jarallax" data-jarallax data-speed="0.2" >
+      <img class="jarallax-img img-fluid object-fit-cover" src="@@sectionBgImage" alt="">
+      <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" 
+      style="background-color: @@sectionBgColor; background-image: @@sectionBgGradient; opacity: @@sectionBgOpacity"></span>
+    </div>
+  }
+  @@ if (sectionBgType !== 'image') {
+    <div class="split-media position-absolute top-0 end-0 w-50 h-100 bg-size-cover" style="background-image: url(./images/blog/10.jpg)"></div>
+  }
+</section>
+<!-- END Info Split -->

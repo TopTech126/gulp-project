@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    @@include('./partials/_head.html', { 
+      "docTitle" : "Edit Listing", 
+      "enqueueFile" : {
+        "owlcarousel" : true, 
+        "magnificpopup" : true,
+        "plyr" : true 
+      } 
+    })
+  </head>
+  
+  <body>
+    
+    <!-- Preloader -->
+    @@include('./partials/_preloader.html')
+    <!-- END Preloader -->
+    
+    <!-- Header -->
+    @@include('./partials/_header.html', {
+      "headerStyle": 1
+    })
+    <!-- END Header -->
+    
+    <!-- Breadcrumb -->
+    @@include('./partials/_breadcrumb.html', {
+      "breadcrumbTitle": "Edit Listing",
+      "breadcrumbItems": "_edit-listing.html"
+    })
+    <!-- END Breadcrumb -->
+    
+    <!-- Main -->
+    @@include('./partials/_main.html', {
+      "contentType" : "edit-listing"
+    })
+    <!-- END Main -->
+    
+    <!-- Footer -->
+    @@include('./partials/_footer.html', {
+      "footerStyle": 1
+    })
+    <!-- END Footer -->
+    
+    <!-- Scripts -->
+    @@include('./partials/_scripts.html', {
+      "enqueueFile" : {
+        "jquery" : true,
+        "lazy" : true,
+        "owlcarousel" : true, 
+        "magnificpopup" : true,
+        "judoSpin" : true,
+        "plyr" : true 
+      } 
+    })
+    <!-- END Scripts -->
+  </body>
+  
+</html>

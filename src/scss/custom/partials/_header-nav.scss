@@ -1,0 +1,94 @@
+
+@import 'navs/main-nav-1';
+@import 'navs/top-bar-1';
+
+@include media-breakpoint-up(lg) {
+  .dropdown-menu {
+    min-width: 200px;
+  }
+  .navbar-expand-lg .dropdown-menu > .dropdown .dropdown-menu {
+    display: none;
+    top: -1px;
+    right: auto;
+    left: 100%;
+    width: auto;
+  }
+
+  .navbar-expand-lg .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+	// .dropdown-menu li {
+	// 	position: relative;
+	// }
+	// .dropdown-menu .submenu { 
+	// 	display: none;
+	// 	position: absolute;
+	// 	left:100%; 
+  //   top:-7px;
+	// }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    padding: 0;
+    border-radius: unset;
+  }
+  .navbar-expand-lg .navbar-nav > .dropdown > .dropdown-menu.dropdown-menu-left {
+    right: 0;
+    left:auto
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu > .dropdown .dropdown-menu.dropdown-menu-left {
+    right: 100%;
+    left:auto
+  }
+  .navbar-expand-lg .nav-item.dropdown {
+    padding-right: 14px;
+  }
+  .navbar-expand-lg .dropdown-toggle::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    width: 18px;
+    height: 18px;
+    background-color:#999595;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+    -webkit-mask-size:16px 16px;
+    mask-size:16px 16px;
+    border: none;
+  }
+  .navbar-expand-lg .nav-item > .dropdown-toggle::after {
+    -webkit-mask-image:url(../icons/chevron-down.svg);
+    mask-image:url(../icons/chevron-down.svg);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  .navbar-expand-lg .dropdown-menu > .dropdown > .dropdown-toggle::after {
+    -webkit-mask-image:url(../icons/chevron-right.svg);
+    mask-image:url(../icons/chevron-right.svg);
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+	// .dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	// .dropdown-menu > li:hover > .submenu{
+	// 	display: block;
+	// }
+}
+
+@include media-breakpoint-down(lg) {
+  .navbar-nav .dropdown-menu {
+    margin-bottom: .75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+    border-left: 2px solid rgba(0,0,0,0);
+    border-radius: 0;
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+  }
+  .dropdown-menu .dropdown-menu {
+      margin-left:0.7rem;
+      margin-right:0.7rem; 
+      margin-bottom:0.5rem;
+  }
+}

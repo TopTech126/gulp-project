@@ -1,0 +1,28 @@
+<div class="container-fluid p-0">
+  <div class="container py-5">
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <h1 class="text-center mb-4 fw-bold custom-color">Frequently Asked Questions</h1>
+
+        <h2 class="text-center mb-4 h3">Answers to Your Common Queries</h2>
+
+        <p class="text-center mb-0 col-md-6 mx-auto">Welcome to our FAQ page. We've compiled a list of answers to the most commonly asked questions to provide you with helpful information and assistance. If you don't find the answers you're looking for, feel free to contact us for further support.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-body-tertiary">
+  <div class="container col-xl-6 col-lg-7 py-5 p-0 bg-body-tertiary">
+    <div class="row g-4">
+      <div>
+        <div class="accordion" id="faq-1">
+          @@loop("./partials/_loops/_faq-type-2.html", "./data/faq-many-first-active.json")
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,207 @@
+<!-- Edit Profile Form -->
+<form id="edit-profile-form" action="">
+  <div class="mb-3">
+    <label class="form-label">Profile picture</label>
+    <div class="d-flex align-items-center">
+      <div class="dropdown">
+        <a
+          class="d-flex flex-column position-relative overflow-hidden bg-size-cover bg-position-center flex-shrink-0 rounded-2 border border-white border-3 shadow"
+          href="#" data-bs-toggle="dropdown" aria-expanded="true" style="width: 120px; height: 120px;">
+          <img id="change-profile-image-preview" class="img-fluid object-fit-cover lazy" data-src="./images/team/06.jpg" alt="">
+          <span class="d-flex justify-content-center position-absolute bottom-0 text-light text-center p-1 w-100 bg-dark bg-opacity-50">
+            <!-- Download SVG icon from http://tabler-icons.io/i/camera -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"></path><path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path></svg>
+          </span>
+        </a>
+        <div class="dropdown-menu" data-popper-placement="bottom-start">
+          <label for="change-profile-image" class="dropdown-item custom-color d-flex align-items-center fw-normal cursor-pointer" href="#">
+            <!-- Download SVG icon from http://tabler-icons.io/i/camera-plus -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 20h-7a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v3.5"></path><path d="M16 19h6"></path><path d="M19 16v6"></path><path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path></svg>Upload new photo</label>
+          <a class="dropdown-item d-flex align-items-center fw-normal text-danger" href="#">
+            <!-- Download SVG icon from http://tabler-icons.io/i/camera-x -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M13.5 20h-8.5a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v4"></path><path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path><path d="M22 22l-5 -5"></path><path d="M17 22l5 -5"></path></svg>Delete photo</a>
+        </div>
+      </div>
+      <div class="ps-3">
+        <h3 class="h6 mb-1">Change profile picture</h3>
+        <p class="fs-sm text-body-secondary mb-0">Allowed file types: png, jpg, jpeg. Max size is 5MB.</p>
+        <input id="change-profile-image" class="form-control d-none" type="file">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="first-name" class="form-label">First Name</label>
+        <input type="text" class="form-control custom-color" id="first-name" name="first-name">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="last-name" class="form-label">Last Name</label>
+        <input type="text" class="form-control custom-color" id="last-name" name="last-name">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-phone" class="form-label">Phone <small class="text-body-tertiary">(optional)</small></label>
+        <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-email" class="form-label">Email</label>
+        <input type="email" class="form-control custom-color" id="user-email" name="user-email">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-country" class="form-label">Country</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" id="user-country" name="user-country" aria-label="Select your country">
+          <option selected>Select country...</option>
+          <option value="Algeria">Algeria</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Canada">Canada</option>
+          <option value="Denmark">Denmark</option>
+          <option value="Equador">Equador</option>
+          <option value="France">France</option>
+          <option value="Greece">Greece</option>
+          <option value="Hungary">Hungary</option>
+          <option value="India">India</option>
+          <option value="Jamaica">Jamaica</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Luxemburg">Luxemburg</option>
+          <option value="Madagascar">Madagascar</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Oman">Oman</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Qatar">Qatar</option>
+          <option value="Rwanda">Rwanda</option>
+          <option value="Singapore">Singapore</option>
+          <option value="Taiwan">Taiwan</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Vitenam">Vitenam</option>
+          <option value="Yemen">Yemen</option>
+          <option value="Zambia">Zambia</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-state" class="form-label">State/Province</label>
+        <input type="text" class="form-control custom-color" id="user-state" name="user-state">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-city" class="form-label">City/Town</label>
+        <input type="text" class="form-control custom-color" id="user-city" name="user-city">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-zip" class="form-label">Zip/Postal Code</label>
+        <input type="text" class="form-control custom-color" id="user-zip" name="user-zip">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-address" class="form-label">Address Line 1</label>
+        <input type="text" class="form-control custom-color" id="user-address" name="user-address">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-address-2" class="form-label">Address Line 2 <small class="text-body-tertiary">(optional)</small></label>
+        <input type="text" class="form-control custom-color" id="user-address-2" name="user-address-2">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-dob" class="form-label">Date of Birth <small class="text-body-tertiary">(optional)</small></label>
+        <input type="text" class="form-control custom-color" id="user-dob" name="user-dob">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-time-zone" class="form-label">Time Zone</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" id="user-time-zone" name="user-time-zone" aria-label="Select your time zone">
+          <option selected>Select time zone...</option>          
+          <option data-tz-offset="-39600" value="International Date Line West">(GMT-11:00) International Date Line West</option>
+          <option data-tz-offset="-39600" value="Midway Island">(GMT-11:00) Midway Island</option>
+          <option data-tz-offset="-39600" value="Samoa">(GMT-11:00) Samoa</option>
+          <option data-tz-offset="-25200" value="Arizona">(GMT-07:00) Arizona</option>
+          <option data-tz-offset="-18000" value="Guadalajara">(GMT-05:00) Guadalajara</option>
+          <option data-tz-offset="-10800" value="Atlantic Time (Canada)">(GMT-03:00) Atlantic Time (Canada)</option>
+          <option data-tz-offset="-7200" value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
+          <option data-tz-offset="-3600" value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
+          <option data-tz-offset="0" value="UTC">(GMT) UTC</option>
+          <option data-tz-offset="3600" value="Dublin">(GMT+01:00) Dublin</option>
+          <option data-tz-offset="7200" value="Budapest">(GMT+02:00) Budapest</option>
+          <option data-tz-offset="7200" value="Berlin">(GMT+02:00) Berlin</option>
+          <option data-tz-offset="10800" value="Kiev">(GMT+03:00) Kiev</option>
+          <option data-tz-offset="10800" value="Nairobi">(GMT+03:00) Nairobi</option>
+          <option data-tz-offset="19800" value="Chennai">(GMT+05:30) Chennai</option>
+          <option data-tz-offset="25200" value="Bangkok">(GMT+07:00) Bangkok</option>
+          <option data-tz-offset="32400" value="Tokyo">(GMT+09:00) Tokyo</option>
+          <option data-tz-offset="43200" value="Kamchatka">(GMT+12:00) Kamchatka</option>
+          <option data-tz-offset="43200" value="Wellington">(GMT+12:00) Wellington</option>
+          <option data-tz-offset="46800" value="Nuku'alofa">(GMT+13:00) Nuku'alofa</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-language" class="form-label">Language</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" id="user-language" name="user-language" aria-label="Select your language">
+          <option selected>Select language...</option>
+          <option value="id">Bahasa Indonesia - Indonesian</option>
+          <option value="msa">Bahasa Melayu - Malay</option>
+          <option value="da">Dansk - Danish</option>
+          <option value="de">Deutsch - German</option>
+          <option value="en">English US</option>
+          <option value="en-gb">English UK</option>
+          <option value="es">Espanol - Spanish</option>
+          <option value="fil">Filipino</option>
+          <option value="fr">Francais - French</option>
+          <option value="ga">Gaeilge - Irish</option>
+          <option value="gl">Galego - Galician</option>
+          <option value="hr">Hrvatski - Croatian</option>
+          <option value="it">Italiano - Italian</option>
+          <option value="hu">Magyar - Hungarian</option>
+          <option value="nl">Nederlands - Dutch</option>
+          <option value="no">Norsk - Norwegian</option>
+          <option value="pl">Polski - Polish</option>
+          <option value="pt">Portugues - Portuguese</option>
+          <option value="fi">Suomi - Finnish</option>
+          <option value="sv">Svenska - Swedish</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="user-currency" class="form-label">Currency</label>
+        <select class="form-select custom-color text-dark-emphasis rounded-1" id="user-currency" name="user-currency" aria-label="Select your currency">
+          <option selected>Select currency...</option>          
+          <option value="USD"><b>USD</b>&nbsp;&ndash;&nbsp;USA Dollar</option>
+          <option value="GBP"><b>GBP</b>&nbsp;&ndash;&nbsp;British Pound</option>
+          <option value="AUD"><b>AUD</b>&nbsp;&ndash;&nbsp;Australian Dollar</option>
+          <option value="JPY"><b>JPY</b>&nbsp;&ndash;&nbsp;Japanese Yen</option>
+          <option value="CAD"><b>CAD</b>&nbsp;&ndash;&nbsp;Canadian Dollar</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="user-bio" class="form-label">Bio <small class="text-body-tertiary">(optional)</small></label>
+    <textarea class="form-control custom-color" id="user-bio" name="user-bio" rows="5" placeholder="Add your description"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Save</button>
+</form>
+<!-- END Edit Profile Form -->

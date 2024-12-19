@@ -1,0 +1,67 @@
+<!-- Testimonials -->
+<section class="position-relative custom-color
+@@ if (sectionBgType !== 'plain' && sectionBgType !== 'image' && sectionBgType !== 'video') {
+  bg-body-tertiary
+}
+"
+>
+  @@ if (sectionBgType === 'plain' || sectionBgType === 'image' || sectionBgType === 'video') {
+    @@ if (sectionBgType !== 'plain') {
+      <div class="jarallax" data-jarallax data-speed="0.2" 
+        @@ if (sectionBgType === 'video') {
+          data-video-src="@@sectionBgVideo"
+          data-video-start-time="@@sectionBgVideoStartTime" 
+          data-video-end-time="@@sectionBgVideoEndTime"
+        }
+      >
+      @@ if (sectionBgType === 'image') {
+        <img class="jarallax-img lazy" data-src="@@sectionBgImage" alt="">
+      }
+    }
+    <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" 
+    style="background-color: @@sectionBgColor; background-image: @@sectionBgGradient; opacity: @@sectionBgOpacity"></span>
+  }
+  <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
+    <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color @@if (sectionHeaderCentered) { text-center }">Customer Testimonial</h2>
+    <div class="card testimonial-card text-bg-dark p-0 overflow-hidden mb-3">
+      
+      <div id="testimonialCardSync1" class="owl-carousel owl-theme custom-color d-flex flex-column justify-content-center py-4 my-auto z-2">
+        @@for (var i = 0; i < testimonialCards.length; i++) {
+          <div id="testimonial-item-`+(i+1)+`" class="testimonial-item rounded-2">
+            <div class="d-flex flex-column justify-content-center py-4 my-auto">
+              <div class="card-text testimonial-text z-1 position-relative col-lg-7 col-md-8 col-sm-10 ps-5 m-3">
+                <p class="fs-4 fst-italic mb-3">`+testimonialCards[i].testimonialText+`</p>
+                <p class="card-text z-1 position-relative m-0">
+                  <span>`+testimonialCards[i].authorName+`</span>
+                  <br>
+                  <small class="text-secondary fs-sm text-uppercase">`+testimonialCards[i].authorTitle+`</small>
+                </p>
+                <button class="btn testiCustomPrevBtn"></button>
+                <button class="btn testiCustomNextBtn"></button>
+              </div>
+            </div>
+          </div>
+        } 
+      </div>
+      
+      <div id="testimonialCardSync2" class="owl-carousel owl-theme z-1 m-0" style="width: 100%;
+      height: 100%;
+      position: absolute;
+      background-size: cover;
+      background-position: center;">
+        @@for (var i = 0; i < testimonialCards.length; i++) {
+          <div id="testimonial-thumb-`+(i+1)+`" class="testimonial-card-image item testimonial-thumb rounded-2 cursor-pointer d-flex align-items-center justify-content-center" style="width: 100%;
+            height: 100%;">
+            <img class="img-fluid object-fit-cover h-100" src="`+testimonialCards[i].cardBgImage+`" alt="..." srcset="">
+            <div class="card-img-overlay"></div>
+          </div>          
+        }
+      </div>
+
+    </div>
+  </div>
+  @@ if (sectionBgType === 'image' || sectionBgType === 'video') {
+    </div>
+  }
+</section>
+<!-- END Testimonials -->

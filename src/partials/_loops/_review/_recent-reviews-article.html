@@ -1,0 +1,28 @@
+@@for (var i = 1; i < carsDataReviewOrder.length; i++) { 
+
+  <!-- Car Review -->
+  <div class="">
+    <div class="card review-item thumbnail-kenburn-effect border h-100">
+      <div class="position-absolute start-0 top-0 pt-2 ps-2 z-2">
+        <span class="card-text review-grade fs-xs rounded-1 fw-bold text-uppercase text-spacing-sm d-flex align-items-center Rating`+carsDataReviewOrder[i].reviewGrade+`"><small>`+carsDataReviewOrder[i].reviewGrade+`</small></span>
+      </div>
+      <div class="card-image position-relative overflow-hidden rounded-top">
+        <img data-src="`+carsDataReviewOrder[i].image1+`" class="img-with-kenburn d-block w-100 rounded-top lazy" alt="...">
+        <div class="review-progress position-absolute bottom-0 start-50 z-4">
+          <div class="barOverflow">
+            <div class="bar Rating`+carsDataReviewOrder[i].reviewGrade+`"></div>
+          </div>
+          <span class="bar-text"><strong>`+carsDataReviewOrder[i].rating+`</strong></span>
+        </div>
+      </div>
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title fw-bold fs-6 fs-special text-truncate-double flex-fill"><a href="./review-details.html" class="text-body text-decoration-none">`+carsDataReviewOrder[i].title+`</a></h5> 
+        <p class="card-text">
+          <span class="car-price text-primary fs-special fs-6 fw-bold custom-color">`+carsDataReviewOrder[i].priceLow+`&nbsp;&ndash;&nbsp;`+carsDataReviewOrder[i].price+`</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- END Car Review -->
+
+}

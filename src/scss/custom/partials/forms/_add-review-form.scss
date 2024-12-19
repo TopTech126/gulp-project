@@ -1,0 +1,50 @@
+.rating-field {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  >input {
+    display: none;
+
+    &:checked~label:before {
+      opacity: 1;
+    }
+  }
+
+  >label {
+    position: relative;
+    width: 1em;
+    font-size: 1.8em;
+    color: #f2b807;
+    cursor: pointer;
+
+    &::before {
+      opacity: 0;
+      content: "";
+      position: absolute;
+      left:0;
+      top:14px;
+      width:22px;
+      height:22px;
+      background-color: #f2b807;
+      -webkit-mask-image: url("../icons/star-filled.svg");
+      mask-image: url("../icons/star-filled.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 22px 22px;
+      mask-size: 22px 22px;
+    }
+
+    &:hover:before,
+    &:hover~label:before {
+      opacity: 1 !important;
+    }
+  }
+
+  &:hover {
+    >input:checked~label:before {
+      opacity: 0.4;
+    }
+  }
+
+}

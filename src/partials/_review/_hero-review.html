@@ -1,0 +1,108 @@
+<!-- Hero Review -->
+<section class="hero-review bg-body-tertiary">
+  <div class="jarallax" data-jarallax data-speed="0.2">
+    <img class="jarallax-img lazy" data-src="./images/cars/bmw-x5/01.jpg" alt="">
+    <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-1"></span>
+    
+    @@include('./partials/_breadcrumb.html', {
+      "breadcrumbTitle": "BMW X5 Review",
+      "breadcrumbItems": "_review-details.html",
+      "breadcrumbStyle": 2,
+      "breadcrumbBgOpacity": 0.45,
+      "breadcrumbBgImage": "",
+      "breadcrumbBgColor": "dark"
+    })
+    
+    <div class="hero-rating-container container py-5 z-1 position-relative">
+      <div class="row mt-5 pt-5">
+
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="average-block bg-blur bg-dark bg-opacity-25 border border-light border-opacity-25 rounded-3 p-4 my-0 mb-0 text-white h-100">
+
+            <div class="average-rating text-center fs-special text-uppercase d-flex flex-column justify-content-around">
+              <span class="review-verdict custom-color fs-xs-alt mt-n1 position-absolute top-0 align-self-center mx-auto rounded-top-1 RatingOutstanding">Outstanding</span>
+              <span class="fs-xs">Avg Rating</span>
+              <span class="display-1 fw-bold">8.3</span>
+              <span class="fs-sm fw-bold">out of 10</span>
+            </div>
+
+            <div class="review-progress custom-color position-absolute bottom-0 start-50 z-4">
+              <div class="barOverflow">
+                <div class="bar RatingOutstanding"></div>
+              </div>
+              <span class="bar-text"><strong>83</strong></span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          
+          <div class="bg-blur bg-dark bg-opacity-25 border border-light border-opacity-25 rounded-3 p-4 pb-1 text-white">
+            <div class="tab-content" id="pills-tabContent">
+              
+              <ul class="nav nav-pills custom-color mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item me-2" role="presentation">
+                  <button class="nav-link link-light px-0 px-sm-3 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                    <span class="me-2 d-inline-flex col-12 justify-content-center d-sm-inline-block col-sm-auto justify-content-sm-start">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-star" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h.5"></path><path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z"></path></svg>
+                    </span><span class="">Expert Review</span>
+                  </button>
+                </li>
+                <li class="nav-item me-2" role="presentation">
+                  <button class="nav-link link-light px-0 px-sm-3" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                    <span class="me-2 d-inline-flex col-12 justify-content-center d-sm-inline-block col-sm-auto justify-content-sm-start">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1"></path><path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M17 10h2a2 2 0 0 1 2 2v1"></path><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M3 13v-1a2 2 0 0 1 2 -2h2"></path></svg>
+                    </span><span class="">Owners Review</span></button>
+                </li>
+              </ul>
+          
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                  
+                  @@for (var i = 0; i < expertReviews.length; i++) {
+                    <div class="review-item">
+                      <p class="fs-sm fs-special mb-1 d-flex justify-content-between"><span>`+expertReviews[i].name+`</span><span>`+expertReviews[i].rating/10+`</span>
+                      </p>
+                      <div class="progress mb-4 rounded-1">
+                        <div class="progress-bar custom-color Rating`+expertReviews[i].reviewGrade+`" role="progressbar" style="width: `+expertReviews[i].rating+`%" aria-valuenow="`+expertReviews[i].rating/10+`"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  }
+                  
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                  @@for (var i = 0; i < ownerReviews.length; i++) {
+                    <div class="review-item">
+                      <p class="fs-sm fs-special mb-1 d-flex justify-content-between"><span>`+ownerReviews[i].name+`</span><span>`+ownerReviews[i].rating/10+`</span>
+                      </p>
+                      <div class="progress mb-4 rounded-1">
+                        <div class="progress-bar custom-color Rating`+ownerReviews[i].reviewGrade+`" role="progressbar" style="width: `+ownerReviews[i].rating+`%" aria-valuenow="`+ownerReviews[i].rating/10+`"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  }
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END Hero Review -->

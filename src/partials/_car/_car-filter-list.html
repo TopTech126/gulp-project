@@ -1,0 +1,27 @@
+<div class="container py-5 mb-md-4">
+  <div class="row">
+    <!-- Sidebar -->
+    <aside class="col-lg-3">
+      <!-- Filter widget -->
+      @@include('./partials/_filter-widget.html')
+    </aside>
+
+    <!-- Content -->
+    <section class="cars col-lg-9">
+
+      <!-- Sorting -->
+      @@include('./partials/_car/_car-filter-sorting.html', { 
+        "listView" : true
+      })
+
+      <div class="row cars-list">
+
+        @@loop("./partials/_loops/_car/_car-filter-list.html", "./data/cars.json")
+
+      </div>
+
+      <!-- Pagination -->
+      @@include('./partials/_pagination.html')
+    </section>
+  </div>
+</div>

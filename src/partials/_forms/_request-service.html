@@ -1,0 +1,55 @@
+<!-- Request Valuation -->
+<form id="add-valuation-form" action="">
+  <div class="mb-3">
+    <label for="user-name" class="form-label">Name</label>
+    <input type="text" class="form-control custom-color" id="user-name" name="user-name">
+  </div>
+  <div class="mb-3">
+    <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span></label>
+    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
+  </div>
+  <div class="mb-3">
+    <label for="user-email" class="form-label">Email</label>
+    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="valuationEmailHelp">
+    <div id="valuationEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="car-make" class="form-label">Make</label>
+    <select class="form-select custom-color text-dark-emphasis rounded-1" name="car-make" aria-label="Select car brand">
+      <option selected>Select make</option>
+      @@for (var i = 0; i < carBrands.length; i++) {
+        <option value="`+carBrands[i].name+`">`+carBrands[i].name+`</option> 
+      }
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="car-model" class="form-label">Model</label>
+    <input type="text" class="form-control custom-color" id="car-model" name="car-model">
+  </div>
+  <div class="mb-3">
+    <label for="car-year" class="form-label">Year</label>
+    <input type="text" class="form-control custom-color" id="car-year" name="car-year">
+  </div>
+  <div class="mb-3">
+    <label for="car-mileage" class="form-label">Mileage</label>
+    <input type="text" class="form-control custom-color" id="car-mileage" name="car-mileage">
+  </div>
+  <div class="mb-3">
+    <label for="car-reg" class="form-label">Registration Number</label>
+    <input type="text" class="form-control custom-color" id="car-reg" name="car-reg">
+  </div>
+  <div class="mb-3">
+    <label for="service-date" class="form-label">Preferred Date</label>
+    <input type="text" class="form-control custom-color" id="service-date" name="service-date">
+  </div>
+  <div class="mb-3">
+    <label for="user-valuation" class="form-label">Notes <span class="text-secondary fs-sm">(Optional)</span></label>
+    <textarea class="form-control custom-color" id="user-valuation" name="user-valuation" rows="3"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
+</form>
+<!-- END Request Valuation -->

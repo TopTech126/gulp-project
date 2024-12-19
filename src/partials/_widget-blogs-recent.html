@@ -1,0 +1,13 @@
+<div class="row g-3 mb-3">
+  @@for (var i = 0; i < 4; i++) {
+    <div class="d-flex align-items-start">
+      <div class="" style="min-width: 80px; height: 80px">
+        <img data-src="`+blogs[i].blogImage+`" class="rounded-1 img-fluid h-100 w-100 object-fit-cover lazy" alt="`+blogs[i].blogTitle+`">
+      </div>
+      <div class="ms-3">
+        <a href="./blog-article-minimal.html" class="d-block text-decoration-none lh-sm link-body-emphasis fs-special fs-6 mb-1">`+blogs[i].blogTitle+`</a>
+        <span class="text-muted">`+blogs[i].blogDate+`</span>
+      </div>
+    </div>
+  }
+</div>

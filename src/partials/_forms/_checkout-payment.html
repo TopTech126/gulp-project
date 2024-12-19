@@ -1,0 +1,201 @@
+<!-- Payment Method Form -->
+<form id="payment-method-form" action="">
+
+  <div class="accordion" id="payment-method-accordion">
+
+    <!-- Credit Card -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCreditCard" aria-expanded="true" aria-controls="collapseCreditCard">
+          <input type="radio" name="paymentMethod" value="creditCard" checked>
+          Credit Card
+        </button>
+      </h2>
+      <div id="collapseCreditCard" class="accordion-collapse collapse show" data-bs-parent="#payment-method-accordion">
+        <div class="accordion-body">
+
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="co-card-name" class="form-label fw-bold fs-special mb-1">Name</label>
+                <input type="text" class="form-control custom-color" id="co-card-name" name="co-card-name" placeholder="Enter card holder name">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="co-card-number" class="form-label fw-bold fs-special mb-1">Number</label>
+                <input type="text" class="form-control custom-color" id="co-card-number" name="co-card-number" placeholder="Enter card number">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="co-card-expiry" class="form-label fw-bold fs-special mb-1">Expiry Date</label>
+                <input type="text" class="form-control custom-color" id="co-card-expiry" name="co-card-expiry" placeholder="MM/YY">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="co-card-cvv" class="form-label fw-bold fs-special mb-1">CVV</label>
+                <input type="text" class="form-control custom-color" id="co-card-cvv" name="co-card-cvv" placeholder="Enter the card CVV code">
+              </div>
+            </div>
+          </div>
+
+          <p>We support Mastercard, Visa, AmericanExpress, Maestro and Discover</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- PayPal -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePayPal" aria-expanded="false" aria-controls="collapsePayPal">
+          <input type="radio" name="paymentMethod" value="paypal">
+          PayPal
+        </button>
+      </h2>
+      <div id="collapsePayPal" class="accordion-collapse collapse" data-bs-parent="#payment-method-accordion">
+        <div class="accordion-body">
+          <p>You will be redirected to PayPal website to login to your PayPal account to complete the purchase.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apple Pay -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseApplePay" aria-expanded="false" aria-controls="collapseApplePay">
+          <input type="radio" name="paymentMethod" value="applePay">
+          Apple Pay
+        </button>
+      </h2>
+      <div id="collapseApplePay" class="accordion-collapse collapse" data-bs-parent="#payment-method-accordion">
+        <div class="accordion-body">
+          <p>With your Apple device, you can use Apple Pay for quick and secure payment.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Pay -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGooglePay" aria-expanded="false" aria-controls="collapseGooglePay">
+          <input type="radio" name="paymentMethod" value="googlePay">
+          Google Pay
+        </button>
+      </h2>
+      <div id="collapseGooglePay" class="accordion-collapse collapse" data-bs-parent="#payment-method-accordion">
+        <div class="accordion-body">
+          <p>Google Pay allows you to make payment using your Google account on supported devices.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bank Transfer -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBankTransfer" aria-expanded="false" aria-controls="collapseBankTransfer">
+          <input type="radio" name="paymentMethod" value="bankTransfer">
+          Bank Transfer
+        </button>
+      </h2>
+      <div id="collapseBankTransfer" class="accordion-collapse collapse" data-bs-parent="#payment-method-accordion">
+        <div class="accordion-body">
+          <p>To complete the payment via bank transfer, please follow the instructions below:</p>
+          <ol class="my-2">
+            <li class="mb-1">Log in to your online banking portal or visit your bank branch.</li>
+            <li class="mb-1">Initiate a new bank transfer.</li>
+            <li class="mb-1">Enter the following recipient details:
+              <ul class="my-2">
+                <li class="mb-1"><span class="text-body-emphasis fw-semibold">Recipient Name:</span> CarMart Autos LTD</li>
+                <li class="mb-1"><span class="text-body-emphasis fw-semibold">Bank Name:</span> AutoBizBank</li>
+                <li class="mb-1"><span class="text-body-emphasis fw-semibold">Account Number:</span> 9876543210</li>
+                <li class="mb-1"><span class="text-body-emphasis fw-semibold">SWIFT/BIC Code:</span> 445566</li>
+                <li class="mb-1"><span class="text-body-emphasis fw-semibold">IBAN:</span> 258369147</li>
+              </ul>
+            </li>
+            <li class="mb-1">Enter the amount you wish to transfer and complete the transaction.</li>
+          </ol>
+          <p>Once the transfer is completed, please allow up to 1—4 business days for the payment to be processed and verified. Your order will be shipped as soon as the payment is confirmed.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cryptocurrency -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCryptocurrency" aria-expanded="false" aria-controls="collapseCryptocurrency">
+          <input type="radio" name="paymentMethod" value="cryptocurrency">
+          Cryptocurrency
+        </button>
+      </h2>
+      <div id="collapseCryptocurrency" class="accordion-collapse collapse" data-bs-parent="#payment-method-accordion">
+        <div class="accordion-body">
+          <p>We use Bitcoin, Ethereum, or other digital currencies.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cash on Delivery (COD) -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCashOnDelivery" aria-expanded="false" aria-controls="collapseCashOnDelivery">
+          <input type="radio" name="paymentMethod" value="cashOnDelivery">
+          Cash on Delivery (COD)
+        </button>
+      </h2>
+      <div id="collapseCashOnDelivery" class="accordion-collapse collapse" data-bs-parent="#payment-method-accordion">
+        <div class="accordion-body">
+          <p>Pay for your order with cash when it's delivered to your doorstep.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gift Cards or Store Credit -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGiftCards" aria-expanded="false" aria-controls="collapseGiftCards">
+          <input type="radio" name="paymentMethod" value="giftCards">
+          Gift Cards or Store Credit
+        </button>
+      </h2>
+      <div id="collapseGiftCards" class="accordion-collapse collapse" data-bs-parent="#payment-method-accordion">
+        <div class="accordion-body">
+          <p>Use your gift cards or store credit as a payment method for their purchases.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Installment Payments -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstallmentPayments" aria-expanded="false" aria-controls="collapseInstallmentPayments">
+          <input type="radio" name="paymentMethod" value="installmentPayments">
+          Installment Payments
+        </button>
+      </h2>
+      <div id="collapseInstallmentPayments" class="accordion-collapse collapse" data-bs-parent="#payment-method-accordion">
+        <div class="accordion-body">
+          <p>Pay in installments over time, either through a payment plan or a third-party financing service.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script>
+  </script>
+
+
+  <div class="p-4">
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
+      <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+    </div>
+    <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Save Payment Method</button>
+  </div>
+</form>
+<!-- END Payment Method Form -->

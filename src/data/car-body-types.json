@@ -1,0 +1,92 @@
+[
+  {
+    "name": "4x4", 
+    "image": "./images/body-types/4x4.png",
+    "offers": 12
+  },
+  {
+    "name": "Camper", 
+    "image": "",
+    "offers": 16
+  },
+  {
+    "name": "Combi", 
+    "image": "",
+    "offers": 5
+  },
+  {
+    "name": "Commercial", 
+    "image": "",
+    "offers": 18
+  },
+  {
+    "name": "Convertible", 
+    "image": "./images/body-types/convertible.png",
+    "offers": 8
+  },
+  {
+    "name": "Coupe", 
+    "image": "./images/body-types/coupe.png",
+    "offers": 25
+  },
+  {
+    "name": "Estate", 
+    "image": "",
+    "offers": 13
+  },
+  {
+    "name": "Hatchback", 
+    "image": "",
+    "offers": 33
+  },
+  {
+    "name": "MPV", 
+    "image": "",
+    "offers": 4
+  },
+  {
+    "name": "Off-Road", 
+    "image": "./images/body-types/off-road.png",
+    "offers": 17
+  },
+  {
+    "name": "Pickup", 
+    "image": "./images/body-types/pickup.png",
+    "offers": 28
+  },
+  {
+    "name": "Roadster", 
+    "image": "./images/body-types/roadster.png",
+    "offers": 8
+  },
+  {
+    "name": "Saloon", 
+    "image": "./images/body-types/saloon.png",
+    "offers": 16
+  },
+  {
+    "name": "Sedan", 
+    "image": "./images/body-types/sedan.png",
+    "offers": 39
+  },
+  {
+    "name": "Sports", 
+    "image": "./images/body-types/sports.png",
+    "offers": 5
+  },
+  {
+    "name": "Wagon", 
+    "image": "./images/body-types/station-wagon.png",
+    "offers": 19
+  },
+  {
+    "name": "SUV", 
+    "image": "./images/body-types/suv.png",
+    "offers": 24
+  },
+  {
+    "name": "Van", 
+    "image": "./images/body-types/van.png",
+    "offers": 14
+  }
+]

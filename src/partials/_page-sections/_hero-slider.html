@@ -1,0 +1,103 @@
+<!-- Hero Slider -->
+<section class="position-relative custom-color
+@@ if (sectionBgType !== 'plain' && sectionBgType !== 'image' && sectionBgType !== 'video') {
+  bg-body-tertiary
+}
+"
+>
+  @@ if (sectionBgType === 'plain' || sectionBgType === 'image' || sectionBgType === 'video') {
+    @@ if (sectionBgType !== 'plain') {
+      <div class="jarallax" data-jarallax data-speed="0.2" 
+        @@ if (sectionBgType === 'video') {
+          data-video-src="@@sectionBgVideo"
+          data-video-start-time="@@sectionBgVideoStartTime" 
+          data-video-end-time="@@sectionBgVideoEndTime"
+        }
+      >
+      @@ if (sectionBgType === 'image') {
+        <img class="jarallax-img lazy" data-src="@@sectionBgImage" alt="">
+      }
+    }
+    <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" 
+    style="background-color: @@sectionBgColor; background-image: @@sectionBgGradient; opacity: @@sectionBgOpacity"></span>
+  }
+  <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
+    <div class="row g-0 align-items-start">
+      <div id="hero-slider" class="carousel slide">        
+        <div class="carousel-indicators z-3">
+          <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded-2">
+          <div class="carousel-item rounded-2 active">
+            <div class="carousel-item-wrapper d-flex align-items-center">
+              <a href="./car-details.html" class="stretched-link z-2"></a>
+              <div class="position-absolute start-0 top-0 pt-3 ps-3">
+                <span class="badge text-bg-success text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">New</span>
+              </div>
+              <img data-src="./images/cars/bmw-x5/01.jpg" class="d-block w-100 rounded-2 lazy" alt="...">
+              <div class="carousel-caption d-none d-md-block text-start start-0 ms-5 z-2">
+                <div class="start-0 top-0 pb-2 pe-3 fs-sm">
+                  <span class="badge text-bg-light rounded-1 bg-body-light bg-opacity-75">2024</span>
+                  <span class="badge text-bg-light rounded-1 bg-body-light bg-opacity-75">Petrol</span>
+                  <span class="badge text-bg-light rounded-1 bg-body-light bg-opacity-75">2500cc</span>
+                </div>
+                <h5 class="fw-bold fs-special fs-2 py-2"><span class="bg-dark p-2 px-3 rounded-2 bg-opacity-75 text-light">BMW X5</span></h5>
+                <p class="py-2"><span class="car-price text-warning custom-color fs-special fs-3 fw-bold bg-dark p-2 px-3 rounded-2 bg-opacity-75">$95,000</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item rounded-2">
+            <div class="carousel-item-wrapper d-flex align-items-center">
+              <a href="./car-details.html" class="stretched-link z-2"></a>
+              <div class="position-absolute start-0 top-0 pt-3 ps-3">
+                <span class="badge text-bg-danger text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Sold</span>
+              </div>
+              <img data-src="./images/cars/volkswagen-tiguan/01.jpg" class="d-block w-100 rounded-2 lazy" alt="...">
+              <div class="carousel-caption d-none d-md-block text-start start-0 ms-5 z-2">
+                <div class="start-0 top-0 pb-2 pe-3 fs-sm">
+                  <span class="badge text-bg-light rounded-1 bg-body-light bg-opacity-75">2019</span>
+                  <span class="badge text-bg-light rounded-1 bg-body-light bg-opacity-75">Petrol</span>
+                  <span class="badge text-bg-light rounded-1 bg-body-light bg-opacity-75">3500cc</span>
+                </div>
+                <h5 class="fw-bold fs-special fs-2 py-2"><span class="bg-dark p-2 px-3 rounded-2 bg-opacity-75 text-light">Volkswagen Tiguan 2021</span></h5>
+                <p class="py-2"><span class="car-price text-warning custom-color fs-special fs-3 fw-bold bg-dark p-2 px-3 rounded-2 bg-opacity-75">$55,000</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item rounded-2">
+            <div class="carousel-item-wrapper d-flex align-items-center">
+              <a href="./car-details.html" class="stretched-link z-2"></a>
+              <div class="position-absolute start-0 top-0 pt-3 ps-3">
+                <span class="badge text-bg-primary text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Used</span>
+              </div>
+              <img data-src="./images/cars/mercedes-g63-amg/01.jpg" class="d-block w-100 rounded-2 lazy" alt="...">
+              <div class="carousel-caption d-none d-md-block text-start start-0 ms-5 z-2">
+                <div class="start-0 top-0 pb-2 pe-3 fs-sm">
+                  <span class="badge text-bg-light rounded-1 bg-body-light bg-opacity-75">2017</span>
+                  <span class="badge text-bg-light rounded-1 bg-body-light bg-opacity-75">Petrol</span>
+                  <span class="badge text-bg-light rounded-1 bg-body-light bg-opacity-75">3000cc</span>
+                </div>
+                <h5 class="fw-bold fs-special fs-2 py-2"><span class="bg-dark p-2 px-3 rounded-2 bg-opacity-75 text-light">Mercedes G63 AMG</span></h5>
+                <p class="py-2"><span class="car-price text-warning custom-color fs-special fs-3 fw-bold bg-dark p-2 px-3 rounded-2 bg-opacity-75">$215,999</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  @@ if (sectionBgType === 'image' || sectionBgType === 'video') {
+    </div>
+  }
+</section>
+<!-- END Hero Slider -->

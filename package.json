@@ -1,0 +1,52 @@
+{
+  "name": "carmart",
+  "version": "1.0.2",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TDR-TC-DEV/CarMart.git"
+  },
+  "author": "ThemeCrest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TDR-TC-DEV/CarMart/issues"
+  },
+  "homepage": "https://github.com/TDR-TC-DEV/CarMart#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-format-html": "^2.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-newer": "^1.4.0",
+    "gulp-npm-dist": "^1.0.4",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.63.6"
+  },
+  "dependencies": {
+    "apexcharts": "^3.47.0",
+    "bootstrap": "^5.3.2",
+    "fly-to": "^1.0.2",
+    "jarallax": "^2.2.1",
+    "jquery": "^3.7.0",
+    "jquery-lazy": "^1.7.11",
+    "judo-spin": "^1.0.3",
+    "magnific-popup": "^1.1.0",
+    "masonry-layout": "^4.2.2",
+    "nouislider": "^15.7.1",
+    "owl.carousel": "^2.3.4",
+    "plyr": "^3.7.8",
+    "resize-observer-polyfill": "^1.5.1",
+    "simba-grid": "^1.0.2",
+    "simplebar": "^6.2.5"
+  }
+}

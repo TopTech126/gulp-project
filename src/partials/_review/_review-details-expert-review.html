@@ -1,0 +1,95 @@
+<!-- Review Details - Expert Review -->
+<div class="container">
+  
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!</p>
+
+  @@for (var i = 0; i < expertReviewData.length; i++) {
+  <div id="review-id-`+(i+1)+`" class="row g-3 mb-5 pb-5 border-bottom">
+    <div class="col-md-3 order-0 position-relative mb-4 mb-md-0">
+      <div class="pos-left fs-sm d-flex bg-body-tertiary flex-column align-items-start sticky-top p-3 rounded-2">
+        <div class="d-flex flex-column mx-auto mb-md-2">
+          <span class="reviewer-img mb-3" style="max-width: 300px; max-height: 300px">
+            <img data-src="`+expertReviewData[i].reviewerImage+`" alt="" class="object-fit-cover img-fluid rounded-1 lazy">
+          </span>
+          <span class="reviewer-by fs-xxs fs-special text-muted text-uppercase text-center mb-1">Driven & Reviewed by</span>
+          <a href="./reviewer-profile.html" class="reviewer-name fs-6 fs-special fw-semibold text-body-emphasis text-center text-decoration-none mb-2">`+expertReviewData[i].reviewerName+`</a>
+          <h5 class="reviewer-name mb-3 fs-xs fs-special text-muted text-uppercase text-spacing-sm text-center">Auto Expert</h5>
+        </div>
+        <div class="d-flex mb-md-2">
+          <span class="text-muted me-1">Reviews:</span>
+          <span class="fw-bold reviewer-reviews-count">39</span>
+        </div>
+        <div class="d-flex mb-md-2">
+          <span class="text-muted me-1">Votes:</span>
+          <span class="fw-bold reviewer-votes-count">`+expertReviewData[i].helpful[0].rating+`</span>
+        </div>
+        <div class="d-flex mb-md-2 d-none">
+          <span class="text-muted me-1">Age:</span>
+          <span class="fw-bold reviewer-age">`+expertReviewData[i].reviewerAge+`</span>
+        </div>
+        <div class="d-flex mb-md-2 d-none flex-md-column">
+          <span class="text-muted me-1">Location:</span> <br>
+          <span class="fw-bold reviewer-location">`+expertReviewData[i].reviewerLocation+`</span>
+        </div>
+        <div class="row expert-review-criteria mt-3 ">
+
+          @@include('./partials/_loops/_review/_expert-review-ratings.html')
+
+        </div>
+        <hr class="opacity-15 position-absolute end-0 bottom-0 w-100 d-block d-md-none m-0">
+      </div>
+    </div>
+    <div class="col-md-9 order-3 order-md-1">
+      <div class="ms-md-2">
+        <div class="row row-cols-md-2 mb-3">
+          <div>
+            <h5 class="mb-1 fs-6 d-flex align-items-center text-success text-uppercase">
+              <!-- Download SVG icon from http://tabler-icons.io/i/checks -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 12l5 5l10 -10"></path><path d="M2 12l5 5m5 -5l5 -5"></path></svg>
+            Pros</h5>
+            <div class="mb-3">
+              `+expertReviewData[i].pros+`
+            </div>
+          </div>
+          <div>
+            <h5 class="mb-1 fs-6 d-flex align-items-center text-danger text-uppercase">
+              <!-- Download SVG icon from http://tabler-icons.io/i/circle-half-vertical -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M3 12h18"></path></svg>
+            Cons</h5>
+            <div class="mb-3">
+              `+expertReviewData[i].cons+`
+            </div>
+          </div>
+        </div>
+
+        <div class="detailed-reviews">
+
+          @@include('./partials/_loops/_review/_expert-review-detailed.html')
+
+        </div>
+        
+        <div class="bg-body-tertiary p-3 mb-4 rounded">
+          <h5 class="mb-2 fs-5 d-flex align-items-center text-info">
+            <!-- Download SVG icon from http://tabler-icons.io/i/360 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M17 15.328c2.414 -.718 4 -1.94 4 -3.328c0 -2.21 -4.03 -4 -9 -4s-9 1.79 -9 4s4.03 4 9 4"></path><path d="M9 13l3 3l-3 3"></path></svg>
+          Verdict</h5>
+          <p>`+expertReviewData[i].reviewerVerdict+`</p>
+        </div>
+        <div id="review-votes" class="d-inline-flex align-items-center mt-2">
+          <div class="me-3 fs-special">Helpful?</div>
+          <div class="me-3 d-flex align-items-center">
+            <span id="vote-yes" class="btn btn-outline-secondary btn-sm rounded-1 fw-bold fs-sm me-2" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .55rem;">`+expertReviewData[i].helpful[0].name+`</span>
+            <span id="vote-yes-count" class="text-body-secondary">`+expertReviewData[i].helpful[0].rating+`</span>
+          </div>
+          <div class="me-3 d-flex align-items-center">
+            <span id="vote-no" class="btn btn-outline-secondary btn-sm rounded-1 fw-bold fs-sm me-2" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .55rem;">`+expertReviewData[i].helpful[1].name+`</span>
+            <span id="vote-no-count" class="text-body-secondary">`+expertReviewData[i].helpful[1].rating+`</span>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+  }
+  
+</div>
+<!-- END Review Details - Expert Review -->

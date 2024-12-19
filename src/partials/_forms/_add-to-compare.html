@@ -1,0 +1,29 @@
+<!-- Add To Compare Form -->
+<form id="add-to-compare-form" action="">
+  <div class="mb-3">
+    <label for="car-brand" class="form-label">Car Brand</label>
+    <select id="car-brand" name="car-brand" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select car brand">
+      <option selected>Select brand</option>
+      @@for (var i = 0; i < carBrands.length; i++) {
+        <option value="`+carBrands[i].name+`">`+carBrands[i].name+`</option> 
+      }
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="car-model" class="form-label">Car Model</label>
+    <select id="car-model" name="car-model" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select car model">
+      <option selected>Select model</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="car-year" class="form-label">Car Year</label>
+    <select id="car-year" name="car-year" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select car year">
+      <option selected>Select year</option>
+      @@for (var i = 2024; i >= 1960; i--) {
+        <option value="`+i+`">`+i+`</option> 
+      }
+    </select>
+  </div>
+  <button type="submit" class="btn btn-warning mt-2 w-100">Add to Compare</button>
+</form>
+<!-- END - Add To Compare Form -->

@@ -1,0 +1,11 @@
+<h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color">Similar Cars</h2>
+<div class="similar-cars-carousel basic-carousel owl-carousel owl-theme"
+@@if (carouselLoop) { data-loop="true" }
+@@if (carouselNav) { data-nav="true" }
+@@if (carouselDots) { data-dots="true" }
+@@if (carouselAutoplay) { data-autoplay="true" }
+>
+
+  @@loop("./partials/_loops/_car/_car-related.html", "./data/cars.json")
+
+</div>

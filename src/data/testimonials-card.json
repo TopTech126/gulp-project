@@ -1,0 +1,30 @@
+[
+  {
+    "testimonialText": "I never thought I could fall in love with a machine until I drove my dream car. The sleek design, powerful engine, and smooth handling make every drive an exhilarating experience.",
+    "authorImage": "./images/customers/01.jpg",
+    "authorName": "John Smith",
+    "authorTitle": "Marketing Manager",
+    "cardBgImage": "./images/customers/large-01.jpg"
+  },
+  {
+    "testimonialText": "My new car is not just a mode of transportation, it's a symbol of freedom and independence. It has given me the ability to explore new places and create unforgettable memories. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, aut.",
+    "authorImage": "./images/customers/02.jpg",
+    "authorName": "Emily Johnson",
+    "authorTitle": "Product Specialist",
+    "cardBgImage": "./images/customers/large-02.jpg"
+  },
+  {
+    "testimonialText": "Reliability is key when it comes to cars, and my vehicle has exceeded all expectations. From long road trips to daily commutes, it has never let me down.",
+    "authorImage": "./images/customers/03.jpg",
+    "authorName": "Ethan Davis",
+    "authorTitle": "Sales Executive",
+    "cardBgImage": "./images/customers/large-03.jpg"
+  },
+  {
+    "testimonialText": "Safety is my top priority, and my car has proven to be an exceptional protector on the road. With advanced features and sturdy construction, I feel secure knowing my loved ones are in good hands.",
+    "authorImage": "./images/customers/04.jpg",
+    "authorName": "Sophia Miller",
+    "authorTitle": "Operations Manager",
+    "cardBgImage": "./images/customers/large-04.jpg"
+  }
+]

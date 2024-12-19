@@ -1,0 +1,29 @@
+@@for (var i = 0; i < vendorReviewsShuffled.length; i++) { 
+
+<!-- Vendor Review -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 bg-body-tertiary border">
+    <div class="card-body d-flex flex-column">
+      <div class="card-title d-flex mb-3 justify-content-between align-items-center">
+        <div class="vendor-review-stars" data-rating="`+vendorReviewsShuffled[i].reviewRating+`">
+        </div>
+        <div class="fs-xs text-body-secondary">
+          <span>`+vendorReviewsShuffled[i].reviewDate+`</span>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="fs-sm d-flex align-items-center w-100">
+          <span class="reviewer-img d-inline-flex align-self-center me-3" style="width: 34px; height: 34px"><img data-src="`+vendorReviewsShuffled[i].vendorImage+`" alt="" class="object-fit-cover img-fluid rounded-1 lazy"></span>
+          <h6 class="reviewer-name m-0 text-body-secondary d-inline-block me-4">`+vendorReviewsShuffled[i].vendorName+`</h6>
+          <span class="text-body-secondary text-uppercase ms-auto">Verified</span>
+        </div>
+      </div>
+      <hr>
+      <h5 class="card-subtitle fs-6 fw-light mt-1 mb-3">`+vendorReviewsShuffled[i].reviewTitle+`</h5>
+      <p class="card-text">`+vendorReviewsShuffled[i].reviewContent+`</p>
+    </div>
+  </div>
+</div>
+<!-- END Vendor Review -->
+
+}

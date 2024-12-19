@@ -1,0 +1,33 @@
+<div class="car-photos mb-4 pb-3 position-relative">
+  
+  <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
+    <button type="button" class="btn btn-slider-zoomin p-0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-in" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+        <path d="M7 10l6 0"></path>
+        <path d="M10 7l0 6"></path>
+        <path d="M21 21l-6 -6"></path>
+     </svg>
+    </button>
+  </div>
+
+  <div id="sync1" class="owl-carousel owl-theme popup-gallery rounded-2">
+    @@for (var i = 0; i < soldCarImages.length; i++) { 
+      <div class="item rounded-2">
+        <a href="`+soldCarImages[i]+`" data-effect="mfp-zoom-in" title="">
+          <img class="img-fluid object-fit-cover rounded-2" src="`+soldCarImages[i]+`" alt="" srcset="">
+        </a>
+      </div>
+    }
+  </div>
+
+  <div id="sync2" class="owl-carousel owl-theme position-relative">
+    @@for (var i = 0; i < soldCarImages.length; i++) {
+      <div class="item rounded-2">
+        <img class="img-fluid object-fit-cover rounded-2" src="`+soldCarImages[i]+`" alt="" srcset="">
+      </div>
+    }
+  </div>
+
+</div>

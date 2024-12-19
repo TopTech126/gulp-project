@@ -1,0 +1,93 @@
+<!-- Hero Filter -->
+<section class="position-relative custom-color
+@@ if (sectionBgType !== 'plain' && sectionBgType !== 'image' && sectionBgType !== 'video') {
+  bg-body-tertiary
+}
+"
+>
+  @@ if (sectionBgType === 'plain' || sectionBgType === 'image' || sectionBgType === 'video') {
+    @@ if (sectionBgType !== 'plain') {
+      <div class="jarallax" data-jarallax data-speed="0.2" 
+        @@ if (sectionBgType === 'video') {
+          data-video-src="@@sectionBgVideo"
+          data-video-start-time="@@sectionBgVideoStartTime" 
+          data-video-end-time="@@sectionBgVideoEndTime"
+        }
+      >
+      @@ if (sectionBgType === 'image') {
+        <img class="jarallax-img lazy" data-src="@@sectionBgImage" alt="">
+      }
+    }
+    <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" 
+    style="background-color: @@sectionBgColor; background-image: @@sectionBgGradient; opacity: @@sectionBgOpacity"></span>
+  }
+    <div class="container position-relative col-xxl-8 py-5">
+      <div class="row g-0 align-items-start">
+        <div class="col-lg-4 bg-blur bg-dark bg-opacity-25 border border-light border-opacity-25 rounded-3 p-4 my-3 my-md-5 text-white">
+          <form id="hero-filter" class="row">
+            <div class="col-12 mb-3 d-grid">
+              <div class="btn-group bg-white bg-opacity-25 text-white" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btn_any" autocomplete="off" checked>
+                <label class="btn btn-outline-success custom-color border bg-body-tertiary text-body" for="btn_any">Any</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btn_new" autocomplete="off">
+                <label class="btn btn-outline-success custom-color border bg-body-tertiary text-body" for="btn_new">New</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btn_used" autocomplete="off">
+                <label class="btn btn-outline-success custom-color border bg-body-tertiary text-body" for="btn_used">Used</label>
+              </div>
+            </div>
+            <div class="col-12 mb-3 d-none">
+              <label for="auto-keyword" class="form-label text-uppercase fs-sm fw-bold">Keyword</label>
+              <input type="text" class="form-control bg-white bg-opacity-25 border-light border-opacity-50" id="auto-keyword" name="auto-keyword">
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="brand-select" class="form-label text-uppercase fs-sm fw-bold">Brand</label>
+              <select id="brand-select" name="brand-select" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select auto brand">
+                <option selected>Any</option>
+                @@for (var i = 0; i < carBrands.length; i++) {
+                  <option value="`+carBrands[i].name+`">`+carBrands[i].name+`</option> 
+                }
+              </select>
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="model-select" class="form-label text-uppercase fs-sm fw-bold">Model</label>
+              <select id="model-select" name="model-select" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select brand model">
+                <option selected>Any</option>
+              </select>
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="min-price-filter" class="form-label text-uppercase fs-sm fw-bold">Min Price</label>
+              <select id="min-price-filter" name="min-price-filter" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select min price">
+                <option selected>Any</option>
+              </select>
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="max-price-filter" class="form-label text-uppercase fs-sm fw-bold">Max Price</label>
+              <select id="max-price-filter" name="max-price-filter" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select maximum price">
+                <option selected>Any</option>
+              </select>
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="min-year-filter" class="form-label text-uppercase fs-sm fw-bold">Year (From)</label>
+              <select id="min-year-filter" name="min-year-filter" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select auto's minimum year">
+                <option selected>Any</option>
+              </select>
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="max-year-filter" class="form-label text-uppercase fs-sm fw-bold">Year (To)</label>
+              <select id="max-year-filter" name="max-year-filter" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select auto's maximum year">
+                <option selected>Any</option>
+              </select>
+            </div>
+            <div class="col-12 mt-2 d-grid">
+              <button type="submit" class="btn btn-warning text-spacing-md text-uppercase fw-bold">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@ if (sectionBgType === 'image' || sectionBgType === 'video') {
+    </div>
+  }
+</section>
+<!-- END Hero Filter -->

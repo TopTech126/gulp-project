@@ -1,0 +1,135 @@
+[
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-10T09:30:00",
+    "messageTexts": [
+      { "text": "Good morning, Ben! How can I help you today?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Ben Clark",
+    "userImage": "./images/customers/08.jpg",
+    "timestamp": "2024-04-10T09:35:00",
+    "messageTexts": [
+      { "text": "Hi Martin!" },
+      { "text": "I heard you have a new shipment of hybrid vehicles. Could you tell me more about them?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-10T09:40:00",
+    "messageTexts": [
+      { "text": "Absolutely, Ben! We've just received several models of hybrid cars. Are you looking for something compact or more on the SUV side?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Ben Clark",
+    "userImage": "./images/customers/08.jpg",
+    "timestamp": "2024-04-10T09:45:00",
+    "messageTexts": [
+      { "text": "I'm interested in compact models. What options do I have?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-10T09:50:00",
+    "messageTexts": [
+      { "text": "For compact hybrids, we have the 2024 Honda Insight and the 2024 Toyota Prius. Both are excellent choices with great fuel efficiency." }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Ben Clark",
+    "userImage": "./images/customers/08.jpg",
+    "timestamp": "2024-04-10T09:55:00",
+    "messageTexts": [
+      { "text": "Could you provide more details on the Honda Insight?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-10T10:00:00",
+    "messageTexts": [
+      { "text": "Sure thing! The 2024 Honda Insight offers up to 55 MPG in the city, has a comfortable and spacious interior, and comes with advanced safety features. The starting price is $25,000." }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Ben Clark",
+    "userImage": "./images/customers/08.jpg",
+    "timestamp": "2024-04-10T10:05:00",
+    "messageTexts": [
+      { "text": "That sounds perfect. Can I schedule a test drive?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-10T10:10:00",
+    "messageTexts": [
+      { "text": "Of course, Ben! When would you like to come in?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Ben Clark",
+    "userImage": "./images/customers/08.jpg",
+    "timestamp": "2024-04-10T10:15:00",
+    "messageTexts": [
+      { "text": "How about this Saturday at 10:00 AM?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-10T10:20:00",
+    "messageTexts": [
+      { "text": "Saturday at 10:00 AM is perfect. I'll set everything up for your test drive. Looking forward to seeing you, Ben!" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  }
+]

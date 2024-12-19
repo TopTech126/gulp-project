@@ -1,0 +1,18 @@
+<div class="container blog blog-grid blog-minimal py-5 mb-2 mb-md-4">
+  <div class="row">
+
+    <div class="col-12">
+      @@include("./partials/_blog/_author-box-profile.html")
+    </div>
+
+    <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 mx-auto">
+    @@loop("./partials/_loops/_blog/_blog-author-article.html", "./data/blogs.json")
+    </div>
+
+    <!-- Pagination -->
+    <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 mx-auto mt-1">
+      @@include('./partials/_pagination.html')
+    </div>
+
+  </row>
+</div>

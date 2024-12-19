@@ -1,0 +1,274 @@
+#listing-images {
+  .image-upload {
+    --#{$prefix}border-style: dashed;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+
+    input {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-size: 999px;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    .upload-icon {
+      width: 24px;
+      height: 24px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 2px;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+        background-color: var(--#{$prefix}secondary-color) !important;
+        -webkit-mask-image: url(../icons/upload.svg);
+        mask-image: url(../icons/upload.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 24px 24px;
+        mask-size: 24px 24px;
+      }
+    }
+
+    [id*="previewImage"] {
+      display: none;
+      width: 140px;
+      height: 140px;
+      position: absolute;
+
+      .remove-upload {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: rgba(var(--#{$prefix}danger-rgb), 0.6);
+        width: 22px;
+        height: 22px;
+        z-index: 3;
+
+        &::after {
+          content: '';
+          position: absolute;
+          z-index: 0;
+          top: 50%;
+          left: 50%;
+          transform: translate(-8px, -8px);
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          position: relative;
+          background-color: #fff;
+          -webkit-mask-image: url(../icons/x.svg);
+          mask-image: url(../icons/x.svg);
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-size: 16px 16px;
+          mask-size: 16px 16px;
+        }
+
+        &:hover {
+          background-color: rgba(var(--#{$prefix}danger-rgb), 1);
+        }
+      }
+    }
+  }
+}
+
+#listing-videos {
+  .video-upload {
+    --#{$prefix}border-style: dashed;
+    min-width: 150px;
+    height: 150px;
+    overflow: hidden;
+
+    input {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-size: 999px;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    .upload-icon {
+      width: 24px;
+      height: 24px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 2px;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+        background-color: var(--#{$prefix}secondary-color) !important;
+        -webkit-mask-image: url(../icons/upload.svg);
+        mask-image: url(../icons/upload.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 24px 24px;
+        mask-size: 24px 24px;
+      }
+    }
+
+    [id*="previewVideo"] {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      .remove-upload {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: rgba(var(--#{$prefix}danger-rgb), 0.6);
+        width: 22px;
+        height: 22px;
+        z-index: 3;
+
+        &::after {
+          content: '';
+          position: absolute;
+          z-index: 0;
+          top: 50%;
+          left: 50%;
+          transform: translate(-8px, -8px);
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          position: relative;
+          background-color: #fff;
+          -webkit-mask-image: url(../icons/x.svg);
+          mask-image: url(../icons/x.svg);
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-size: 16px 16px;
+          mask-size: 16px 16px;
+        }
+
+        &:hover {
+          background-color: rgba(var(--#{$prefix}danger-rgb), 1);
+        }
+      }
+    }
+  }
+}
+
+.upload-container-360 {
+  text-align: center;
+  
+  .drag-drop-area-360 {
+  --#{$prefix}border-style: dashed;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+  
+  .image-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 110px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: var(--#{$prefix}border-radius-sm) !important;
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+      }
+    }
+
+    .image-number-360 {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: var(--#{$prefix}dark);
+      color: white;
+      border-radius: 50%;
+      padding: 0;
+      font-size: 12px;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 19px;
+      font-weight: bold;
+    }
+
+    .remove-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: var(--#{$prefix}danger);
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0ms, opacity 390ms ease-in;
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform-origin: 50% 50%;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        -webkit-mask-image: url(../icons/x.svg);
+        mask-image: url(../icons/x.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 16px 16px;
+        mask-size: 16px 16px;
+      }
+    }
+
+    &:hover {
+      .remove-btn {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  
+  .dragging {
+    opacity: 0.8;
+    border-radius: var(--#{$prefix}border-radius-sm) !important;
+  }
+  
+  .placeholder-360 {
+    --#{$prefix}border-style: dashed;
+    --#{$prefix}bg-opacity: 1;
+    background-color: rgba(var(--#{$prefix}tertiary-bg-rgb),var(--#{$prefix}bg-opacity)) !important;
+    width: 110px;
+    height: 100px;
+    border: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color) !important;
+    border-width: 2px !important;
+    border-radius: var(--#{$prefix}border-radius) !important;
+    box-sizing: border-box;
+  }
+}

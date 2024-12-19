@@ -1,0 +1,56 @@
+.social-share-modal {
+
+  .social-icons {
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      position: relative;
+      transition: all 300ms ease;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-13px, -13px);
+        width: 26px;
+        height: 26px;
+        background-color: #fff;
+        -webkit-mask-image: $facebook-logo;
+        mask-image: $facebook-logo;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 26px 26px;
+        mask-size: 26px 26px;
+      }
+      &:hover {
+        &::after {
+          background-color: #fff !important;
+        }
+      }
+
+      @mixin social-share-icon($color, $logo) {
+        &::after {
+          content: "";
+          background-color: $color;
+          -webkit-mask-image: $logo;
+          mask-image: $logo;
+        }
+        border: 1px solid rgba($color, 0.5);
+        &:hover {
+          background-color: $color;
+        }
+      }
+      
+      @each $social, $values in $social-media-icons {
+        &.#{$social} {
+          @include social-share-icon(map-get($values, iconColor), map-get($values, iconLogo));
+        }
+      }
+
+    }
+  }
+
+}

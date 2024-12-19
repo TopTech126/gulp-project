@@ -1,0 +1,345 @@
+<button class="btn btn-primary d-lg-none position-fixed bottom-0 start-0 mb-2 ms-2 z-3 d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter-widget" aria-controls="filter-widget"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-adjustments-horizontal me-2" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 6l8 0" /><path d="M16 6l4 0" /><path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 12l2 0" /><path d="M10 12l10 0" /><path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 18l11 0" /><path d="M19 18l1 0" /></svg>Filter</button>
+
+<div class="offcanvas-lg offcanvas-start" data-bs-scroll="true" tabindex="-1" id="filter-widget" aria-labelledby="filter-widget-label">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title" id="filter-widget-label">Filter</h2>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#filter-widget" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body row filter-fields">
+
+    <div class="col-12 mb-4 d-flex justify-content-between align-items-center">
+      <h3 class="fs-5 mb-0">Filter Results</h3>
+      <span class="filter-all-clear"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAllOptions(this)">Clear All</a></span>
+    </div>
+
+    <div class="col-12 mb-3 d-grid">
+      <div class="btn-group bg-white bg-opacity-25 text-white" role="group"
+        aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btn_any" autocomplete="off" checked>
+        <label class="btn btn-outline-success custom-color border bg-body-tertiary text-body" for="btn_any">Any</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btn_new" autocomplete="off">
+        <label class="btn btn-outline-success custom-color border bg-body-tertiary text-body" for="btn_new">New</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btn_used" autocomplete="off">
+        <label class="btn btn-outline-success custom-color border bg-body-tertiary text-body" for="btn_used">Used</label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="accordion accordion-flush w-100" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-make" aria-expanded="true" aria-controls="filter-make">
+              Make & Model
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-make" class="accordion-collapse collapse show">
+            <div class="accordion-body px-0 pt-0">
+              <select id="brand-select" class="form-select custom-color text-dark-emphasis mb-3" aria-label="Select car brand">
+                <option selected>Any Make</option>
+                @@for (var i = 0; i < carBrands.length; i++) {
+                  <option value="`+carBrands[i].name+`">`+carBrands[i].name+`</option> 
+                }
+              </select>
+              <select id="model-select" class="form-select custom-color text-dark-emphasis mb-3" aria-label="Select car model">
+                <option selected>Any Model</option>
+              </select>
+              <select id="trim-select" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select car trim">
+                <option selected>Any Trim</option>
+                <option value="1">AMG C 63</option>
+                <option value="1">AMG G 63</option>
+                <option value="1">AMG GLS 63</option>
+                <option value="1">AMG S 63</option>
+                <option value="2">Carrera 4S</option>
+                <option value="3">Flying Spur</option>
+                <option value="3">GT Speed</option>
+                <option value="3">HSE</option>
+                <option value="3">HSE LUX</option>
+                <option value="3">HST</option>
+                <option value="3">Stingray</option>
+                <option value="3">Ti</option>
+                <option value="3">Turbo</option>
+                <option value="3">V8</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color" type="button" data-bs-toggle="collapse" data-bs-target="#filter-price-slider" aria-expanded="false" aria-controls="filter-price-slider">
+              Price Range
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Reset</a></span>
+          </h4>
+          <div id="filter-price-slider" class="accordion-collapse collapse show">
+            <div class="accordion-body px-0 pt-4 mt-2">
+              <div id="car-price-slider" class="filter-price-slider custom-color mb-4" data-max="500000" data-min="0" data-start-max="432000" data-start-min="57000" data-step="1000"></div>
+              <div class="d-flex align-items-center">
+                <div class="w-50 pe-2">
+                  <input id="price-min" class="form-control form-control-light custom-color price-slider-value-min" type="text">
+                </div>
+                <div class="text-body-secondary">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-horizontal"
+                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 8l-4 4l4 4"></path>
+                    <path d="M17 8l4 4l-4 4"></path>
+                    <path d="M3 12l18 0"></path>
+                  </svg>
+                </div>
+                <div class="w-50 ps-2">
+                  <input id="price-max" class="form-control form-control-light custom-color price-slider-value-max" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-price" aria-expanded="false" aria-controls="filter-price">
+              Price Range 2
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-price" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0 d-flex justify-content-between">
+              <select id="min-price-filter" class="form-select custom-color text-dark-emphasis me-3" aria-label="Select minimum price">
+                <option selected>Min Price</option>
+              </select>
+              <select id="max-price-filter" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select maximum price">
+                <option selected>Max Price</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-year" aria-expanded="false" aria-controls="filter-year">
+              Year
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-year" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0 d-flex justify-content-between">
+              <select id="min-year-filter" class="form-select custom-color text-dark-emphasis me-3" aria-label="Select minimum year">
+                <option selected>Year Min</option>
+              </select>
+              <select id="max-year-filter" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select maximum year">
+                <option selected>Year Max</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-mileage" aria-expanded="false" aria-controls="filter-mileage">
+              Distance/Mileage
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-mileage" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0 d-flex justify-content-between">
+              <select id="min-mileage-filter" class="form-select custom-color text-dark-emphasis me-3" aria-label="Default select example">
+                <option selected>From Any</option>
+              </select>
+              <select id="max-mileage-filter" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Default select example">
+                <option selected>To Any</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-fuel" aria-expanded="false" aria-controls="filter-fuel">
+              Fuel Type
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-fuel" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0">
+              <div data-simplebar data-simplebar-auto-hide="false" class="filter-widget-simplebar data-simplebar">
+                @@for (var i = 0; i < carFuelTypes.length; i++) {
+                  <div class="form-check">
+                    <input class="form-check-input custom-color" type="checkbox" value="" id="fuel-`+carFuelTypes[i].alias+`">
+                    <label class="form-check-label" for="fuel-`+carFuelTypes[i].alias+`">`+carFuelTypes[i].name+`</label>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-engine" aria-expanded="false" aria-controls="filter-engine">
+              Engine Size
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-engine" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0">
+              <select class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Default select example">
+                <option selected>Any</option>
+                @@for (var i = 0; i < carEngineTypes.length; i++) {
+                  <option value="`+carEngineTypes[i].alias+`">`+carEngineTypes[i].name+`</option> 
+                }
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-transmission" aria-expanded="false" aria-controls="filter-transmission">
+              Transmission
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-transmission" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0">
+              <select class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Default select example">
+                <option selected>Any</option>
+                @@for (var i = 0; i < carTransmissionTypes.length; i++) {
+                  <option value="`+carTransmissionTypes[i].alias+`">`+carTransmissionTypes[i].name+`</option> 
+                }
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-drive-type" aria-expanded="false" aria-controls="filter-drive-type">
+              Drive Type
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-drive-type" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0">
+              <div data-simplebar data-simplebar-auto-hide="false" class="filter-widget-simplebar data-simplebar">
+                @@for (var i = 0; i < carDriveTypes.length; i++) {
+                  <div class="form-check">
+                    <input class="form-check-input custom-color" type="checkbox" value="" id="drive-`+carDriveTypes[i].alias+`">
+                    <label class="form-check-label" for="drive-`+carDriveTypes[i].alias+`">`+carDriveTypes[i].name+`</label>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-body" aria-expanded="false" aria-controls="filter-body">
+              Body Type
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-body" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0">
+              <div data-simplebar data-simplebar-auto-hide="false" class="filter-widget-simplebar data-simplebar">
+                @@for (var i = 0; i < carBodyTypes.length; i++) {
+                  <div class="form-check">
+                    <input class="form-check-input custom-color" type="checkbox" value="" id="body-`+carBodyTypes[i].alias+`">
+                    <label class="form-check-label" for="body-`+carBodyTypes[i].alias+`">`+carBodyTypes[i].name+`</label>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-seats" aria-expanded="false" aria-controls="filter-seats">
+              Seats
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-seats" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0">
+              <div data-simplebar data-simplebar-auto-hide="false" class="filter-widget-simplebar data-simplebar">
+                @@for (var i = 0; i < carSeatsTypes.length; i++) {
+                  <div class="form-check">
+                    <input class="form-check-input custom-color" type="checkbox" value="" id="seat-`+carSeatsTypes[i].alias+`">
+                    <label class="form-check-label" for="seat-`+carSeatsTypes[i].alias+`">`+carSeatsTypes[i].name+`</label>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-doors" aria-expanded="false" aria-controls="filter-doors">
+              Doors
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-doors" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0">
+              <div data-simplebar data-simplebar-auto-hide="false" class="filter-widget-simplebar data-simplebar">
+                @@for (var i = 0; i < carDoorsTypes.length; i++) {
+                  <div class="form-check">
+                    <input class="form-check-input custom-color" type="checkbox" value="" id="door-`+carDoorsTypes[i].alias+`">
+                    <label class="form-check-label" for="door-`+carDoorsTypes[i].alias+`">`+carDoorsTypes[i].name+`</label>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-features" aria-expanded="false" aria-controls="filter-features">
+              Features
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-features" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0">
+              <div data-simplebar data-simplebar-auto-hide="false" class="filter-widget-simplebar data-simplebar">
+                @@for (var i = 0; i < carFeatures.length; i++) {
+                  <div class="form-check">
+                    <input class="form-check-input custom-color" type="checkbox" value="" id="feature-`+carFeatures[i].alias+`">
+                    <label class="form-check-label" for="feature-`+carFeatures[i].alias+`">`+carFeatures[i].name+`</label>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header h2">
+            <button class="accordion-button px-0 fw-bold custom-color collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#filter-colors" aria-expanded="false" aria-controls="filter-colors">
+              Color
+            </button>
+            <span class="filter-tab-clear"><a class="link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover custom-color" href="#" onclick="event.preventDefault(); resetFilterWidgetAccordionOption(this)">Clear</a></span>
+          </h4>
+          <div id="filter-colors" class="accordion-collapse collapse">
+            <div class="accordion-body px-0 pt-0">
+              <div data-simplebar data-simplebar-auto-hide="false" class="filter-widget-simplebar data-simplebar">
+                @@for (var i = 0; i < carColorsTypes.length; i++) {
+                  <div class="form-check">
+                    <input class="form-check-input custom-color" type="checkbox" value="" id="color-`+carColorsTypes[i].alias+`">
+                    <label class="form-check-label" for="color-`+carColorsTypes[i].alias+`">`+carColorsTypes[i].name+`</label>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

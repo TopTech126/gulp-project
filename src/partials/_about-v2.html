@@ -1,0 +1,73 @@
+<div class="container col-xxl-8 py-5 p-0">
+  <div class="row">
+    <div class="col-12">
+      <img class="img-fluid object-fit-cover rounded lazy" data-src="./images/yard.jpg" alt="Our Showroom">
+    </div>
+  </div>
+</div>
+
+<div class="container col-xxl-8 py-5">
+  <div class="row g-4">
+    <div class="col-12 col-md-6">
+      <div class="pe-4">
+        <h2 class="text-uppercase mb-4 custom-color">Why Choose Us?</h2>
+        <ul class="list-unstyled">
+          <li class="mb-4">					
+            <h4 class="text-uppercase fw-bold fs-6 fs-special"><i class="fa fa-check"></i> Wide Selection of Top Brands</h4>
+            <p class="text-muted">Whether you're looking for the latest models from renowned manufacturers like Audi, BMW, or Mercedes-Benz, or seeking the thrill of a high-performance sports car from Ferrari or Lamborghini, we have it all.</p>
+          </li>
+
+          <li class="mb-4">					
+            <h4 class="text-uppercase fw-bold fs-6 fs-special"><i class="fa fa-check"></i> Unmatched Customer Service</h4>
+            <p class="text-muted">Our team of knowledgeable and friendly sales professionals is dedicated to assisting you every step of the way. From providing detailed information about each car to offering test drives, we strive to ensure you make an informed decision that fits your needs. </p>
+          </li>
+
+          <li class="mb-4">					
+            <h4 class="text-uppercase fw-bold fs-6 fs-special"><i class="fa fa-check"></i> Transparent and Hassle-Free Buying Process</h4>
+            <p class="text-muted">Our dealership upholds a policy of honesty and integrity, ensuring that you receive accurate and upfront information about each vehicle. We provide clear pricing and financing options, with no hidden fees or surprises.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      
+        <div class="accordion" id="faq-2">
+
+          @@loop("./partials/_loops/_faq-type-2.html", "./data/faq.json")
+
+        </div>
+        
+    </div>
+  </div>
+</div>
+
+@@include('./partials/_page-sections/_team-carousel.html', { 
+  sectionHeaderCentered: true, 
+  carouselNav: false, 
+  carouselDots: true 
+})
+
+@@include('./partials/_page-sections/_careers.html', {
+  sectionBgType: 'plain',
+  sectionBgGradient: '',
+  sectionHeaderCentered: true,
+})
+
+@@include('./partials/_page-sections/_counters.html', { sectionHeaderCentered: true })
+
+@@include('./partials/_page-sections/_testimonials-carousel.html', { 
+  sectionBgType: 'plain',
+  sectionBgColor: 'var(--bs-primary)',
+  sectionBgOpacity: '0.04',
+  sectionBgGradient: '',
+  sectionHeaderCentered: true, 
+  carouselNav: false, 
+  carouselDots: true 
+ })
+
+@@include('./partials/_page-sections/_featured-on.html', { 
+  sectionHeaderCentered: true,
+  carouselNav: false, 
+  carouselDots: true 
+})

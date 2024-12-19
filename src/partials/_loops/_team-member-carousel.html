@@ -1,0 +1,37 @@
+<!-- Team Member -->
+<div class="item">
+  <div class="team-card overflow-hidden custom-color">
+    <div class="image-holder">
+      <img data-src="@@image" class="img-fluid img-grayscale rounded-3 lazy" alt="Melania Turner">
+    </div>
+    <h2 class="team-name fs-3">@@name</h2>
+    <h3 class="team-title text-uppercase fs-sm mb-3">@@title</h3>
+    <div class="team-bio">
+      <button type="button" class="btn btn-dark text-uppercase fs-xs" data-bs-toggle="modal" data-bs-target="#teamBio" data-bs-member-id="@@id" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+        Read Bio
+      </button>
+    </div>
+    <div class="team-social">
+      <nav class="m-0">
+        <ul class="p-0 mb-2">
+          @@if (x) {
+            <li><a href="@@x" class="social-brand x"><span class="label">X</span></a></li>
+          }
+          @@if (facebook) {
+            <li><a href="@@facebook" class="social-brand facebook"><span class="label">Facebook</span></a></li>
+          }
+          @@if (instagram) {
+            <li><a href="@@instagram" class="social-brand instagram"><span class="label">Instagram</span></a></li>
+          }
+          @@if (linkedin) {
+            <li><a href="@@linkedin" class="social-brand linkedin"><span class="label">LinkedIn</span></a></li>
+          }
+          @@if (email) {
+            <li><a href="mailto:@@email" class="social-brand email"><span class="label">Email</span></a></li>
+          }
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- END Team Member -->

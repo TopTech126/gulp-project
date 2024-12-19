@@ -1,0 +1,88 @@
+[
+  {
+  "reviewerVerdict": "My new car has been an absolute game-changer in my life. It's not just a mode of transportation; it's a symbol of freedom and independence. With this car, I've had the opportunity to explore new places, create unforgettable memories, and embark on exciting adventures. Whether I'm cruising down the open highway or navigating through the bustling streets of Toronto, it never fails to deliver an exceptional experience. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, aut.",
+  "reviewerImage": "./images/team/06.jpg",
+  "reviewerName": "Josh Passman",
+  "reviewerAge": "25 to 30",
+  "reviewerLocation": "Toronto, Canada",
+  "reviewTitle": "A Game-Changer!",
+  "pros": "- Effortless parking<br>- Serene highway experience<br>- Superior seats<br>- Precise steering and strong brakes<br>- Seamless Bluetooth connectivity",
+  "cons": "- Limited cargo space<br>- Aging interior<br>- Subpar display screen",
+  "recommends": "Yes",
+  "helpful": [
+    {
+      "name": "Yes",
+      "rating": 756
+    },
+    {
+      "name": "No",
+      "rating": 1
+    }
+  ],
+  "reviewRating": [
+    {
+      "alias": "safety",
+      "name": "Safety",
+      "rating": 10,
+      "review": "The safety features of this vehicle are outstanding. It provides a strong sense of security, with advanced safety technologies that make every journey worry-free. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!",
+      "reviewGrade": "Outstanding"
+    },
+    {
+      "alias": "comfort",
+      "name": "Comfort",
+      "rating": 7,
+      "review": "While the comfort level is decent, there's room for improvement. The seats are reasonably comfortable, but a few additional amenities could enhance the overall comfort experience. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!",
+      "reviewGrade": "Satisfactory"
+    },
+    {
+      "alias": "economy",
+      "name": "Economy",
+      "rating": 7,
+      "review": "In terms of fuel economy, this vehicle performs adequately. It's not the most fuel-efficient option in its class, but it strikes a reasonable balance between power and efficiency. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!",
+      "reviewGrade": "Satisfactory"
+    },
+    {
+      "alias": "interior",
+      "name": "Interior",
+      "rating": 5,
+      "review": "The interior of this vehicle is a standout feature. It boasts high-quality materials, a well-designed cabin, and plenty of creature comforts that elevate the driving experience. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!",
+      "reviewGrade": "Average"
+    },
+    {
+      "alias": "exterior",
+      "name": "Exterior",
+      "rating": 8,
+      "review": "The exterior design is decent, but it might not turn heads on the road. It's a matter of personal preference, as some may appreciate its understated elegance. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!",
+      "reviewGrade": "Good"
+    },
+    {
+      "alias": "driving",
+      "name": "Driving",
+      "rating": 7,
+      "review": "The overall driving experience is quite enjoyable. This vehicle offers a smooth ride, responsive handling, and a good balance between comfort and sportiness. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!",
+      "reviewGrade": "Pass"
+    },
+    {
+      "alias": "performance",
+      "name": "Performance",
+      "rating": 9,
+      "review": "Performance enthusiasts will love this vehicle. It delivers strong acceleration, precise handling, and an exhilarating driving experience that sets it apart from the competition. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!",
+      "reviewGrade": "Outstanding"
+    },
+    {
+      "alias": "reliability",
+      "name": "Reliability",
+      "rating": 7,
+      "review": "When it comes to reliability, this vehicle has a solid track record. It's known for its dependable performance and low maintenance costs, making it a trustworthy choice. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!",
+      "reviewGrade": "Satisfactory"
+    },
+    {
+      "alias": "practicality",
+      "name": "Practicality",
+      "rating": 6,
+      "review": "In terms of practicality, this vehicle offers a decent amount of space and functionality. It's suitable for daily commuting and errands, but some may find it lacking in terms of versatility. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, animi aspernatur recusandae molestiae neque iure rem alias dolores quidem, facilis deleniti, inventore suscipit nulla. Ipsam dignissimos doloribus voluptas, nulla illo possimus, tempora repellendus voluptate soluta recusandae tenetur vero maxime exercitationem fuga at odio sint similique ut praesentium repudiandae, perspiciatis odit nobis? Eveniet recusandae libero cumque a animi voluptatum. Hic, inventore!",
+      "reviewGrade": "Pass"
+    }
+  ]
+}
+]

@@ -1,0 +1,36 @@
+<ul class="nav flex-column border-transparent">
+  <li class="nav-item my-1">
+    <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1 
+    @@if (currPage === 'profile') {@@activeClass}
+    @@if (currPage !== 'profile') {@@normalClass}"
+      href="./account-settings-profile.html"><!-- Download SVG icon from http://tabler-icons.io/i/user-cog -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon me-3" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h2.5"></path><path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M19.001 15.5v1.5"></path><path d="M19.001 21v1.5"></path><path d="M22.032 17.25l-1.299 .75"></path><path d="M17.27 20l-1.3 .75"></path><path d="M15.97 17.25l1.3 .75"></path><path d="M20.733 20l1.3 .75"></path></svg>Profile</a>
+  </li>
+  <li class="nav-item my-1">
+    <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1 
+    @@if (currPage === 'security') {@@activeClass}
+    @@if (currPage !== 'security') {@@normalClass}"
+      href="./account-settings-security.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-shield me-3" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 21v-2a4 4 0 0 1 4 -4h2" /><path d="M22 16c0 4 -2.5 6 -3.5 6s-3.5 -2 -3.5 -6c1 0 2.5 -.5 3.5 -1.5c1 1 2.5 1.5 3.5 1.5z" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /></svg>Security</a>
+  </li>
+  <li class="nav-item my-1">
+    <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1 
+    @@if (currPage === 'notifications') {@@activeClass}
+    @@if (currPage !== 'notifications') {@@normalClass}"
+      href="./account-settings-notifications.html"><!-- Download SVG icon from http://tabler-icons.io/i/bell-cog -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon me-3" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 17h-8a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6a2 2 0 1 1 4 0a7 7 0 0 1 4 6v.5"></path><path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M19.001 15.5v1.5"></path><path d="M19.001 21v1.5"></path><path d="M22.032 17.25l-1.299 .75"></path><path d="M17.27 20l-1.3 .75"></path><path d="M15.97 17.25l1.3 .75"></path><path d="M20.733 20l1.3 .75"></path><path d="M9 17v1a3 3 0 0 0 3 3"></path></svg>Notifications</a>
+  </li>
+  <li class="nav-item my-1">
+    <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1 
+    @@if (currPage === 'messages') {@@activeClass}
+    @@if (currPage !== 'messages') {@@normalClass}"
+      href="./account-settings-messages.html"><!-- Download SVG icon from http://tabler-icons.io/i/message-cog -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon me-3" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 9h8"></path><path d="M8 13h6"></path><path d="M12.031 18.581l-4.031 2.419v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v5"></path><path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M19.001 15.5v1.5"></path><path d="M19.001 21v1.5"></path><path d="M22.032 17.25l-1.299 .75"></path><path d="M17.27 20l-1.3 .75"></path><path d="M15.97 17.25l1.3 .75"></path><path d="M20.733 20l1.3 .75"></path></svg>
+      Messages</a>
+  </li>
+  <li class="nav-item my-1">
+    <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1 
+    @@if (currPage === 'delete') {@@activeClass}
+    @@if (currPage !== 'delete') {@@normalClass}"
+      href="./account-settings-delete.html"><svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-x me-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" /><path d="M22 22l-5 -5" /><path d="M17 22l5 -5" /></svg>Delete Account</a>
+  </li>
+</ul>

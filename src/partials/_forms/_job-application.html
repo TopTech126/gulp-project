@@ -1,0 +1,190 @@
+<!-- Career Application -->
+<form id="job-application-form" action="">
+  <div class="row border-bottom mb-4">
+    <div class="col-lg-4">
+      <h3 class="fs-6 fw-bold">Personal Information</h3>
+      <p class="fs-sm text-body-secondary">
+        Tell us about yourself.
+      </p>
+    </div>
+    <div class="col-lg-8 col-xl-5">
+      <div class="mb-4">
+        <label class="form-label fw-bold" for="applicant-full-name">Full Name</label>
+        <input type="text" class="form-control custom-color" id="applicant-full-name" name="applicant-full-name" placeholder="Your full name">
+      </div>
+      <div class="mb-4">
+        <label class="form-label fw-bold" for="applicant-email">Email Address</label>
+        <input type="email" class="form-control custom-color" id="applicant-email" name="applicant-email" placeholder="Your email address">
+      </div>
+      <div class="mb-4">
+        <label class="form-label fw-bold" for="applicant-phone">Phone number <span class="text-secondary fs-sm">(Optional)</span></label>
+        <input type="text" class="form-control custom-color" id="applicant-phone" name="applicant-phone" placeholder="Your phone number">
+      </div>
+      <div class="mb-4">
+        <label class="form-label fw-bold" for="applicant-photo">Photo</label>
+        <input class="form-control custom-color" type="file" id="applicant-photo" name="applicant-photo" aria-describedby="photoHelpBlock">
+        <div id="photoHelpBlock" class="form-text">
+          Max file size is 5 MB. We accept PNG, JPG and JPEG.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row border-bottom mb-4">
+    <div class="col-lg-4">
+      <h3 class="fs-6 fw-bold">CV / Resume</h3>
+      <p class="fs-sm text-body-secondary">
+        Attach your CV or resume file.
+      </p>
+    </div>
+    <div class="col-lg-8 col-xl-5">
+      <div class="mb-4">
+        <input class="form-control custom-color" type="file" id="applicant-cv" name="applicant-cv" aria-describedby="cvHelpBlock">
+        <div id="cvHelpBlock" class="form-text">
+          Max file size is 5 MB. We accept PDF, DOC, DOCX, PNG and JPG files.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row border-bottom mb-4">
+    <div class="col-lg-4">
+      <h3 class="fs-6 fw-bold">Cover Letter</h3>
+      <p class="fs-sm text-body-secondary">
+        Attach your cover letter.
+      </p>
+    </div>
+    <div class="col-lg-8 col-xl-5">
+      <div class="mb-4">
+        <input class="form-control custom-color" type="file" id="applicant-cover-letter" name="applicant-cover-letter" aria-describedby="coverLetterHelpBlock">
+        <div id="coverLetterHelpBlock" class="form-text">
+          Max file size is 5 MB. We accept PDF, DOC, DOCX, PNG and JPG files.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row border-bottom mb-4">
+    <div class="col-lg-4">
+      <h3 class="fs-6 fw-bold">Other Document</h3>
+      <p class="fs-sm text-body-secondary">
+        Attach other relevant document.
+      </p>
+    </div>
+    <div class="col-lg-8 col-xl-5">
+      <div class="mb-4">
+        <input class="form-control custom-color" type="file" id="applicant-other-document" name="applicant-other-document" aria-describedby="otherDocumentHelpBlock">
+        <div id="otherDocumentHelpBlock" class="form-text">
+          Max file size is 5 MB. We accept PDF, DOC, DOCX, PNG and JPG files.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row border-bottom mb-4">
+    <div class="col-lg-4">
+      <h3 class="fs-6 fw-bold">Message <em><span class="text-secondary fs-sm">(Optional)</span></em></h3>
+      <p class="fs-sm text-body-secondary">
+        Add any extra notes.
+      </p>
+    </div>
+    <div class="col-lg-8 col-xl-5">
+      <div class="mb-4">
+        <textarea class="form-control custom-color" id="applicant-message" name="applicant-message" rows="4"
+          placeholder="Your message..."></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row border-bottom mb-4">
+    <div class="col-lg-4">
+      <h3 class="fs-6 fw-bold">Questions</h3>
+      <p class="fs-sm text-body-secondary">
+        Tell us more about yourself.
+      </p>
+    </div>
+    <div class="col-lg-8 col-xl-5">
+      <div class="mb-4">
+        <label class="form-label fw-bold" for="applicant-cover-letter">Why do you think you will make a great addition to our team?</label>
+        <textarea class="form-control custom-color" id="applicant-addtion-message" name="applicant-addtion-message" rows="4"></textarea>
+      </div>
+      <div class="mb-4">
+        <label class="form-label fw-bold">Which is your favorite?</label>
+        <div class="space-x-2">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input custom-color" type="radio" id="applicant-platform-win" name="applicant-platform"
+              value="option1">
+            <label class="form-check-label" for="applicant-platform-win">Windows</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input custom-color" type="radio" id="applicant-platform-mac" name="applicant-platform"
+              value="option2">
+            <label class="form-check-label" for="applicant-platform-mac">Mac</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input custom-color" type="radio" id="applicant-platform-lin" name="applicant-platform"
+              value="option2">
+            <label class="form-check-label" for="applicant-platform-lin">Linux</label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="form-label fw-bold">Which of these platforms are you conversant with?</label>
+        <div class="space-y-2">
+          <div class="form-check">
+            <input class="form-check-input custom-color" type="checkbox" value="" id="applicant-git-bitbucket"
+              name="applicant-git-bitbucket">
+            <label class="form-check-label" for="applicant-git-bitbucket">BitBucket</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input custom-color" type="checkbox" value="" id="applicant-git-github"
+              name="applicant-git-github">
+            <label class="form-check-label" for="applicant-git-github">GitHub</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input custom-color" type="checkbox" value="" id="applicant-git-gitlab"
+              name="applicant-git-gitlab">
+            <label class="form-check-label" for="applicant-git-gitlab">GitLab</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input custom-color" type="checkbox" value="" id="applicant-git-gitorious"
+              name="applicant-git-gitorious">
+              <label class="form-check-label" for="applicant-git-gitorious">Gitorious</label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="form-label fw-bold" for="applicant-salary">Please state your salary expectation per year in USD.</label>
+          <input type="text" class="form-control custom-color" id="applicant-salary" name="applicant-salary">
+        </div>
+        <div class="mb-4">
+          <label class="form-label fw-bold">Will you be willing to relocate to the USA?</label>
+          <div class="space-y-2">
+            <div class="form-check">
+              <input class="form-check-input custom-color" type="radio" id="applicant-relocation-yes" name="applicant-relocation"
+                value="option1">
+              <label class="form-check-label" for="applicant-relocation-yes">Yes</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input custom-color" type="radio" id="applicant-relocation-no" name="applicant-relocation"
+                value="option2">
+              <label class="form-check-label" for="applicant-relocation-no">No</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input custom-color" type="radio" id="applicant-relocation-maybe" name="applicant-relocation"
+                value="option2">
+              <label class="form-check-label" for="applicant-relocation-maybe">Maybe</label>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-lg-4">
+    </div>
+    <div class="col-lg-8 col-xl-5">
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input custom-color" id="confirm-terms-submit-application" name="confirm-terms-submit-application" checked>
+        <label class="form-check-label text-body-secondary" for="confirm-terms-submit-application">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+      </div>
+      <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit Application</button>
+    </div>
+  </div>
+
+</form>
+<!-- END Career Application -->

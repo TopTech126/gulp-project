@@ -1,0 +1,41 @@
+<!-- Featured Cars  Carousel -->
+<section class="featured-cars-grid featured-cars-carousel @@if (featuredFullWidth) {px-4} position-relative custom-color
+@@ if (sectionBgType !== 'plain' && sectionBgType !== 'image' && sectionBgType !== 'video') {
+  bg-body-tertiary
+}
+"
+>
+  @@ if (sectionBgType === 'plain' || sectionBgType === 'image' || sectionBgType === 'video') {
+    @@ if (sectionBgType !== 'plain') {
+      <div class="jarallax" data-jarallax data-speed="0.2" 
+        @@ if (sectionBgType === 'video') {
+          data-video-src="@@sectionBgVideo"
+          data-video-start-time="@@sectionBgVideoStartTime" 
+          data-video-end-time="@@sectionBgVideoEndTime"
+        }
+      >
+      @@ if (sectionBgType === 'image') {
+        <img class="jarallax-img lazy" data-src="@@sectionBgImage" alt="">
+      }
+    }
+    <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" 
+    style="background-color: @@sectionBgColor; background-image: @@sectionBgGradient; opacity: @@sectionBgOpacity"></span>
+  }
+  <div class="@@if (featuredFullWidth) {container-fluid col-12} @@if (!featuredFullWidth) {container col-xxl-8}  py-5 px-3 px-sm-0 position-relative">
+    <h2 class="fs-5 text-uppercase pb-3 mb-1 custom-color @@if (sectionHeaderCentered) { text-center }">Featured Cars</h2>
+    <div id="featured-cars-carousel" class="owl-carousel owl-theme mt-4 @@if (featuredFullWidth) {featured-full-width} @@if (!featuredFullWidth) {featured-normal-width}"
+    data-loop="@@carouselLoop"
+    data-nav="@@carouselNav"
+    data-dots="@@carouselDots"
+    data-autoplay="@@carouselAutoplay"
+    >
+
+      @@loop("./partials/_loops/_car/_featured-car-carousel.html", "./data/featured-cars.json")
+
+    </div>
+  </div>
+  @@ if (sectionBgType === 'image' || sectionBgType === 'video') {
+    </div>
+  }
+</section>
+<!-- END Featured Cars  Carousel -->

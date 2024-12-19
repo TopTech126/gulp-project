@@ -1,0 +1,135 @@
+[
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-11T14:00:00",
+    "messageTexts": [
+      { "text": "Hello Michael! Welcome back to our Auto Emporium. How may I assist you today?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Michael Brown",
+    "userImage": "./images/customers/06.jpg",
+    "timestamp": "2024-04-11T14:05:00",
+    "messageTexts": [
+      { "text": "Hi Dora, thank you for reaching out." },
+      { "text": "I'm on the lookout for a new electric vehicle. What models do you currently have in stock?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-11T14:10:00",
+    "messageTexts": [
+      { "text": "We've got several exciting electric vehicle options available. Are you looking for something in the sedan category or more of an SUV?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Michael Brown",
+    "userImage": "./images/customers/06.jpg",
+    "timestamp": "2024-04-11T14:15:00",
+    "messageTexts": [
+      { "text": "I'd prefer an SUV. Something that can handle a bit of off-road, has good range, and ample cargo space." }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-11T14:20:00",
+    "messageTexts": [
+      { "text": "In that case, I'd recommend the 2024 Tesla Model X and the 2024 Ford Mustang Mach-E. Both are excellent choices for what you're looking for." }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Michael Brown",
+    "userImage": "./images/customers/06.jpg",
+    "timestamp": "2024-04-11T14:25:00",
+    "messageTexts": [
+      { "text": "I've heard good things about the Mustang Mach-E. Could you give me more details on that?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-11T14:30:00",
+    "messageTexts": [
+      { "text": "Certainly! The 2024 Ford Mustang Mach-E offers an impressive range of up to 300 miles on a single charge. It features all-wheel drive, advanced driver-assist technologies, and a spacious interior with about 59.7 cubic feet of cargo space when the rear seats are folded down. The starting price is around $43,000." }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Michael Brown",
+    "userImage": "./images/customers/06.jpg",
+    "timestamp": "2024-04-11T14:35:00",
+    "messageTexts": [
+      { "text": "That sounds like what I'm looking for. Can I schedule a test drive?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-11T14:40:00",
+    "messageTexts": [
+      { "text": "Absolutely, Michael! When would be a convenient time for you to visit us?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Michael Brown",
+    "userImage": "./images/customers/06.jpg",
+    "timestamp": "2024-04-11T14:45:00",
+    "messageTexts": [
+      { "text": "How does next Monday at 2:00 PM sound?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-11T14:50:00",
+    "messageTexts": [
+      { "text": "Monday at 2:00 PM is perfect. I'll have the Mustang Mach-E ready for your test drive. See you then, Michael!" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  }
+]

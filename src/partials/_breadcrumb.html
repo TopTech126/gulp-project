@@ -1,0 +1,191 @@
+@@if (breadcrumbStyle === 1) {
+  <!-- Breadcrumb Style @@breadcrumbStyle -->
+  <div class="breadcrumb-style-@@breadcrumbStyle 
+  @@if (!breadcrumbBgColor) { bg-body-tertiary } 
+  @@if (breadcrumbBgColor === 'dark') { bg-dark } 
+  @@if (breadcrumbCssClass) { @@breadcrumbCssClass }  
+  @@if (breadcrumbBgImage) { has-bg-image jarallax }
+  position-relative z-1 py-4" 
+  @@if (breadcrumbBgImage) { data-jarallax data-speed="0.2" }
+  style="--bs-bg-opacity: @@breadcrumbBgOpacity">
+    @@if (breadcrumbBgImage) { 
+      <img class="jarallax-img lazy" data-src="@@breadcrumbBgImage" alt="">    
+      <div class="position-absolute top-0 start-0 w-100 h-100 z-0  
+      @@if (!breadcrumbBgColor) { bg-body-tertiary } 
+      @@if (breadcrumbBgColor === 'dark') { bg-dark } 
+      @@if (breadcrumbCssClass) { @@breadcrumbCssClass }" 
+      style="--bs-bg-opacity:  @@breadcrumbBgOpacity"></div>
+    }
+    <div class="container d-lg-flex position-relative z-1 justify-content-between align-items-center py-2 py-lg-3">
+      @@if (breadcrumbTitle) {
+        <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+          <h3 class="h3 mb-3 mb-lg-0">@@breadcrumbTitle</h3>
+        </div>
+      }
+      <div class="order-lg-2 mb-0">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start m-0 fs-sm">
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis text-nowrap link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-50-hover" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-home mt-n1-sm me-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                </svg>Home</a>
+            </li>
+            @@if (breadcrumbItems) {
+              @@include('./partials/_breadcrumbs/@@breadcrumbItems')
+            }
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- END Breadcrumb Style @@breadcrumbStyle -->
+}
+
+@@if (breadcrumbStyle === 2) {
+  <!-- Breadcrumb Style @@breadcrumbStyle -->
+  <div class="breadcrumb-style-@@breadcrumbStyle 
+  @@if (!breadcrumbBgColor) { bg-body-tertiary } 
+  @@if (breadcrumbBgColor === 'dark') { bg-dark } 
+  @@if (breadcrumbCssClass) { @@breadcrumbCssClass }  
+  @@if (breadcrumbBgImage) { has-bg-image jarallax }
+  position-relative z-1 py-1" 
+  @@if (breadcrumbBgImage) { data-jarallax data-speed="0.2" }
+  style="--bs-bg-opacity: @@breadcrumbBgOpacity">
+    @@if (breadcrumbBgImage) { 
+      <img class="jarallax-img lazy" data-src="@@breadcrumbBgImage" alt="">    
+      <div class="position-absolute top-0 start-0 w-100 h-100 z-0  
+      @@if (!breadcrumbBgColor) { bg-body-tertiary } 
+      @@if (breadcrumbBgColor === 'dark') { bg-dark } 
+      @@if (breadcrumbCssClass) { @@breadcrumbCssClass }" 
+      style="--bs-bg-opacity:  @@breadcrumbBgOpacity"></div>
+    }
+    <div class="container d-lg-flex position-relative z-1 justify-content-between align-items-center py-2 py-lg-3">
+      @@if (breadcrumbTitle) {
+        <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+          <h1 class="h3 mb-3 mb-lg-0">@@breadcrumbTitle</h1>
+        </div>
+      }
+      <div class="order-lg-2 mb-0">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start m-0 fs-sm">
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis text-nowrap link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-50-hover" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-home mt-n1-sm me-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                </svg>Home</a>
+            </li>
+            @@if (breadcrumbItems) {
+              @@include('./partials/_breadcrumbs/@@breadcrumbItems')
+            }
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- END Breadcrumb Style @@breadcrumbStyle -->
+}
+
+@@if (breadcrumbStyle === 3) {
+  <!-- Breadcrumb Style @@breadcrumbStyle -->
+  <div class="breadcrumb-style-@@breadcrumbStyle 
+  @@if (!breadcrumbBgColor) { bg-body-tertiary } 
+  @@if (breadcrumbBgColor === 'dark') { bg-dark } 
+  @@if (breadcrumbCssClass) { @@breadcrumbCssClass }  
+  @@if (breadcrumbBgImage) { has-bg-image jarallax }
+  position-relative z-1 py-1" 
+  @@if (breadcrumbBgImage) { data-jarallax data-speed="0.2" }
+  style="--bs-bg-opacity: @@breadcrumbBgOpacity">
+    @@if (breadcrumbBgImage) { 
+      <img class="jarallax-img lazy" data-src="@@breadcrumbBgImage" alt="">    
+      <div class="position-absolute top-0 start-0 w-100 h-100 z-0  
+      @@if (!breadcrumbBgColor) { bg-body-tertiary } 
+      @@if (breadcrumbBgColor === 'dark') { bg-dark } 
+      @@if (breadcrumbCssClass) { @@breadcrumbCssClass }" 
+      style="--bs-bg-opacity:  @@breadcrumbBgOpacity"></div>
+    }
+    <div class="container d-lg-flex position-relative z-1 flex-column justify-content-between align-items-start py-3 py-lg-5 pb-lg-4">
+      @@if (breadcrumbTitle) {
+        <div class="order-lg-1 pe-lg-4 mb-4 mb-lg-5 text-center text-lg-start">
+          <h1 class="h3 mb-3 mb-lg-0">@@breadcrumbTitle</h1>
+        </div>
+      }
+      <div class="order-lg-2 mb-0">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start m-0 fs-sm">
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis text-nowrap link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-50-hover" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-home mt-n1-sm me-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                </svg>Home</a>
+            </li>
+            @@if (breadcrumbItems) {
+              @@include('./partials/_breadcrumbs/@@breadcrumbItems')
+            }
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- END Breadcrumb Style @@breadcrumbStyle -->
+}
+
+@@if (breadcrumbStyle === 4) {
+  <!-- Breadcrumb Style @@breadcrumbStyle -->
+  <div class="breadcrumb-style-@@breadcrumbStyle 
+  @@if (!breadcrumbBgColor) { bg-body-tertiary } 
+  @@if (breadcrumbBgColor === 'dark') { bg-dark } 
+  @@if (breadcrumbCssClass) { @@breadcrumbCssClass }  
+  @@if (breadcrumbBgImage) { has-bg-image jarallax }
+  position-relative z-1 py-1"
+  @@if (breadcrumbBgImage) { data-jarallax data-speed="0.2" }
+  style="--bs-bg-opacity: @@breadcrumbBgOpacity">
+    @@if (breadcrumbBgImage) { 
+      <img class="jarallax-img lazy" data-src="@@breadcrumbBgImage" alt="">    
+      <div class="position-absolute top-0 start-0 w-100 h-100 z-0  
+      @@if (!breadcrumbBgColor) { bg-body-tertiary } 
+      @@if (breadcrumbBgColor === 'dark') { bg-dark } 
+      @@if (breadcrumbCssClass) { @@breadcrumbCssClass }" 
+      style="--bs-bg-opacity:  @@breadcrumbBgOpacity"></div>
+    }
+    <div class="container d-lg-flex position-relative z-1 flex-column justify-content-between align-items-center py-3 py-lg-5 pb-lg-4">
+      @@if (breadcrumbTitle) {
+        <div class="order-lg-1 pe-lg-4 mb-4 mb-lg-5 text-center text-lg-start">
+          <h1 class="h3 mb-3 mb-lg-0">@@breadcrumbTitle</h1>
+        </div>
+      }
+      <div class="order-lg-2 mb-0">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start m-0 fs-sm">
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis text-nowrap link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-50-hover" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-home mt-n1-sm me-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                </svg>Home</a>
+            </li>
+            @@if (breadcrumbItems) {
+              @@include('./partials/_breadcrumbs/@@breadcrumbItems')
+            }
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- END Breadcrumb Style @@breadcrumbStyle -->
+}

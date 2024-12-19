@@ -1,0 +1,217 @@
+<!-- Review Details - Owners Review -->
+<div class="container">
+  <form id="owners-review-search" class="row g-3 justify-content-start pb-4 pt-0 border-bottom mb-5">
+    <div class="col-12 col-md-auto">
+      <select class="form-select custom-color text-dark-emphasis rounded-1" id="review-sort-by" name="review-sort-by" aria-label="Sort reviews">
+        <option selected>Sort by</option>
+        <option value="top">Top</option>
+        <option value="recent">Most Recent</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-auto">
+      <select class="form-select custom-color text-dark-emphasis rounded-1" id="review-filter-by" name="review-filter-by" aria-label="Filter reviews">
+        <option selected>Filter by</option>
+        <option value="all">All Reviewers</option>
+        <option value="verified">Verified Only</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-auto">
+      <select class="form-select custom-color text-dark-emphasis rounded-1" id="review-stars" name="review-stars" aria-label="Select reviews star rating">
+        <option selected>All Stars</option>
+        <option value="5-star">5 Star Only</option>
+        <option value="4-star">4 Star Only</option>
+        <option value="3-star">3 Star Only</option>
+        <option value="2-star">2 Star Only</option>
+        <option value="1-star">1 Star Only</option>
+        <option value="positive">All Positive</option>
+        <option value="critical">All Critical</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-auto ms-auto">
+      <button type="button" class="btn btn-warning w-100 d-flex justify-content-start align-items-center rounded-1"
+        data-bs-toggle="modal" data-bs-target="#addReview">
+        <span class="me-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"></path>
+            <path d="M10 16h6"></path>
+            <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+            <path d="M4 8h3"></path>
+            <path d="M4 12h3"></path>
+            <path d="M4 16h3"></path>
+          </svg>
+        </span>
+        <span class="fs-sm fw-bold text-uppercase">Add Review</span>
+      </button>
+    </div>
+  </form>
+  @@include('./partials/_modals/_add-review.html')
+  @@for (var i = 0; i < ownerReviewDetails.length; i++) {
+  <div id="review-id-`+(i+1)+`" class="row mb-4 pb-5 border-bottom">
+    <div class="col-md-2 order-0 position-relative mb-4 mb-md-0">
+      <div class="vr opacity-15 position-absolute end-0 top-0 h-100 d-none d-md-block m-0"></div>
+      <div class="pos-left fs-sm d-flex flex-column align-items-start position-relative pb-3 pb-md-0">
+        <span class="reviewer-img mb-3" style="width: 82px; height: 82px">
+          <img data-src="`+ownerReviewDetails[i].reviewerImage+`" alt="" class="object-fit-cover img-fluid rounded-1 lazy">
+        </span>
+        <h5 class="reviewer-name fs-sm mb-1">`+ownerReviewDetails[i].reviewerName+`</h5>
+        <span class="review-date mb-3 fs-xs fst-italic text-muted">`+ownerReviewDetails[i].reviewDate+`</span>
+        <div class="d-flex mb-md-2">
+          <span class="text-muted me-1">Reviews:</span>
+          <span class="fw-bold reviewer-reviews-count">1</span>
+        </div>
+        <div class="d-flex mb-md-2">
+          <span class="text-muted me-1">Votes:</span>
+          <span class="fw-bold reviewer-votes-count">`+ownerReviewDetails[i].helpful[0].rating+`</span>
+        </div>
+        <div class="d-flex mb-md-2">
+          <span class="text-muted me-1">Age:</span>
+          <span class="fw-bold reviewer-age">`+ownerReviewDetails[i].reviewerAge+`</span>
+        </div>
+        <div class="d-flex flex-md-column">
+          <span class="text-muted me-1">Location:</span> <br>
+          <span class="fw-bold reviewer-location">`+ownerReviewDetails[i].reviewerLocation+`</span>
+        </div>
+        <hr class="opacity-15 position-absolute end-0 bottom-0 w-100 d-block d-md-none m-0">
+      </div>
+    </div>
+    <div class="col-md-6 order-3 order-md-1">
+      <div class="ms-md-2">
+        <h4 class="h5">`+ownerReviewDetails[i].reviewTitle+`</h4>
+        <h5 class="mb-1 fs-6 d-flex align-items-center text-success">
+          <!-- Download SVG icon from http://tabler-icons.io/i/checks -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 12l5 5l10 -10"></path><path d="M2 12l5 5m5 -5l5 -5"></path></svg>
+        Pros</h5>
+        <div class="mb-3">
+          `+ownerReviewDetails[i].pros+`
+        </div>
+        <h5 class="mb-1 fs-6 d-flex align-items-center text-danger">
+          <!-- Download SVG icon from http://tabler-icons.io/i/circle-half-vertical -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M3 12h18"></path></svg>
+        Cons</h5>
+        <div class="mb-3">
+          `+ownerReviewDetails[i].cons+`
+        </div>
+        <h5 class="mb-1 fs-6 d-flex align-items-center text-info">
+          <!-- Download SVG icon from http://tabler-icons.io/i/360 -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M17 15.328c2.414 -.718 4 -1.94 4 -3.328c0 -2.21 -4.03 -4 -9 -4s-9 1.79 -9 4s4.03 4 9 4"></path><path d="M9 13l3 3l-3 3"></path></svg>
+        Verdict</h5>
+        <p>`+ownerReviewDetails[i].reviewerVerdict+`</p>
+        <div id="review-votes" class="d-inline-flex align-items-center mt-2">
+          <div class="me-3 fs-special">Helpful?</div>
+          <div class="me-3 d-flex align-items-center">
+            <span id="vote-yes" class="btn btn-outline-secondary btn-sm rounded-1 fw-bold fs-sm me-2" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .55rem;">`+ownerReviewDetails[i].helpful[0].name+`</span>
+            <span id="vote-yes-count" class="text-body-secondary">`+ownerReviewDetails[i].helpful[0].rating+`</span>
+          </div>
+          <div class="me-3 d-flex align-items-center">
+            <span id="vote-no" class="btn btn-outline-secondary btn-sm rounded-1 fw-bold fs-sm me-2" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .55rem;">`+ownerReviewDetails[i].helpful[1].name+`</span>
+            <span id="vote-no-count" class="text-body-secondary">`+ownerReviewDetails[i].helpful[1].rating+`</span>
+          </div>
+          <div class="me-3 d-flex align-items-center">
+            <span class="btn btn-outline-secondary btn-sm rounded-1 fw-bold fs-sm me-2 report-review" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .55rem;" data-bs-toggle="modal" data-bs-target="#reportReview">Report</span>
+            <span class="text-body-secondary"></span>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <div class="col-md-4 order-1 order-md-2 mb-3 mb-md-0">
+      <div class="position-relative pb-3 pb-md-0">
+        <ul class="list-group list-group-flush border-0 mb-1">
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1 rounded-top-1">
+            <div class="rating-overall d-flex justify-content-between align-items-center fw-bold pb-1">
+              <span class="fs-6">Overall</span>
+              <span class="fs-6">`+Math.round(
+                (
+                  (
+                    ownerReviewDetails[i].reviewRating[0].rating+
+                    ownerReviewDetails[i].reviewRating[1].rating+
+                    ownerReviewDetails[i].reviewRating[2].rating+
+                    ownerReviewDetails[i].reviewRating[3].rating+
+                    ownerReviewDetails[i].reviewRating[4].rating+
+                    ownerReviewDetails[i].reviewRating[5].rating+
+                    ownerReviewDetails[i].reviewRating[6].rating+
+                    ownerReviewDetails[i].reviewRating[7].rating+
+                    ownerReviewDetails[i].reviewRating[8].rating
+                  )/9
+                )*2
+              )+`/10</span>
+            </div>
+          </li>
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1">
+            @@include('./partials/_loops/_owner-review.html', {
+              "alias": '`+ownerReviewDetails[i].reviewRating[0].alias+`',
+              "name": '`+ownerReviewDetails[i].reviewRating[0].name+`',
+              "rating": '`+ownerReviewDetails[i].reviewRating[0].rating+`'
+            })
+          </li>
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1">
+            @@include('./partials/_loops/_owner-review.html', {
+              "alias": '`+ownerReviewDetails[i].reviewRating[1].alias+`',
+              "name": '`+ownerReviewDetails[i].reviewRating[1].name+`',
+              "rating": '`+ownerReviewDetails[i].reviewRating[1].rating+`'
+            })
+          </li>
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1">
+            @@include('./partials/_loops/_owner-review.html', {
+              "alias": '`+ownerReviewDetails[i].reviewRating[2].alias+`',
+              "name": '`+ownerReviewDetails[i].reviewRating[2].name+`',
+              "rating": '`+ownerReviewDetails[i].reviewRating[2].rating+`'
+            })
+          </li>
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1">
+            @@include('./partials/_loops/_owner-review.html', {
+              "alias": '`+ownerReviewDetails[i].reviewRating[3].alias+`',
+              "name": '`+ownerReviewDetails[i].reviewRating[3].name+`',
+              "rating": '`+ownerReviewDetails[i].reviewRating[3].rating+`'
+            })
+          </li>
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1">
+            @@include('./partials/_loops/_owner-review.html', {
+              "alias": '`+ownerReviewDetails[i].reviewRating[4].alias+`',
+              "name": '`+ownerReviewDetails[i].reviewRating[4].name+`',
+              "rating": '`+ownerReviewDetails[i].reviewRating[4].rating+`'
+            })
+          </li>
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1">
+            @@include('./partials/_loops/_owner-review.html', {
+              "alias": '`+ownerReviewDetails[i].reviewRating[5].alias+`',
+              "name": '`+ownerReviewDetails[i].reviewRating[5].name+`',
+              "rating": '`+ownerReviewDetails[i].reviewRating[5].rating+`'
+            })
+          </li>
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1">
+            @@include('./partials/_loops/_owner-review.html', {
+              "alias": '`+ownerReviewDetails[i].reviewRating[6].alias+`',
+              "name": '`+ownerReviewDetails[i].reviewRating[6].name+`',
+              "rating": '`+ownerReviewDetails[i].reviewRating[6].rating+`'
+            })
+          </li>
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1">
+            @@include('./partials/_loops/_owner-review.html', {
+              "alias": '`+ownerReviewDetails[i].reviewRating[7].alias+`',
+              "name": '`+ownerReviewDetails[i].reviewRating[7].name+`',
+              "rating": '`+ownerReviewDetails[i].reviewRating[7].rating+`'
+            })
+          </li>
+          <li class="list-group-item list-group-item-light border mt-n1 px-2 py-1 rounded-bottom-1">
+            @@include('./partials/_loops/_owner-review.html', {
+              "alias": '`+ownerReviewDetails[i].reviewRating[8].alias+`',
+              "name": '`+ownerReviewDetails[i].reviewRating[8].name+`',
+              "rating": '`+ownerReviewDetails[i].reviewRating[8].rating+`',
+              "mb-n1": 'mb-n1'
+            })
+          </li>
+        </ul>
+        <hr class="opacity-15 position-absolute end-0 bottom-0 w-100 d-block d-md-none m-0">
+      </div>
+    </div>
+  </div>
+  }
+  <!-- Pagination -->
+  @@include('./partials/_pagination.html')
+
+  @@include('./partials/_modals/_report-review.html')
+</div>
+<!-- END Review Details - Owners Review -->

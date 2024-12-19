@@ -1,0 +1,21 @@
+header .logo img {
+  height: 30px;
+
+  &.logo-light {
+    display: none
+  }
+}
+
+[data-bs-theme=dark] header .logo img {
+  &.logo-light {
+    display: block
+  }
+
+  &.logo-dark {
+    display: none
+  }
+}
+
+.header-widget-item {
+  min-width: 200px
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Cars.com",
+    "image": "./images/featured-on/cars-com.png"
+  },
+  {
+    "name": "Cnet",
+    "image": "./images/featured-on/cnet.png"
+  },
+  {
+    "name": "FOX",
+    "image": "./images/featured-on/fox.png"
+  },
+  {
+    "name": "Edmunds",
+    "image": "./images/featured-on/edmunds.png"
+  },
+  {
+    "name": "CNN",
+    "image": "./images/featured-on/cnn.png"
+  },
+  {
+    "name": "Forbes",
+    "image": "./images/featured-on/forbes.png"
+  }
+]

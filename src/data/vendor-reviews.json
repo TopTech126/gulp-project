@@ -1,0 +1,82 @@
+[
+  {
+    "reviewContent": "Excellent service! The advertiser was prompt in listing my ad and provided clear communication throughout the process. Highly recommended.",
+    "vendorImage": "./images/customers/01.jpg",
+    "vendorName": "John S.",
+    "reviewDate": "11/24/23",
+    "reviewTitle": "Prompt and Professional",
+    "reviewRating": 4.5
+  },
+  {
+    "reviewContent": "Very satisfied with the ad listing experience. The advertiser demonstrated professionalism and attention to detail, resulting in an effective advertisement that garnered significant interest.",
+    "vendorImage": "./images/customers/02.jpg",
+    "vendorName": "Emily J.",
+    "reviewDate": "08/04/23",
+    "reviewTitle": "Satisfaction Guaranteed",
+    "reviewRating": 4
+  },
+  {
+    "reviewContent": "Impressed with the quality of service provided by the advertiser. They went above and beyond to ensure my ad was tailored to my needs and reached the right audience.",
+    "vendorImage": "./images/customers/03.jpg",
+    "vendorName": "Sophia M.",
+    "reviewDate": "07/20/23",
+    "reviewTitle": "Expertise at its Best",
+    "reviewRating": 5
+  },
+  {
+    "reviewContent":  "Smooth and seamless process from start to finish. The advertiser exhibited great expertise in crafting the perfect ad, and I saw immediate results. Will definitely use their services again.",
+    "vendorImage": "./images/customers/04.jpg",
+    "vendorName": "Ethan D.",
+    "reviewDate": "07/15/23",
+    "reviewTitle": "Seamless Experience",
+    "reviewRating": 4
+  },
+  {
+    "reviewContent": "Outstanding job by the advertiser! They understood my requirements perfectly and delivered a compelling ad that exceeded my expectations. Couldn't be happier with the outcome.",
+    "vendorImage": "./images/customers/05.jpg",
+    "vendorName": "David L.",
+    "reviewDate": "06/24/23",
+    "reviewTitle": "Exceeding Expectations",
+    "reviewRating": 4.5
+  },
+  {
+    "reviewContent": "Highly professional and efficient service. The advertiser was responsive to my feedback and delivered a top-notch ad that generated a lot of interest. Would definitely recommend their services.",
+    "vendorImage": "./images/customers/06.jpg",
+    "vendorName": "Michael B.",
+    "reviewDate": "05/18/23",
+    "reviewTitle": "Professional Excellence",
+    "reviewRating": 3.5
+  },
+  {
+    "reviewContent": "Fantastic experience working with the advertiser. They were attentive to my needs and provided valuable insights to optimize my ad for maximum impact. A pleasure to collaborate with.",
+    "vendorImage": "./images/customers/07.jpg",
+    "vendorName": "Olivia W.",
+    "reviewDate": "05/06/23",
+    "reviewTitle": "Collaborative Brilliance",
+    "reviewRating": 5
+  },
+  {
+    "reviewContent": "Brilliant job on the ad listing! The advertiser showcased creativity and expertise in crafting an attention-grabbing ad that truly captured the essence of my product. Couldn't have asked for better results.",
+    "vendorImage": "./images/customers/08.jpg",
+    "vendorName": "Ben C.",
+    "reviewDate": "04/18/23",
+    "reviewTitle": "Captivating Creativity",
+    "reviewRating": 4.5
+  },
+  {
+    "reviewContent": "Extremely satisfied with the advertiser's work. They were proactive in suggesting improvements to my ad and ensured it was positioned effectively to reach the right audience. Great attention to detail.",
+    "vendorImage": "./images/customers/09.jpg",
+    "vendorName": "Liam A.",
+    "reviewDate": "05/28/23",
+    "reviewTitle": "Attention to Detail",
+    "reviewRating": 5
+  },
+  {
+    "reviewContent": "Exceptional service and results from the advertiser. They took the time to understand my goals and delivered a tailored ad campaign that delivered impressive ROI. Will definitely be a repeat customer.",
+    "vendorImage": "./images/customers/10.jpg",
+    "vendorName": "Harper T.",
+    "reviewDate": "02/17/23",
+    "reviewTitle": "Results-Driven Service",
+    "reviewRating": 5
+  }
+]

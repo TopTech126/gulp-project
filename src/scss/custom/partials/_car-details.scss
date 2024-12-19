@@ -1,0 +1,125 @@
+.car-title {
+
+  .car-name {
+    width: calc(100% - 120px);
+    display: block
+  }
+
+  .btn-share,
+  .btn-compare,
+  .btn-favorites {
+    background-color: rgba(var(--#{$prefix}secondary-bg-rgb), .7);
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 6px;
+      left: 5px;
+      background-color: rgba(var(--#{$prefix}body-color-rgb), 0.75);
+      -webkit-mask-image: url(../icons/heart.svg);
+      mask-image: url(../icons/heart.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 18px 18px;
+      mask-size: 18px 18px;
+    }
+
+    &.favorites-active {
+      &::after {
+        background-color: var(--#{$prefix}danger);
+        -webkit-mask-image: url(../icons/heart-filled.svg);
+        mask-image: url(../icons/heart-filled.svg);
+      }
+    }
+  }
+
+  .btn-share {
+    width: 30px;
+    height: 30px;
+
+    &::after {
+      -webkit-mask-image: url(../icons/sharer.svg);
+      mask-image: url(../icons/sharer.svg);
+    }
+  }
+
+  .btn-compare {
+    width: 30px;
+    height: 30px;
+
+    &::after {
+      -webkit-mask-image: url(../icons/arrows-diff.svg);
+      mask-image: url(../icons/arrows-diff.svg);
+    }
+
+    &.compare-active {
+      &::after {
+        background-color: var(--#{$prefix}danger);
+      }
+    }
+  }
+
+  .btn-share,
+  .btn-compare,
+  .btn-favorites {
+    background-color: var(--#{$prefix}body-bg);
+
+    &::after {
+      background-color: rgba(var(--#{$prefix}body-color-rgb), 0.65);
+    }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  .car-title {
+
+    .car-id,
+    .car-date,
+    .car-vin,
+    .car-views {
+      width: 50%;
+      font-size: $fs-xs;
+    }
+  }
+}
+
+
+[data-bs-theme=dark] {
+
+  .car-title {
+
+    .btn-share,
+    .btn-compare,
+    .btn-favorites {
+      background-color: rgba(var(--#{$prefix}secondary-bg-rgb), .3);
+
+      &::after {
+        background-color: var(--#{$prefix}secondary-bg);
+      }
+
+      &.favorites-active {
+        &::after {
+          background-color: var(--#{$prefix}danger);
+        }
+      }
+    }
+  }
+
+  .car-title {
+
+    .btn-share,
+    .btn-compare,
+    .btn-favorites {
+      background-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.4);
+
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
+}

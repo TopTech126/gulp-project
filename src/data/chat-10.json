@@ -1,0 +1,164 @@
+[
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-05T10:00:00",
+    "messageTexts": [
+      { "text": "Hello Harper! Welcome to our car dealership." },
+      { "text": "How can I assist you today?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Harper Thomas",
+    "userImage": "./images/customers/10.jpg",
+    "timestamp": "2024-04-05T10:05:00",
+    "messageTexts": [
+      { "text": "Hi Martin!" },
+      { "text": "I'm interested in buying a used car." },
+      { "text": "Do you have any available?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-05T10:10:00",
+    "messageTexts": [
+      { "text": "Absolutely, Harper! We have a wide range of used cars available. What type of car are you looking for?" }
+    ],
+    "messageFiles": [
+      { 
+        "file": "Installation-manual.pdf", 
+        "type": "pdf", 
+        "size":  "225KB"
+      },
+      { 
+        "file": "Report-2024.xls", 
+        "type": "xls", 
+        "size":  "145KB"
+      },
+      { 
+        "file": "Compressed-data-files.zip", 
+        "type": "zip", 
+        "size":  "873KB"
+      }
+    ],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Harper Thomas",
+    "userImage": "./images/customers/10.jpg",
+    "timestamp": "2024-04-05T10:15:00",
+    "messageTexts": [
+      { "text": "I'm looking for a sedan with low mileage and good fuel efficiency." },
+      { "text": "Do you have any recommendations?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-05T10:20:00",
+    "messageTexts": [
+      { "text": "We have a few options that match your criteria. Let me provide you with some details..." }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-05T10:25:00",
+    "messageTexts": [
+      { "text": "Option 1: <br />2023 Toyota Camry. <br />Mileage: 30,000 miles. <br />Fuel Efficiency: 28 MPG. <br />Price: $15,000." }
+    ],
+    "messageFiles": [],
+    "messageImages": [
+      { "image": "./images/cars/toyota-camry/01.jpg" },
+      { "image": "./images/cars/toyota-camry/02.jpg" },
+      { "image": "./images/cars/toyota-camry/03.jpg" }
+    ],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-05T10:30:00",
+    "messageTexts": [
+      { "text": "Option 2: <br />2019 Suzuki SX4. <br />Mileage: 25,000 miles. <br />Fuel Efficiency: 30 MPG. <br />Price: $17,500." }
+    ],
+    "messageFiles": [],
+    "messageImages": [
+      { "image": "./images/cars/suzuki-sx4/01.jpg" },
+      { "image": "./images/cars/suzuki-sx4/02.jpg" },
+      { "image": "./images/cars/suzuki-sx4/03.jpg" }
+    ],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Harper Thomas",
+    "userImage": "./images/customers/10.jpg",
+    "timestamp": "2024-04-05T10:35:00",
+    "messageTexts": [
+      { "text": "Thanks, Martin Jones! I'm interested in the Toyota Camry. 😍" },
+      { "text": "Can I schedule a test drive?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-05T10:40:00",
+    "messageTexts": [
+      { "text": "Of course, Harper! When would you like to come in for a test drive?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "guest",
+    "sender": "Harper Thomas",
+    "userImage": "./images/customers/10.jpg",
+    "timestamp": "2024-04-05T10:45:00",
+    "messageTexts": [
+      { "text": "How about tomorrow afternoon around 3:00 PM?" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  },
+  {
+    "identity": "staff",
+    "sender": "Martin Jones",
+    "userImage": "./images/team/06.jpg",
+    "timestamp": "2024-04-05T10:50:00",
+    "messageTexts": [
+      { "text": "That works for me. I'll schedule you in for a test drive tomorrow at 3:00 PM." },
+      { "text": "See you then! 😊" }
+    ],
+    "messageFiles": [],
+    "messageImages": [],
+    "read": true
+  }
+]

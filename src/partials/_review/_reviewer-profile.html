@@ -1,0 +1,53 @@
+<!-- Reviewer Profile -->
+<div class="container py-5 mb-md-4">
+  <div class="row">
+
+    <div class="col-12">
+      @@include("./partials/_review/_reviewer-box-profile.html")
+    </div>
+    
+    <div class="col-12">
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-body-tertiary border rounded p-3 mb-4">
+            <form id="reviewer-review-search" class="row g-3 justify-content-start pt-0">
+              <div class="col-12 col-sm-auto">
+                <input type="text" class="form-control custom-color bg-body" id="reviewer-reviews-keyword" name="reviewer-reviews-keyword" placeholder="Search by car name">
+              </div>
+              <div class="col-12 col-sm-auto ms-auto">
+                <select class="form-select custom-color text-dark-emphasis bg-body" id="review-sort-by" name="review-sort-by" aria-label="Sort reviews">
+                  <option selected>Sort by</option>
+                  <option value="top">Top</option>
+                  <option value="recent">Most Recent</option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-auto ms-0">
+                <select class="form-select custom-color text-dark-emphasis bg-body" id="review-stars" name="review-stars" aria-label="Select reviews star rating">
+                  <option selected>All Rating</option>
+                  <option value="2-star">> 9 Only</option>
+                  <option value="2-star">8 - 9 Only</option>
+                  <option value="2-star">7 - 8 Only</option>
+                  <option value="2-star">6 - 7 Only</option>
+                  <option value="2-star">5 - 6 Only</option>
+                  <option value="1-star">< 5 Only</option>
+                  <option value="positive">All Positive</option>
+                  <option value="critical">All Critical</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        @@include("./partials/_loops/_review/_reviewer-article.html")
+
+      </div>
+    </div>
+    
+    <!-- Pagination -->
+    <div class="col-12">
+      @@include('./partials/_pagination.html')
+    </div>
+    
+  </div>
+</div>
+<!-- END Reviewer Profile -->

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    @@include('./partials/_head.html', { 
+      "docTitle" : "Blog Article", 
+      "enqueueFile" : {
+        "owlcarousel" : true, 
+        "magnificpopup" : true 
+      } 
+    })
+  </head>
+  
+  <body>
+    
+    <!-- Preloader -->
+    @@include('./partials/_preloader.html')
+    <!-- END Preloader -->
+    
+    <!-- Header -->
+    @@include('./partials/_header.html', {
+      "headerStyle": 1
+    })
+    <!-- END Breadcrumb -->
+    
+    <!-- Main -->
+    @@include('./partials/_main.html', {
+      "contentType" : "blog-article-minimal-2"
+    })
+    <!-- END Main -->
+    
+    <!-- Footer -->
+    @@include('./partials/_footer.html', {
+      "footerStyle": 1
+    })
+    <!-- END Footer -->
+    
+    <!-- Scripts -->
+    @@include('./partials/_scripts.html', { 
+      "enqueueFile" : {
+        "jquery" : true,
+        "lazy" : true,
+        "owlcarousel" : true, 
+        "magnificpopup" : true 
+      } 
+    })
+    <!-- END Scripts -->
+  </body>
+  
+</html>

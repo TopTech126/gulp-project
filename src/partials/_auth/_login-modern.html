@@ -1,0 +1,24 @@
+<div class="bg-body-tertiary py-5 vh-100 d-flex">
+  <div class="container py-5 p-0 align-self-center">
+    
+    <div class="row py-5">
+      <div class="col-lg-8 col-md-6 col-sm-8 col-10 bg-dark bg-opacity-10 p-4 mx-auto rounded order-md-1 order-2 d-flex justify-content-center align-items-center text-dark-emphasis">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="300" height="300" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path><path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8 11v-4a4 4 0 1 1 8 0v4"></path></svg>
+        
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-8 col-10 bg-body p-4 mx-auto rounded shadow-sm order-md-2 order-1">
+
+        <h1 class="fs-4 fw-bold mb-4 text-center text-uppercase">Login</h1>
+
+        @@include('./partials/_forms/_auth-login.html', { "resetLink" : "/auth-forgot-password-modern.html" } )
+        
+        <div class="mb-3 text-center">
+          <p class="mb-0 mt-3">Don't have an account ? <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fw-bold" href="./auth-signup-modern.html">Sign Up</a></p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

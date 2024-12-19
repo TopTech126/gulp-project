@@ -1,0 +1,68 @@
+[
+  {
+    "type": "select",
+    "alias": "manufacturer",
+    "text": "Manufacturer",
+    "aria": "Select manufacturer"
+  },
+  {
+    "type": "select",
+    "alias": "model",
+    "text": "Model",
+    "aria": "Select model"
+  },
+  {
+    "type": "select",
+    "alias": "series",
+    "text": "Series",
+    "aria": "Select series"
+  },
+  {
+    "type": "select",
+    "alias": "body",
+    "text": "Body",
+    "aria": "Select body"
+  },
+  {
+    "type": "select",
+    "alias": "transmission",
+    "text": "Transmission",
+    "aria": "Select transmission"
+  },
+  {
+    "type": "select",
+    "alias": "fuel",
+    "text": "Fuel",
+    "aria": "Select fuel"
+  },
+  {
+    "type": "select",
+    "alias": "engine",
+    "text": "Engine",
+    "aria": "Select engine"
+  },
+  {
+    "type": "select",
+    "alias": "doors",
+    "text": "Doors",
+    "aria": "Select doors"
+  },
+  {
+    "type": "text",
+    "alias": "power",
+    "text": "Power",
+    "aria": ""
+  },
+  {
+    "type": "select",
+    "alias": "power-unit",
+    "text": "Power Unit",
+    "aria": "Select power unit"
+  },
+  {
+    "type": "text",
+    "alias": "vin",
+    "text": "VIN/Chassis Number",
+    "aria": ""
+  }
+]

@@ -1,0 +1,160 @@
+<!-- Vendor Profile -->
+<div class="container py-5 mb-md-4">
+  <div class="row">
+
+    <div class="col-12">
+      @@include("./partials/_vendor/_vendor-box-profile.html")
+    </div>
+    
+    <div class="col-12">
+
+      <ul class="nav nav-tabs custom-color justify-content-center mb-4" id="vendorTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4 active" id="vendor-listings-tab" data-bs-toggle="tab" data-bs-target="#vendor-listings" type="button" role="tab" aria-controls="vendor-listings" aria-selected="true">Listings <span class="badge rounded-pill bg-secondary text-bg-secondary  text-bg-primary ms-1">78</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4" id="vendor-sold-tab" data-bs-toggle="tab" data-bs-target="#vendor-sold" type="button" role="tab" aria-controls="vendor-sold" aria-selected="false">Sold <span class="badge rounded-pill bg-secondary text-bg-secondary  text-bg-primary ms-1">249</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4" id="vendor-reviews-tab" data-bs-toggle="tab" data-bs-target="#vendor-reviews" type="button" role="tab" aria-controls="vendor-reviews" aria-selected="false">Reviews <span class="badge rounded-pill bg-secondary text-bg-secondary  text-bg-primary ms-1">145</span></button>
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="vendorTabsContent">
+        <div class="tab-pane vendor-listings fade show active" id="vendor-listings" role="tabpanel" aria-labelledby="vendor-listings-tab" tabindex="0">
+          <div class="row">
+
+            <div class="col-12">
+              <div class="bg-body-tertiary border rounded p-3 mb-4">
+                <form id="vendor-listing-search" class="row g-3 justify-content-start pt-0">
+                  <div class="col-12 col-sm-auto">
+                    <input type="text" class="form-control custom-color bg-body" id="vendor-listings-keyword" name="vendor-listings-keyword" placeholder="Search by car name">
+                  </div>
+                  <div class="col-12 col-sm-auto ms-auto">
+                    <select class="form-select custom-color text-dark-emphasis bg-body" id="listings-sort-by" name="listings-sort-by" aria-label="Sort listings">
+                      <option selected>Sort by</option>
+                      <option>Most Recent</option>
+                      <option>Most Popular</option>
+                      <option>Price: Low - High</option>
+                      <option>Price: High - Low</option>
+                      <option>Order: A - Z</option>
+                      <option>Order: Z - A</option>
+                      <option>Price Reduced</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+            </div>
+    
+            @@loop("./partials/_loops/_vendor/_vendor-car.html", "./data/cars.json")
+    
+          </div>
+    
+          <!-- Pagination -->
+          <div>
+            @@include('./partials/_pagination.html')
+          </div>
+          
+        </div>
+        <div class="tab-pane fade" id="vendor-sold" role="tabpanel" aria-labelledby="vendor-sold-tab" tabindex="0">
+          <div class="row">
+
+            <div class="col-12">
+              <div class="bg-body-tertiary border rounded p-3 mb-4">
+                <form id="vendor-sold-listing-search" class="row g-3 justify-content-start pt-0">
+                  <div class="col-12 col-sm-auto">
+                    <input type="text" class="form-control custom-color bg-body" id="vendor-sold-listings-keyword" name="vendor-sold-listings-keyword" placeholder="Search by car name">
+                  </div>
+                  <div class="col-12 col-sm-auto ms-auto">
+                    <select class="form-select custom-color text-dark-emphasis bg-body" id="sold-listings-sort-by" name="sold-listings-sort-by" aria-label="Sort sold-listings">
+                      <option selected>Sort by</option>
+                      <option>Most Recent</option>
+                      <option>Price: Low - High</option>
+                      <option>Price: High - Low</option>
+                      <option>Order: A - Z</option>
+                      <option>Order: Z - A</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            @@loop("./partials/_loops/_car/_car-sold-details.html", "./data/cars.json")
+          </div>
+
+          <!-- Pagination -->
+          @@include('./partials/_pagination.html')
+        </div>
+        <div class="tab-pane fade" id="vendor-reviews" role="tabpanel" aria-labelledby="vendor-reviews-tab" tabindex="0">
+          <div class="row">
+
+            <div class="col-12">
+              <div class="bg-body-tertiary border rounded p-3 mb-4">
+                <form id="vendor-review-search" class="row g-3 justify-content-start pt-0">
+                  <div class="col-12 col-md-6 col-lg-auto">
+                    <input type="text" class="form-control custom-color bg-body" id="vendor-reviews-keyword" name="vendor-reviews-keyword" placeholder="Enter keyword">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-auto">
+                    <select class="form-select custom-color text-dark-emphasis bg-body" id="review-sort-by" name="review-sort-by" aria-label="Sort reviews">
+                      <option selected>Sort by</option>
+                      <option value="top">Top</option>
+                      <option value="recent">Most Recent</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-auto">
+                    <select class="form-select custom-color text-dark-emphasis bg-body" id="review-filter-by" name="review-filter-by" aria-label="Filter reviews">
+                      <option selected>Filter by</option>
+                      <option value="all">All Reviewers</option>
+                      <option value="verified">Verified Only</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-auto">
+                    <select class="form-select custom-color text-dark-emphasis bg-body" id="review-stars" name="review-stars" aria-label="Select reviews star rating">
+                      <option selected>All Stars</option>
+                      <option value="5-star">5 Star Only</option>
+                      <option value="4-star">4 Star Only</option>
+                      <option value="3-star">3 Star Only</option>
+                      <option value="2-star">2 Star Only</option>
+                      <option value="1-star">1 Star Only</option>
+                      <option value="positive">All Positive</option>
+                      <option value="critical">All Critical</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-lg-auto ms-lg-auto">
+                    <button type="button" class="btn btn-warning w-100 d-flex justify-content-start align-items-center rounded-1"
+                      data-bs-toggle="modal" data-bs-target="#addVendorReview">
+                      <span class="me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="24"
+                          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"></path>
+                          <path d="M10 16h6"></path>
+                          <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                          <path d="M4 8h3"></path>
+                          <path d="M4 12h3"></path>
+                          <path d="M4 16h3"></path>
+                        </svg>
+                      </span>
+                      <span class="fs-sm fw-bold text-uppercase">Add Review</span>
+                    </button>
+                  </div>
+                </form>
+                @@include('./partials/_modals/_add-vendor-review.html')
+              </div>
+            </div>
+
+            @@include("./partials/_loops/_vendor/_vendor-review.html")
+          </div>
+
+          <!-- Pagination -->
+          @@include('./partials/_pagination.html')
+        </div>
+      </div>
+
+      
+    </div>
+    
+  </div>
+</div>
+<!-- END Vendor Profile -->

@@ -1,0 +1,72 @@
+<div class="container py-5 mb-md-4">
+  <div class="row">
+
+    <!-- Content -->
+    <section class="col-12">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-body-tertiary border rounded p-2 mb-4">
+            @@include('./partials/_account/_nav.html', { 
+              "currPage": "user-reviews",
+              "normalClass": "bg-body-tertiary text-body-secondary fs-6",
+              "activeClass": "bg-body text-body-emphasis text-primary custom-color border border-light-subtle",
+            })
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-12">
+          <div class="bg-body border rounded p-3 mb-4">
+            <form id="vendor-user-reviews-search" class="row g-3 justify-content-start pt-0">
+              <div class="col-12 col-md-auto">
+                <input type="text" class="form-control form-control-sm custom-color" id="vendor-user-reviews-keyword" name="vendor-user-reviews-keyword" placeholder="Search by keyword">
+              </div>
+              <div class="col-12 col-md-auto ms-auto">
+                <div class="row g-3 d-flex align-items-end">
+                  <div class="col-12 col-md-auto">
+                    <select class="form-select custom-color form-select-sm text-dark-emphasis rounded-1" id="user-reviews-sort-by" name="user-reviews-sort-by" aria-label="Sort reviews">
+                      <option selected>Sort by</option>
+                      <option value="top">Top</option>
+                      <option value="recent">Most Recent</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-auto">
+                    <select class="form-select custom-color form-select-sm text-dark-emphasis rounded-1" id="user-reviews-filter-by" name="user-reviews-filter-by" aria-label="Filter reviews">
+                      <option selected>Filter by</option>
+                      <option value="all">All Reviewers</option>
+                      <option value="verified">Verified Only</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-auto">
+                    <select class="form-select custom-color form-select-sm text-dark-emphasis rounded-1" id="user-reviews-stars" name="user-reviews-stars" aria-label="Select reviews star rating">
+                      <option selected>All Stars</option>
+                      <option value="5-star">5 Star Only</option>
+                      <option value="4-star">4 Star Only</option>
+                      <option value="3-star">3 Star Only</option>
+                      <option value="2-star">2 Star Only</option>
+                      <option value="1-star">1 Star Only</option>
+                      <option value="positive">All Positive</option>
+                      <option value="critical">All Critical</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        @@include("./partials/_loops/_vendor/_vendor-review.html")
+
+      </div>
+
+      <!-- Pagination -->
+      <div>
+        @@include('./partials/_pagination.html')
+      </div>
+      
+    </section>
+  </div>
+</div>

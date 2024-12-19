@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Oil Change Service",
+    "image": "./images/services/oil-change.png",
+    "description": "Regular oil changes are essential for maintaining the health of your vehicle's engine. This service involves draining the old oil, replacing the oil filter, and adding fresh oil to ensure proper lubrication and prevent engine damage."
+  },
+  {
+    "title": "Tire Rotation and Balancing",
+    "image": "./images/services/tire-balancing.png",
+    "description": "Over time, tires wear unevenly. Tire rotation and balancing involve moving the tires to different positions on the vehicle and ensuring they have even wear. This extends tire life and improves safety."
+  },
+  {
+    "title": "Brake Inspection and Repair",
+    "image": "./images/services/brake-inspection.png",
+    "description": "Brake services encompass routine inspections, pad and rotor replacements, and brake fluid checks. Proper brake maintenance is crucial for safe stopping and preventing brake system failure."
+  },
+  {
+    "title": "Wheel Alignment",
+    "image": "./images/services/wheel-alignment.png",
+    "description": "Wheel alignment adjustments ensure that your vehicle's wheels are properly aligned with the manufacturer's specifications. This helps maintain tire longevity, improves handling, and prevents uneven tire wear."
+  },
+  {
+    "title": "Transmission Fluid Flush",
+    "image": "./images/services/transmission-fluid.png",
+    "description": "The transmission fluid flush service involves removing old transmission fluid and replacing it with new fluid. This helps extend the life of your transmission and ensures smooth gear shifting."
+  },
+  {
+    "title": "Air Conditioning (A/C) Service",
+    "image": "./images/services/air-conditioning.png",
+    "description": "A/C service includes inspection, refrigerant recharge, and repairs if necessary. It helps keep your car's interior cool and comfortable, especially during hot weather."
+  },
+  {
+    "title": "Wheel and Tire Services",
+    "image": "./images/services/wheel-services.png",
+    "description": "This service category encompasses a range of services related to your vehicle's wheels and tires. It includes services like tire replacement, tire repair (patching or plugging), tire mounting and balancing, wheel repair for bent or damaged rims, and tire pressure monitoring system (TPMS) diagnostics and maintenance. Properly maintained wheels and tires are essential for a smooth and safe ride, as well as optimal fuel efficiency."
+  },
+  {
+    "title": "Battery Inspection and Replacement",
+    "image": "./images/services/battery-inspection.png",
+    "description": "Regular battery inspection ensures your vehicle starts reliably. If needed, a new battery is installed to prevent unexpected breakdowns."
+  },
+  {
+    "title": "Engine Diagnostics and Tune-Up",
+    "image": "./images/services/engine-diagnostics.png",
+    "description": "Engine diagnostics involve using specialized tools to identify and fix issues related to your vehicle's performance. A tune-up may include adjustments to the engine's components, such as spark plugs, fuel filters, and sensors, to optimize fuel efficiency and performance."
+  }
+]

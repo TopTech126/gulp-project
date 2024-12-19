@@ -1,0 +1,63 @@
+<!-- Review Details -->
+<div class="container py-5 mb-2 mb-md-4">
+  <div class="row">
+
+    <div class="col-lg-8">
+      
+      <ul class="nav nav-tabs custom-color mb-4" id="reviewDetailsTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4 active" id="expert-review-tab" data-bs-toggle="tab" data-bs-target="#expert-review" type="button" role="tab" aria-controls="expert-review" aria-selected="true">Expert Review</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4" id="owners-review-tab" data-bs-toggle="tab" data-bs-target="#owners-review" type="button" role="tab" aria-controls="owners-review" aria-selected="false">Owners Review</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4" id="review-gallery-tab" data-bs-toggle="tab" data-bs-target="#review-gallery" type="button" role="tab" aria-controls="review-gallery" aria-selected="false">Gallery</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4" id="review-video-tab" data-bs-toggle="tab" data-bs-target="#review-video" type="button" role="tab" aria-controls="review-video" aria-selected="false">Video</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4" id="review-360-tab" data-bs-toggle="tab" data-bs-target="#review-360" type="button" role="tab" aria-controls="review-360" aria-selected="false">360° View</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="reviewDetailsTabContent">
+        <div class="tab-pane fade show active" id="expert-review" role="tabpanel" aria-labelledby="expert-review-tab" tabindex="0">
+          @@include('./partials/_review/_review-details-expert-review.html')
+        </div>
+        <div class="tab-pane fade" id="owners-review" role="tabpanel" aria-labelledby="owners-review-tab" tabindex="0">
+          @@include('./partials/_review/_review-details-owners-reviews.html')
+        </div>
+        <div class="tab-pane fade" id="review-gallery" role="tabpanel" aria-labelledby="review-gallery-tab" tabindex="0">
+          @@include('./partials/_review/_review-details-gallery.html')
+        </div>
+        <div class="tab-pane fade" id="review-video" role="tabpanel" aria-labelledby="review-video-tab" tabindex="0">
+          @@include('./partials/_review/_review-details-video.html')
+        </div>
+        <div class="tab-pane fade" id="review-360" role="tabpanel" aria-labelledby="review-360-tab" tabindex="0">
+          @@include('./partials/_review/_review-details-360.html')
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-4">
+      @@include('./partials/_review/_review-sidebar.html')
+    </div>
+
+  </div>
+</div>
+<!-- END Review Details -->
+
+<!-- Similara Cars -->
+<div class="container-fluid p-0 bg-body-tertiary">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="fs-5 text-uppercase pb-3 mb-4 custom-color">Similar Cars on Sale</h3>
+        @@include('./partials/_car/_cars-related.html')
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Similara Cars -->

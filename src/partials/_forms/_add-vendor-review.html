@@ -1,0 +1,38 @@
+<!-- Add Vendor Review -->
+<form id="add-vendor-review-form" action="">
+  <div class="mb-3">
+    <label for="rating-field" class="form-label mb-0">Rating</label>
+    <div id="rating-field" class="rating-field">
+      @@for (var i = 5; i >= 1; i--) {
+        <input type="radio" name="review-rating" value="`+i+`" class="form-check-input custom-color" id="review-rating-`+i+`">
+        <label class="form-check-label" for="review-rating-`+i+`">☆</label>
+      }
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="review-title" class="form-label">Title</label>
+    <input type="text" class="form-control custom-color" id="review-title" name="review-title" placeholder="Example: Professional Service">
+  </div>
+  <div class="mb-3">
+    <label for="review-comments" class="form-label">Comment</label>
+    <textarea class="form-control custom-color" id="review-comments" name="review-comments" rows="3" placeholder="Provide your overall insight about this listing provider"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="review-comments" class="form-label">Would you recommend this provider to your friends?</em></label>
+    <div class="btn-group d-flex" role="group" aria-label="Basic radio toggle button group">
+      @@for (var i = 0; i <= 10; i++) {
+        <input type="radio" class="btn-check" name="recommend" id="recommend`+i+`" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="recommend`+i+`">`+i+`</label>
+      }
+    </div>
+    <div class="d-flex justify-content-between text-body-tertiary mt-1">
+      <span>Never</span><span>Definitely</span>
+    </div>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms-add-vendor-review" name="confirm-terms-add-vendor-review" checked>
+    <label class="form-check-label text-body-secondary" for="confirm-terms-add-vendor-review">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="./privacy-policy.html">Privacy Policy</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Add Review</button>
+</form>
+<!-- END Add Vendor Review -->
