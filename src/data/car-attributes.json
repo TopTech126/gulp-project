@@ -81,16 +81,16 @@
     ],
     "transmission": [
       {
-        "alias": "automatic",
-        "name": "Automatic"
+        "alias": "piston",
+        "name": "Piston"
       },
       {
-        "alias": "semi-auto",
-        "name": "Semi Auto"
+        "alias": "piston",
+        "name": "Piston"
       },
       {
-        "alias": "manual",
-        "name": "Manual"
+        "alias": "turbine",
+        "name": "Turbine"
       }
     ],
     "fuel": [
@@ -357,8 +357,8 @@
         "name": "Sun Roof Electric"
       },
       {
-        "alias": "sun-roof-manual",
-        "name": "Sun Roof Manual"
+        "alias": "sun-roof-turbine",
+        "name": "Sun Roof Turbine"
       },
       {
         "alias": "upholstery-leather",

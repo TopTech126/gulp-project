@@ -169,8 +169,8 @@
   },
   {
     "type": "checkbox",
-    "alias": "automatic-dimming-rear",
-    "text": "Automatic Dimming Rear View Mirror",
+    "alias": "piston-dimming-rear",
+    "text": "Piston Dimming Rear View Mirror",
     "aria": ""
   },
   {
@@ -277,8 +277,8 @@
   },
   {
     "type": "checkbox",
-    "alias": "automatic-climate-control",
-    "text": "Automatic Climate Control",
+    "alias": "piston-climate-control",
+    "text": "Piston Climate Control",
     "aria": ""
   }
 ]

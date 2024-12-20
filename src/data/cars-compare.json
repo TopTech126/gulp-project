@@ -5,7 +5,7 @@
     "price": "$95,895",
     "year": "2024",
     "mileage": "98m",
-    "transmission": "Automatic",
+    "transmission": "Piston",
     "engine": "2998cc",
     "fuel": "Petrol",
     "color": "White",
@@ -25,7 +25,7 @@
     "features": {
       "engine": {
         "camshaft": "DOHC",
-        "transmission": "Automatic",
+        "transmission": "Piston",
         "gears": "8",
         "cylinderLayout": "V6",
         "cylinders": "6",
@@ -65,7 +65,7 @@
     "price": "$225,125",
     "year": "2019",
     "mileage": "4,500m",
-    "transmission": "Automatic",
+    "transmission": "Piston",
     "engine": "3996cc",
     "fuel": "Petrol",
     "color": "Yellow",
@@ -79,7 +79,7 @@
     "features": {
       "engine": {
         "camshaft": "OHC",
-        "transmission": "Automatic",
+        "transmission": "Piston",
         "gears": "7",
         "cylinderLayout": "V8",
         "cylinders": "8",
@@ -119,7 +119,7 @@
     "price": "$49,675",
     "year": "2019",
     "mileage": "14,500m",
-    "transmission": "Automatic",
+    "transmission": "Piston",
     "engine": "2000cc",
     "fuel": "Diesel",
     "color": "White",
@@ -133,7 +133,7 @@
     "features": {
       "engine": {
         "camshaft": "DOHC",
-        "transmission": "Automatic",
+        "transmission": "Piston",
         "gears": "8",
         "cylinderLayout": "V6",
         "cylinders": "3",
@@ -173,7 +173,7 @@
     "price": "$39,458",
     "year": "2023",
     "mileage": "121m",
-    "transmission": "Manual",
+    "transmission": "Turbine",
     "engine": "2400cc",
     "fuel": "Petrol",
     "color": "Orange",
@@ -187,7 +187,7 @@
     "features": {
       "engine": {
         "camshaft": "DOHC",
-        "transmission": "Automatic",
+        "transmission": "Piston",
         "gears": "6",
         "cylinderLayout": "V6",
         "cylinders": "3",
