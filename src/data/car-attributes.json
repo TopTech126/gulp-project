@@ -2,112 +2,81 @@
   {
     "carBodyTypes": [
       {
-        "alias": "4x4",
-        "name": "4x4",
+        "alias": "Single-Engine Piston (SEP)",
+        "name": "Single-Engine Piston (SEP)",
         "image": "./images/body-types/4x4.png",
-        "offers": 12
+        "offers": 12,
+        "group": "fixed-wing"
       },
       {
-        "alias": "camper",
-        "name": "Camper",
-        "image": "",
-        "offers": 16
-      },
-      {
-        "alias": "combi",
-        "name": "Combi",
-        "image": "",
-        "offers": 5
-      },
-      {
-        "alias": "commercial",
-        "name": "Commercial",
-        "image": "",
-        "offers": 18
-      },
-      {
-        "alias": "convertible",
-        "name": "Convertible",
-        "image": "./images/body-types/convertible.png",
-        "offers": 8
-      },
-      {
-        "alias": "coupe",
-        "name": "Coupe",
-        "image": "./images/body-types/coupe.png",
-        "offers": 25
-      },
-      {
-        "alias": "estate",
-        "name": "Estate",
-        "image": "",
-        "offers": 13
-      },
-      {
-        "alias": "hatchback",
-        "name": "Hatchback",
-        "image": "",
-        "offers": 33
-      },
-      {
-        "alias": "camper",
-        "name": "MPV",
-        "image": "",
-        "offers": 4
-      },
-      {
-        "alias": "off-road",
-        "name": "Off-Road",
-        "image": "./images/body-types/off-road.png",
-        "offers": 17
-      },
-      {
-        "alias": "pickup",
-        "name": "Pickup",
-        "image": "./images/body-types/pickup.png",
-        "offers": 28
-      },
-      {
-        "alias": "roadster",
-        "name": "Roadster",
-        "image": "./images/body-types/roadster.png",
-        "offers": 8
-      },
-      {
-        "alias": "saloon",
-        "name": "Saloon",
-        "image": "./images/body-types/saloon.png",
-        "offers": 16
-      },
-      {
-        "alias": "sedan",
-        "name": "Sedan",
-        "image": "./images/body-types/sedan.png",
-        "offers": 39
-      },
-      {
-        "alias": "sports",
-        "name": "Sports",
-        "image": "./images/body-types/sports.png",
-        "offers": 5
-      },
-      {
-        "alias": "station-wagon",
-        "name": "Wagon",
-        "image": "./images/body-types/station-wagon.png",
-        "offers": 19
-      },
-      {
-        "alias": "suv",
-        "name": "SUV",
+        "alias": "Multi-Engine Piston (MEP)",
+        "name": "Multi-Engine Piston (MEP)",
         "image": "./images/body-types/suv.png",
-        "offers": 24
+        "offers": 16,
+        "group": "fixed-wing"
       },
       {
-        "alias": "van",
-        "name": "Van",
-        "image": "./images/body-types/van.png",
-        "offers": 14
+        "alias": "Turboprop",
+        "name": "Turboprop",
+        "image": "./images/body-types/sports.png",
+        "offers": 5,
+        "group": "fixed-wing"
+      },
+      {
+        "alias": "Utility/Bush Planes",
+        "name": "Utility/Bush Planes",
+        "image": "./images/body-types/sedan.png",
+        "offers": 18,
+        "group": "fixed-wing"
+      },
+      {
+        "alias": "Amphibious/Seaplanes",
+        "name": "Amphibious/Seaplanes",
+        "image": "./images/body-types/convertible.png",
+        "offers": 8,
+        "group": "fixed-wing"
+      },
+      {
+        "alias": "High-Performance Aircraft",
+        "name": "High-Performance Aircraft",
+        "image": "./images/body-types/coupe.png",
+        "offers": 25,
+        "group": "fixed-wing"
+      },
+      {
+        "alias": "Business Jets",
+        "name": "Business Jets",
+        "image": "./images/body-types/sedan.png",
+        "offers": 13,
+        "group": "fixed-wing"
+      },
+      {
+        "alias": "Turbine",
+        "name": "Turbine",
+        "image": "./images/body-types/saloon.png",
+        "offers": 33,
+        "group": "rotorcraft"
+      },
+      {
+        "alias": "Light Utility",
+        "name": "Light Utility",
+        "image": "./images/body-types/roadster.png",
+        "offers": 4,
+        "group": "rotorcraft"
+      },
+      {
+        "alias": "Heavy-Lift",
+        "name": "Heavy-Lift",
+        "image": "./images/body-types/off-road.png",
+        "offers": 17,
+        "group": "rotorcraft"
+      },
+      {
+        "alias": "Amphibious",
+        "name": "Amphibious",
+        "image": "./images/body-types/pickup.png",
+        "offers": 28,
+        "group": "rotorcraft"
       }
     ],
     "transmission": [
