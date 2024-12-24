@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Turbine", 
+    "image": "./images/body-types/Turbine-Helicopter.png.png",
+    "offers": 33,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "Light Utility", 
+    "image": "./images/body-types/Light-Utility-Helicopters.png.png",
+    "offers": 4,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "Heavy-Lift", 
+    "image": "./images/body-types/Heavy-Lift-Helicopters.png.png",
+    "offers": 17,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "Amphibious", 
+    "image": "./images/body-types/Amphibious-Helicopters.png.png",
+    "offers": 28,
+    "group": "rotorcraft"
+  }
+]

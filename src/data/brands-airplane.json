@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Cessna",
+    "models": ["595", "124 Spider"],
+    "image": "",
+    "logo": "../images/brand-logo/cessna.png",
+    "symbol": "",
+    "offers": 8,
+    "group": "fixed-wing"
+  },
+  {
+    "name": "Piper",
+    "models": ["RT2", "568 Spider"],
+    "image": "",
+    "logo": "../images/brand-logo/piper.png",
+    "symbol": "",
+    "offers": 2,
+    "group": "fixed-wing"
+  },
+  {
+    "name": "Beechcraft",
+    "models": ["Giulia", "Stelvio", "Giulietta", "4C", "Mito"],
+    "image": "",
+    "logo": "../images/brand-logo/beechcraft.png",
+    "symbol": "",
+    "offers": 8,
+    "group": "fixed-wing"
+  },
+  {
+    "name": "Cirrus",
+    "models": ["A110"],
+    "image": "",
+    "logo": "../images/brand-logo/cirrus.png",
+    "symbol": "",
+    "offers": 8,
+    "group": "fixed-wing"
+  },
+  {
+    "name": "Diamond",
+    "models": ["DB11", "Vantage", "DBS Superleggera", "Rapide", "Valhalla"],
+    "image": "",
+    "logo": "../images/brand-logo/diamond.png",
+    "symbol": "",
+    "offers": 15,
+    "group": "fixed-wing"
+  },
+  {
+    "name": "Mooney",
+    "models": ["A3", "A4", "A5", "Q5", "Q7", "Q3", "A6"],
+    "image": "",
+    "logo": "../images/brand-logo/mooney.png",
+    "symbol": "",
+    "offers": 3,
+    "group": "fixed-wing"
+  },
+  {
+    "name": "Pilatus",
+    "models": ["Baojun A", "Baojun B"],
+    "image": "",
+    "logo": "../images/brand-logo/pilatus.png",
+    "symbol": "",
+    "offers": 2,
+    "group": "fixed-wing"
+  },
+  {
+    "name": "Tecnam",
+    "models": ["3 Series", "5 Series", "X3", "X5", "1 Series", "7 Series", "X1"],
+    "image": "",
+    "logo": "../images/brand-logo/tecnam.png",
+    "symbol": "",
+    "offers": 12,
+    "group": "fixed-wing"
+  },
+  {
+    "name": "Maule",
+    "models": ["3 Series", "5 Series"],
+    "image": "",
+    "logo": "../images/brand-logo/maule.png",
+    "symbol": "",
+    "offers": 12,
+    "group": "fixed-wing"
+  }
+]

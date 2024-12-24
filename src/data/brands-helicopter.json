@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Bell",
+    "models": ["Cadillac A", "Cadillac B", "Escalade"],
+    "image": "",
+    "logo": "../images/brand-logo/bell.png",
+    "symbol": "",
+    "offers": 5,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "Airbus",
+    "models": ["Changan A", "Changan B"],
+    "image": "",
+    "logo": "../images/brand-logo/airbus.png",
+    "symbol": "",
+    "offers": 4,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "Sikorsky",
+    "models": ["Camaro", "Corvette", "Spark", "Trax", "Malibu"],
+    "image": "",
+    "logo": "../images/brand-logo/sikorsky.png",
+    "symbol": "",
+    "offers": 19,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "Robinson",
+    "models": ["300C", "Voyager", "Grand Voyager"],
+    "image": "",
+    "logo": "../images/brand-logo/robinson.png",
+    "symbol": "",
+    "offers": 4,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "Leonardo",
+    "models": ["C3", "C5 Aircross", "Berlingo", "C1", "C4 Picasso"],
+    "image": "",
+    "logo": "../images/brand-logo/leonardo.png",
+    "symbol": "",
+    "offers": 10,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "MD",
+    "models": ["Stingray"],
+    "image": "",
+    "logo": "../images/brand-logo/md.png",
+    "symbol": "",
+    "offers": 2,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "Enstrom",
+    "models": ["Leon", "Ateca", "Formentor"],
+    "image": "",
+    "logo": "../images/brand-logo/enstrom.png",
+    "symbol": "",
+    "offers": 8,
+    "group": "rotorcraft"
+  },
+  {
+    "name": "Stinson",
+    "models": ["3 Crossback", "7 Crossback"],
+    "image": "",
+    "logo": "../images/brand-logo/stinson.png",
+    "symbol": "",
+    "offers": 8,
+    "group": "vintage-specialty-brands"
+  },
+  {
+    "name": "Taylorcraft",
+    "models": ["488 GTB", "F8 Tributo", "812 Superfast", "Portofino", "SF90 Stradale"],
+    "image": "",
+    "logo": "../images/brand-logo/taylorcraft.png",
+    "symbol": "",
+    "offers": 9,
+    "group": "vintage-specialty-brands"
+  },
+  {
+    "name": "Champion",
+    "models": ["500", "Panda", "Tipo", "500X", "500L", "124 Spider"],
+    "image": "",
+    "logo": "../images/brand-logo/champion.png",
+    "symbol": "",
+    "offers": 2,
+    "group": "vintage-specialty-brands"
+  },
+  {
+    "name": "WACO",
+    "models": ["Focus", "Kuga", "Mustang", "Fiesta", "Mondeo", "EcoSport", "Edge"],
+    "image": "",
+    "logo": "../images/brand-logo/waco.png",
+    "symbol": "",
+    "offers": 11,
+    "group": "vintage-specialty-brands"
+  }
+]
