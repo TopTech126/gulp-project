@@ -1,44 +1,44 @@
 [
     {
-        "name": "Single-Engine Piston (SEP)", 
-        "image": "./images/body-types/Single-Engine-Piston.png",
-        "offers": 12,
-        "group": "fixed-wing"
-      },
-      {
-        "name": "Multi-Engine Piston (MEP)", 
-        "image": "./images/body-types/Multi-Engine-Piston.png",
-        "offers": 16,
-        "group": "fixed-wing"
-      },
-      {
-        "name": "Turboprop", 
-        "image": "./images/body-types/Turboprop.png",
-        "offers": 5,
-        "group": "fixed-wing"
-      },
-      {
-        "name": "Utility/Bush Planes", 
-        "image": "./images/body-types/Utility-Bush-Planes.png",
-        "offers": 18,
-        "group": "fixed-wing"
-      },
-      {
-        "name": "Amphibious/Seaplanes", 
-        "image": "./images/body-types/Seaplanes.png",
-        "offers": 8,
-        "group": "fixed-wing"
-      },
-      {
-        "name": "High-Performance Aircraft", 
-        "image": "./images/body-types/High-Performance-Aircraft.png",
-        "offers": 25,
-        "group": "fixed-wing"
-      },
-      {
-        "name": "Business Jets", 
-        "image": "./images/body-types/Business-Jets.png",
-        "offers": 13,
-        "group": "fixed-wing"
-      }
+      "name": "Single-Engine Piston (SEP)", 
+      "image": "./images/body-types/Single-Engine-Piston.png",
+      "offers": 12,
+      "group": "fixed-wing"
+    },
+    {
+      "name": "Multi-Engine Piston (MEP)", 
+      "image": "./images/body-types/Multi-Engine-Piston.png",
+      "offers": 16,
+      "group": "fixed-wing"
+    },
+    {
+      "name": "Turboprop", 
+      "image": "./images/body-types/Turboprop.png",
+      "offers": 5,
+      "group": "fixed-wing"
+    },
+    {
+      "name": "Utility/Bush Planes", 
+      "image": "./images/body-types/Utility-Bush-Planes.png",
+      "offers": 18,
+      "group": "fixed-wing"
+    },
+    {
+      "name": "Amphibious/Seaplanes", 
+      "image": "./images/body-types/Seaplanes.png",
+      "offers": 8,
+      "group": "fixed-wing"
+    },
+    {
+      "name": "High-Performance Aircraft", 
+      "image": "./images/body-types/High-Performance-Aircraft.png",
+      "offers": 25,
+      "group": "fixed-wing"
+    },
+    {
+      "name": "Business Jets", 
+      "image": "./images/body-types/Business-Jets.png",
+      "offers": 13,
+      "group": "fixed-wing"
+    }
 ]

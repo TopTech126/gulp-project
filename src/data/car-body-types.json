@@ -1,7 +1,7 @@
 [
   {
     "name": "Single-Engine Piston (SEP)", 
-    "image": "./images/body-types/Single-Engine Piston-(SEP).png.png",
+    "image": "./images/body-types/Single-Engine-Piston.png",
     "offers": 12,
     "group": "fixed-wing"
   },
@@ -43,25 +43,25 @@
   },
   {
     "name": "Turbine", 
-    "image": "./images/body-types/Turbine-Helicopter.png.png",
+    "image": "./images/body-types/Turbine-Helicopter.png",
     "offers": 33,
     "group": "rotorcraft"
   },
   {
     "name": "Light Utility", 
-    "image": "./images/body-types/Light-Utility-Helicopters.png.png",
+    "image": "./images/body-types/Light-Utility-Helicopters.png",
     "offers": 4,
     "group": "rotorcraft"
   },
   {
     "name": "Heavy-Lift", 
-    "image": "./images/body-types/Heavy-Lift-Helicopters.png.png",
+    "image": "./images/body-types/Heavy-Lift-Helicopters.png",
     "offers": 17,
     "group": "rotorcraft"
   },
   {
     "name": "Amphibious", 
-    "image": "./images/body-types/Amphibious-Helicopters.png.png",
+    "image": "./images/body-types/Amphibious-Helicopters.png",
     "offers": 28,
     "group": "rotorcraft"
   }
