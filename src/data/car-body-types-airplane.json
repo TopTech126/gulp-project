@@ -1,7 +1,7 @@
 [
     {
         "name": "Single-Engine Piston (SEP)", 
-        "image": "./images/body-types/Single-Engine Piston-(SEP).png.png",
+        "image": "./images/body-types/Single-Engine-Piston.png",
         "offers": 12,
         "group": "fixed-wing"
       },
